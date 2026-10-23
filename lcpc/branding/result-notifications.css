@@ -1,0 +1,19 @@
+#lcpc-result-dialog{box-sizing:border-box;width:min(94vw,480px);max-height:90vh;overflow:auto;padding:26px;border:1px solid #dbe4ee;border-top:6px solid var(--lcpc-result-color,#15803d);border-radius:16px;background:#fff;color:#152b43;box-shadow:0 24px 80px #081e3860;font:16px/1.5 Arial,Helvetica,sans-serif;text-align:left}
+#lcpc-result-dialog::backdrop{background:#0c213a80}
+#lcpc-result-dialog[data-result=accepted]{--lcpc-result-color:#15803d;--lcpc-result-soft:#ecfdf3}
+#lcpc-result-dialog[data-result=rejected]{--lcpc-result-color:#b42332;--lcpc-result-soft:#fff1f2}
+#lcpc-result-dialog .lcpc-result-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}
+#lcpc-result-dialog .lcpc-result-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--lcpc-result-soft);color:var(--lcpc-result-color);font-size:34px;font-weight:700}
+#lcpc-result-dialog button{font:inherit;cursor:pointer}
+#lcpc-result-dialog .lcpc-result-dismiss{border:0;background:transparent;color:#52657b;font-size:30px;line-height:1;width:40px;height:40px;border-radius:8px}
+#lcpc-result-dialog .lcpc-result-eyebrow{margin:18px 0 4px;color:#52657b;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em}
+#lcpc-result-dialog h2{margin:0 0 10px;color:var(--lcpc-result-color);font-size:28px;line-height:1.25;overflow-wrap:anywhere}
+#lcpc-result-dialog p{margin-bottom:16px}
+#lcpc-result-dialog dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 20px;border-top:1px solid #dbe4ee;padding-top:16px}
+#lcpc-result-dialog dt{color:#52657b;font-weight:400}
+#lcpc-result-dialog dd{margin:0;font-weight:600;overflow-wrap:anywhere}
+#lcpc-result-dialog .lcpc-result-actions{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:24px}
+#lcpc-result-dialog small{color:#52657b}
+#lcpc-result-dialog .lcpc-result-close{margin-left:auto;border:0;border-radius:8px;padding:10px 24px;background:var(--lcpc-result-color);color:#fff;font-weight:700}
+#lcpc-result-dialog button:focus-visible{outline:3px solid #2563eb;outline-offset:3px}
+@media(prefers-reduced-motion:no-preference){#lcpc-result-dialog[open]{animation:lcpc-result-in .15s ease-out}@keyframes lcpc-result-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}}

@@ -1,0 +1,3 @@
+# PDF generation and structural validation. Install into a dedicated virtual environment.
+reportlab>=4.2,<5
+pypdf>=5,<7

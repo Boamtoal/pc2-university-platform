@@ -1,0 +1,91 @@
+/* Keep team identity on its own full-width row below logos and navigation. */
+app-header > header{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto;
+  grid-template-areas:"logos navigation" "team team";
+  column-gap:20px;
+  align-items:center;
+}
+app-header > header .logo-container{
+  grid-area:logos;
+  min-width:0;
+  display:flex;
+  align-items:center;
+}
+app-header > header .logo-container img{
+  min-width:0;
+  max-width:100%;
+  object-fit:contain;
+}
+app-header > header .lcpc-header-logos{gap:10px}
+app-header > header .lcpc-header-logos img{
+  height:64px!important;
+  width:auto;
+}
+app-header > header .lcpc-header-logos .lcpc-institution-logo{
+  height:72px!important;
+  width:92px;
+  padding:6px;
+  border-radius:6px;
+  background:#fff;
+}
+app-header > header > nav{
+  grid-area:navigation;
+  min-width:0;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+  gap:4px;
+}
+app-header > header > nav > a{
+  display:inline-flex!important;
+  align-items:center;
+  justify-content:center;
+  min-width:0!important;
+  margin:0!important;
+  padding:12px 10px!important;
+  font-size:16px!important;
+  line-height:1.4;
+  color:#fff;
+  border-bottom:3px solid transparent;
+  text-decoration:none;
+  white-space:nowrap;
+}
+app-header > header > nav > a:hover,
+app-header > header > nav > a.active{
+  border-bottom-color:#ffc107!important;
+}
+app-header > header > .teamid-container{
+  grid-area:team;
+  justify-self:stretch;
+  width:100%;
+  min-width:0;
+  padding-top:12px;
+  margin-top:8px;
+  border-top:1px solid #ffffff30;
+  text-align:left;
+  white-space:normal;
+  overflow-wrap:anywhere;
+}
+app-header > header > .teamid-container > p{
+  margin:0;
+  line-height:1.5;
+}
+@media(max-width:1100px){
+  app-header > header{
+    grid-template-columns:minmax(0,1fr);
+    grid-template-areas:"logos" "navigation" "team";
+    row-gap:8px;
+  }
+  app-header > header > nav{justify-content:flex-start}
+}
+@media(max-width:600px){
+  app-header > header{padding:12px!important}
+  app-header > header .lcpc-header-logos{flex-wrap:wrap}
+  app-header > header > nav > a{
+    min-width:0!important;
+    padding:10px 8px!important;
+    font-size:14px!important;
+  }
+}

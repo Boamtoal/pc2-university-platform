@@ -1,0 +1,3169 @@
+{
+  "source": "IANA tz database zone.tab and iso3166.tab; conversion uses the server timezone database",
+  "countries": [
+    {
+      "code": "AF",
+      "name": "Afghanistan",
+      "zones": [
+        {
+          "id": "Asia/Kabul",
+          "label": "Kabul · Asia/Kabul"
+        }
+      ]
+    },
+    {
+      "code": "AL",
+      "name": "Albania",
+      "zones": [
+        {
+          "id": "Europe/Tirane",
+          "label": "Tirane · Europe/Tirane"
+        }
+      ]
+    },
+    {
+      "code": "DZ",
+      "name": "Algeria",
+      "zones": [
+        {
+          "id": "Africa/Algiers",
+          "label": "Algiers · Africa/Algiers"
+        }
+      ]
+    },
+    {
+      "code": "AD",
+      "name": "Andorra",
+      "zones": [
+        {
+          "id": "Europe/Andorra",
+          "label": "Andorra · Europe/Andorra"
+        }
+      ]
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "zones": [
+        {
+          "id": "Africa/Luanda",
+          "label": "Luanda · Africa/Luanda"
+        }
+      ]
+    },
+    {
+      "code": "AI",
+      "name": "Anguilla",
+      "zones": [
+        {
+          "id": "America/Anguilla",
+          "label": "Anguilla · America/Anguilla"
+        }
+      ]
+    },
+    {
+      "code": "AQ",
+      "name": "Antarctica",
+      "zones": [
+        {
+          "id": "Antarctica/McMurdo",
+          "label": "McMurdo · Antarctica/McMurdo"
+        },
+        {
+          "id": "Antarctica/Casey",
+          "label": "Casey · Antarctica/Casey"
+        },
+        {
+          "id": "Antarctica/Davis",
+          "label": "Davis · Antarctica/Davis"
+        },
+        {
+          "id": "Antarctica/DumontDUrville",
+          "label": "DumontDUrville · Antarctica/DumontDUrville"
+        },
+        {
+          "id": "Antarctica/Mawson",
+          "label": "Mawson · Antarctica/Mawson"
+        },
+        {
+          "id": "Antarctica/Palmer",
+          "label": "Palmer · Antarctica/Palmer"
+        },
+        {
+          "id": "Antarctica/Rothera",
+          "label": "Rothera · Antarctica/Rothera"
+        },
+        {
+          "id": "Antarctica/Syowa",
+          "label": "Syowa · Antarctica/Syowa"
+        },
+        {
+          "id": "Antarctica/Troll",
+          "label": "Troll · Antarctica/Troll"
+        },
+        {
+          "id": "Antarctica/Vostok",
+          "label": "Vostok · Antarctica/Vostok"
+        }
+      ]
+    },
+    {
+      "code": "AG",
+      "name": "Antigua & Barbuda",
+      "zones": [
+        {
+          "id": "America/Antigua",
+          "label": "Antigua · America/Antigua"
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "zones": [
+        {
+          "id": "America/Argentina/Buenos_Aires",
+          "label": "Buenos Aires · America/Argentina/Buenos_Aires"
+        },
+        {
+          "id": "America/Argentina/Cordoba",
+          "label": "Cordoba · America/Argentina/Cordoba"
+        },
+        {
+          "id": "America/Argentina/Salta",
+          "label": "Salta · America/Argentina/Salta"
+        },
+        {
+          "id": "America/Argentina/Jujuy",
+          "label": "Jujuy · America/Argentina/Jujuy"
+        },
+        {
+          "id": "America/Argentina/Tucuman",
+          "label": "Tucuman · America/Argentina/Tucuman"
+        },
+        {
+          "id": "America/Argentina/Catamarca",
+          "label": "Catamarca · America/Argentina/Catamarca"
+        },
+        {
+          "id": "America/Argentina/La_Rioja",
+          "label": "La Rioja · America/Argentina/La_Rioja"
+        },
+        {
+          "id": "America/Argentina/San_Juan",
+          "label": "San Juan · America/Argentina/San_Juan"
+        },
+        {
+          "id": "America/Argentina/Mendoza",
+          "label": "Mendoza · America/Argentina/Mendoza"
+        },
+        {
+          "id": "America/Argentina/San_Luis",
+          "label": "San Luis · America/Argentina/San_Luis"
+        },
+        {
+          "id": "America/Argentina/Rio_Gallegos",
+          "label": "Rio Gallegos · America/Argentina/Rio_Gallegos"
+        },
+        {
+          "id": "America/Argentina/Ushuaia",
+          "label": "Ushuaia · America/Argentina/Ushuaia"
+        }
+      ]
+    },
+    {
+      "code": "AM",
+      "name": "Armenia",
+      "zones": [
+        {
+          "id": "Asia/Yerevan",
+          "label": "Yerevan · Asia/Yerevan"
+        }
+      ]
+    },
+    {
+      "code": "AW",
+      "name": "Aruba",
+      "zones": [
+        {
+          "id": "America/Aruba",
+          "label": "Aruba · America/Aruba"
+        }
+      ]
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "zones": [
+        {
+          "id": "Australia/Lord_Howe",
+          "label": "Lord Howe · Australia/Lord_Howe"
+        },
+        {
+          "id": "Antarctica/Macquarie",
+          "label": "Macquarie · Antarctica/Macquarie"
+        },
+        {
+          "id": "Australia/Hobart",
+          "label": "Hobart · Australia/Hobart"
+        },
+        {
+          "id": "Australia/Melbourne",
+          "label": "Melbourne · Australia/Melbourne"
+        },
+        {
+          "id": "Australia/Sydney",
+          "label": "Sydney · Australia/Sydney"
+        },
+        {
+          "id": "Australia/Broken_Hill",
+          "label": "Broken Hill · Australia/Broken_Hill"
+        },
+        {
+          "id": "Australia/Brisbane",
+          "label": "Brisbane · Australia/Brisbane"
+        },
+        {
+          "id": "Australia/Lindeman",
+          "label": "Lindeman · Australia/Lindeman"
+        },
+        {
+          "id": "Australia/Adelaide",
+          "label": "Adelaide · Australia/Adelaide"
+        },
+        {
+          "id": "Australia/Darwin",
+          "label": "Darwin · Australia/Darwin"
+        },
+        {
+          "id": "Australia/Perth",
+          "label": "Perth · Australia/Perth"
+        },
+        {
+          "id": "Australia/Eucla",
+          "label": "Eucla · Australia/Eucla"
+        }
+      ]
+    },
+    {
+      "code": "AT",
+      "name": "Austria",
+      "zones": [
+        {
+          "id": "Europe/Vienna",
+          "label": "Vienna · Europe/Vienna"
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Azerbaijan",
+      "zones": [
+        {
+          "id": "Asia/Baku",
+          "label": "Baku · Asia/Baku"
+        }
+      ]
+    },
+    {
+      "code": "BS",
+      "name": "Bahamas",
+      "zones": [
+        {
+          "id": "America/Nassau",
+          "label": "Nassau · America/Nassau"
+        }
+      ]
+    },
+    {
+      "code": "BH",
+      "name": "Bahrain",
+      "zones": [
+        {
+          "id": "Asia/Bahrain",
+          "label": "Bahrain · Asia/Bahrain"
+        }
+      ]
+    },
+    {
+      "code": "BD",
+      "name": "Bangladesh",
+      "zones": [
+        {
+          "id": "Asia/Dhaka",
+          "label": "Dhaka · Asia/Dhaka"
+        }
+      ]
+    },
+    {
+      "code": "BB",
+      "name": "Barbados",
+      "zones": [
+        {
+          "id": "America/Barbados",
+          "label": "Barbados · America/Barbados"
+        }
+      ]
+    },
+    {
+      "code": "BY",
+      "name": "Belarus",
+      "zones": [
+        {
+          "id": "Europe/Minsk",
+          "label": "Minsk · Europe/Minsk"
+        }
+      ]
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "zones": [
+        {
+          "id": "Europe/Brussels",
+          "label": "Brussels · Europe/Brussels"
+        }
+      ]
+    },
+    {
+      "code": "BZ",
+      "name": "Belize",
+      "zones": [
+        {
+          "id": "America/Belize",
+          "label": "Belize · America/Belize"
+        }
+      ]
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "zones": [
+        {
+          "id": "Africa/Porto-Novo",
+          "label": "Porto-Novo · Africa/Porto-Novo"
+        }
+      ]
+    },
+    {
+      "code": "BM",
+      "name": "Bermuda",
+      "zones": [
+        {
+          "id": "Atlantic/Bermuda",
+          "label": "Bermuda · Atlantic/Bermuda"
+        }
+      ]
+    },
+    {
+      "code": "BT",
+      "name": "Bhutan",
+      "zones": [
+        {
+          "id": "Asia/Thimphu",
+          "label": "Thimphu · Asia/Thimphu"
+        }
+      ]
+    },
+    {
+      "code": "BO",
+      "name": "Bolivia",
+      "zones": [
+        {
+          "id": "America/La_Paz",
+          "label": "La Paz · America/La_Paz"
+        }
+      ]
+    },
+    {
+      "code": "BA",
+      "name": "Bosnia & Herzegovina",
+      "zones": [
+        {
+          "id": "Europe/Sarajevo",
+          "label": "Sarajevo · Europe/Sarajevo"
+        }
+      ]
+    },
+    {
+      "code": "BW",
+      "name": "Botswana",
+      "zones": [
+        {
+          "id": "Africa/Gaborone",
+          "label": "Gaborone · Africa/Gaborone"
+        }
+      ]
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "zones": [
+        {
+          "id": "America/Noronha",
+          "label": "Noronha · America/Noronha"
+        },
+        {
+          "id": "America/Belem",
+          "label": "Belem · America/Belem"
+        },
+        {
+          "id": "America/Fortaleza",
+          "label": "Fortaleza · America/Fortaleza"
+        },
+        {
+          "id": "America/Recife",
+          "label": "Recife · America/Recife"
+        },
+        {
+          "id": "America/Araguaina",
+          "label": "Araguaina · America/Araguaina"
+        },
+        {
+          "id": "America/Maceio",
+          "label": "Maceio · America/Maceio"
+        },
+        {
+          "id": "America/Bahia",
+          "label": "Bahia · America/Bahia"
+        },
+        {
+          "id": "America/Sao_Paulo",
+          "label": "Sao Paulo · America/Sao_Paulo"
+        },
+        {
+          "id": "America/Campo_Grande",
+          "label": "Campo Grande · America/Campo_Grande"
+        },
+        {
+          "id": "America/Cuiaba",
+          "label": "Cuiaba · America/Cuiaba"
+        },
+        {
+          "id": "America/Santarem",
+          "label": "Santarem · America/Santarem"
+        },
+        {
+          "id": "America/Porto_Velho",
+          "label": "Porto Velho · America/Porto_Velho"
+        },
+        {
+          "id": "America/Boa_Vista",
+          "label": "Boa Vista · America/Boa_Vista"
+        },
+        {
+          "id": "America/Manaus",
+          "label": "Manaus · America/Manaus"
+        },
+        {
+          "id": "America/Eirunepe",
+          "label": "Eirunepe · America/Eirunepe"
+        },
+        {
+          "id": "America/Rio_Branco",
+          "label": "Rio Branco · America/Rio_Branco"
+        }
+      ]
+    },
+    {
+      "code": "GB",
+      "name": "Britain (UK)",
+      "zones": [
+        {
+          "id": "Europe/London",
+          "label": "London · Europe/London"
+        }
+      ]
+    },
+    {
+      "code": "IO",
+      "name": "British Indian Ocean Territory",
+      "zones": [
+        {
+          "id": "Indian/Chagos",
+          "label": "Chagos · Indian/Chagos"
+        }
+      ]
+    },
+    {
+      "code": "BN",
+      "name": "Brunei",
+      "zones": [
+        {
+          "id": "Asia/Brunei",
+          "label": "Brunei · Asia/Brunei"
+        }
+      ]
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "zones": [
+        {
+          "id": "Europe/Sofia",
+          "label": "Sofia · Europe/Sofia"
+        }
+      ]
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "zones": [
+        {
+          "id": "Africa/Ouagadougou",
+          "label": "Ouagadougou · Africa/Ouagadougou"
+        }
+      ]
+    },
+    {
+      "code": "BI",
+      "name": "Burundi",
+      "zones": [
+        {
+          "id": "Africa/Bujumbura",
+          "label": "Bujumbura · Africa/Bujumbura"
+        }
+      ]
+    },
+    {
+      "code": "KH",
+      "name": "Cambodia",
+      "zones": [
+        {
+          "id": "Asia/Phnom_Penh",
+          "label": "Phnom Penh · Asia/Phnom_Penh"
+        }
+      ]
+    },
+    {
+      "code": "CM",
+      "name": "Cameroon",
+      "zones": [
+        {
+          "id": "Africa/Douala",
+          "label": "Douala · Africa/Douala"
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "zones": [
+        {
+          "id": "America/St_Johns",
+          "label": "St Johns · America/St_Johns"
+        },
+        {
+          "id": "America/Halifax",
+          "label": "Halifax · America/Halifax"
+        },
+        {
+          "id": "America/Glace_Bay",
+          "label": "Glace Bay · America/Glace_Bay"
+        },
+        {
+          "id": "America/Moncton",
+          "label": "Moncton · America/Moncton"
+        },
+        {
+          "id": "America/Goose_Bay",
+          "label": "Goose Bay · America/Goose_Bay"
+        },
+        {
+          "id": "America/Blanc-Sablon",
+          "label": "Blanc-Sablon · America/Blanc-Sablon"
+        },
+        {
+          "id": "America/Toronto",
+          "label": "Toronto · America/Toronto"
+        },
+        {
+          "id": "America/Iqaluit",
+          "label": "Iqaluit · America/Iqaluit"
+        },
+        {
+          "id": "America/Atikokan",
+          "label": "Atikokan · America/Atikokan"
+        },
+        {
+          "id": "America/Winnipeg",
+          "label": "Winnipeg · America/Winnipeg"
+        },
+        {
+          "id": "America/Resolute",
+          "label": "Resolute · America/Resolute"
+        },
+        {
+          "id": "America/Rankin_Inlet",
+          "label": "Rankin Inlet · America/Rankin_Inlet"
+        },
+        {
+          "id": "America/Regina",
+          "label": "Regina · America/Regina"
+        },
+        {
+          "id": "America/Swift_Current",
+          "label": "Swift Current · America/Swift_Current"
+        },
+        {
+          "id": "America/Edmonton",
+          "label": "Edmonton · America/Edmonton"
+        },
+        {
+          "id": "America/Cambridge_Bay",
+          "label": "Cambridge Bay · America/Cambridge_Bay"
+        },
+        {
+          "id": "America/Inuvik",
+          "label": "Inuvik · America/Inuvik"
+        },
+        {
+          "id": "America/Vancouver",
+          "label": "Vancouver · America/Vancouver"
+        },
+        {
+          "id": "America/Creston",
+          "label": "Creston · America/Creston"
+        },
+        {
+          "id": "America/Dawson_Creek",
+          "label": "Dawson Creek · America/Dawson_Creek"
+        },
+        {
+          "id": "America/Fort_Nelson",
+          "label": "Fort Nelson · America/Fort_Nelson"
+        },
+        {
+          "id": "America/Whitehorse",
+          "label": "Whitehorse · America/Whitehorse"
+        },
+        {
+          "id": "America/Dawson",
+          "label": "Dawson · America/Dawson"
+        }
+      ]
+    },
+    {
+      "code": "CV",
+      "name": "Cape Verde",
+      "zones": [
+        {
+          "id": "Atlantic/Cape_Verde",
+          "label": "Cape Verde · Atlantic/Cape_Verde"
+        }
+      ]
+    },
+    {
+      "code": "BQ",
+      "name": "Caribbean NL",
+      "zones": [
+        {
+          "id": "America/Kralendijk",
+          "label": "Kralendijk · America/Kralendijk"
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Cayman Islands",
+      "zones": [
+        {
+          "id": "America/Cayman",
+          "label": "Cayman · America/Cayman"
+        }
+      ]
+    },
+    {
+      "code": "CF",
+      "name": "Central African Rep.",
+      "zones": [
+        {
+          "id": "Africa/Bangui",
+          "label": "Bangui · Africa/Bangui"
+        }
+      ]
+    },
+    {
+      "code": "TD",
+      "name": "Chad",
+      "zones": [
+        {
+          "id": "Africa/Ndjamena",
+          "label": "Ndjamena · Africa/Ndjamena"
+        }
+      ]
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "zones": [
+        {
+          "id": "America/Santiago",
+          "label": "Santiago · America/Santiago"
+        },
+        {
+          "id": "America/Coyhaique",
+          "label": "Coyhaique · America/Coyhaique"
+        },
+        {
+          "id": "America/Punta_Arenas",
+          "label": "Punta Arenas · America/Punta_Arenas"
+        },
+        {
+          "id": "Pacific/Easter",
+          "label": "Easter · Pacific/Easter"
+        }
+      ]
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "zones": [
+        {
+          "id": "Asia/Shanghai",
+          "label": "Shanghai · Asia/Shanghai"
+        },
+        {
+          "id": "Asia/Urumqi",
+          "label": "Urumqi · Asia/Urumqi"
+        }
+      ]
+    },
+    {
+      "code": "CX",
+      "name": "Christmas Island",
+      "zones": [
+        {
+          "id": "Indian/Christmas",
+          "label": "Christmas · Indian/Christmas"
+        }
+      ]
+    },
+    {
+      "code": "CC",
+      "name": "Cocos (Keeling) Islands",
+      "zones": [
+        {
+          "id": "Indian/Cocos",
+          "label": "Cocos · Indian/Cocos"
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "zones": [
+        {
+          "id": "America/Bogota",
+          "label": "Bogota · America/Bogota"
+        }
+      ]
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "zones": [
+        {
+          "id": "Indian/Comoro",
+          "label": "Comoro · Indian/Comoro"
+        }
+      ]
+    },
+    {
+      "code": "CD",
+      "name": "Congo (Dem. Rep.)",
+      "zones": [
+        {
+          "id": "Africa/Kinshasa",
+          "label": "Kinshasa · Africa/Kinshasa"
+        },
+        {
+          "id": "Africa/Lubumbashi",
+          "label": "Lubumbashi · Africa/Lubumbashi"
+        }
+      ]
+    },
+    {
+      "code": "CG",
+      "name": "Congo (Rep.)",
+      "zones": [
+        {
+          "id": "Africa/Brazzaville",
+          "label": "Brazzaville · Africa/Brazzaville"
+        }
+      ]
+    },
+    {
+      "code": "CK",
+      "name": "Cook Islands",
+      "zones": [
+        {
+          "id": "Pacific/Rarotonga",
+          "label": "Rarotonga · Pacific/Rarotonga"
+        }
+      ]
+    },
+    {
+      "code": "CR",
+      "name": "Costa Rica",
+      "zones": [
+        {
+          "id": "America/Costa_Rica",
+          "label": "Costa Rica · America/Costa_Rica"
+        }
+      ]
+    },
+    {
+      "code": "HR",
+      "name": "Croatia",
+      "zones": [
+        {
+          "id": "Europe/Zagreb",
+          "label": "Zagreb · Europe/Zagreb"
+        }
+      ]
+    },
+    {
+      "code": "CU",
+      "name": "Cuba",
+      "zones": [
+        {
+          "id": "America/Havana",
+          "label": "Havana · America/Havana"
+        }
+      ]
+    },
+    {
+      "code": "CW",
+      "name": "Curaçao",
+      "zones": [
+        {
+          "id": "America/Curacao",
+          "label": "Curacao · America/Curacao"
+        }
+      ]
+    },
+    {
+      "code": "CY",
+      "name": "Cyprus",
+      "zones": [
+        {
+          "id": "Asia/Nicosia",
+          "label": "Nicosia · Asia/Nicosia"
+        },
+        {
+          "id": "Asia/Famagusta",
+          "label": "Famagusta · Asia/Famagusta"
+        }
+      ]
+    },
+    {
+      "code": "CZ",
+      "name": "Czech Republic",
+      "zones": [
+        {
+          "id": "Europe/Prague",
+          "label": "Prague · Europe/Prague"
+        }
+      ]
+    },
+    {
+      "code": "CI",
+      "name": "Côte d’Ivoire",
+      "zones": [
+        {
+          "id": "Africa/Abidjan",
+          "label": "Abidjan · Africa/Abidjan"
+        }
+      ]
+    },
+    {
+      "code": "DK",
+      "name": "Denmark",
+      "zones": [
+        {
+          "id": "Europe/Copenhagen",
+          "label": "Copenhagen · Europe/Copenhagen"
+        }
+      ]
+    },
+    {
+      "code": "DJ",
+      "name": "Djibouti",
+      "zones": [
+        {
+          "id": "Africa/Djibouti",
+          "label": "Djibouti · Africa/Djibouti"
+        }
+      ]
+    },
+    {
+      "code": "DM",
+      "name": "Dominica",
+      "zones": [
+        {
+          "id": "America/Dominica",
+          "label": "Dominica · America/Dominica"
+        }
+      ]
+    },
+    {
+      "code": "DO",
+      "name": "Dominican Republic",
+      "zones": [
+        {
+          "id": "America/Santo_Domingo",
+          "label": "Santo Domingo · America/Santo_Domingo"
+        }
+      ]
+    },
+    {
+      "code": "TL",
+      "name": "East Timor",
+      "zones": [
+        {
+          "id": "Asia/Dili",
+          "label": "Dili · Asia/Dili"
+        }
+      ]
+    },
+    {
+      "code": "EC",
+      "name": "Ecuador",
+      "zones": [
+        {
+          "id": "America/Guayaquil",
+          "label": "Guayaquil · America/Guayaquil"
+        },
+        {
+          "id": "Pacific/Galapagos",
+          "label": "Galapagos · Pacific/Galapagos"
+        }
+      ]
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "zones": [
+        {
+          "id": "Africa/Cairo",
+          "label": "Cairo · Africa/Cairo"
+        }
+      ]
+    },
+    {
+      "code": "SV",
+      "name": "El Salvador",
+      "zones": [
+        {
+          "id": "America/El_Salvador",
+          "label": "El Salvador · America/El_Salvador"
+        }
+      ]
+    },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "zones": [
+        {
+          "id": "Africa/Malabo",
+          "label": "Malabo · Africa/Malabo"
+        }
+      ]
+    },
+    {
+      "code": "ER",
+      "name": "Eritrea",
+      "zones": [
+        {
+          "id": "Africa/Asmara",
+          "label": "Asmara · Africa/Asmara"
+        }
+      ]
+    },
+    {
+      "code": "EE",
+      "name": "Estonia",
+      "zones": [
+        {
+          "id": "Europe/Tallinn",
+          "label": "Tallinn · Europe/Tallinn"
+        }
+      ]
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini (Swaziland)",
+      "zones": [
+        {
+          "id": "Africa/Mbabane",
+          "label": "Mbabane · Africa/Mbabane"
+        }
+      ]
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "zones": [
+        {
+          "id": "Africa/Addis_Ababa",
+          "label": "Addis Ababa · Africa/Addis_Ababa"
+        }
+      ]
+    },
+    {
+      "code": "FK",
+      "name": "Falkland Islands",
+      "zones": [
+        {
+          "id": "Atlantic/Stanley",
+          "label": "Stanley · Atlantic/Stanley"
+        }
+      ]
+    },
+    {
+      "code": "FO",
+      "name": "Faroe Islands",
+      "zones": [
+        {
+          "id": "Atlantic/Faroe",
+          "label": "Faroe · Atlantic/Faroe"
+        }
+      ]
+    },
+    {
+      "code": "FJ",
+      "name": "Fiji",
+      "zones": [
+        {
+          "id": "Pacific/Fiji",
+          "label": "Fiji · Pacific/Fiji"
+        }
+      ]
+    },
+    {
+      "code": "FI",
+      "name": "Finland",
+      "zones": [
+        {
+          "id": "Europe/Helsinki",
+          "label": "Helsinki · Europe/Helsinki"
+        }
+      ]
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "zones": [
+        {
+          "id": "Europe/Paris",
+          "label": "Paris · Europe/Paris"
+        }
+      ]
+    },
+    {
+      "code": "GF",
+      "name": "French Guiana",
+      "zones": [
+        {
+          "id": "America/Cayenne",
+          "label": "Cayenne · America/Cayenne"
+        }
+      ]
+    },
+    {
+      "code": "PF",
+      "name": "French Polynesia",
+      "zones": [
+        {
+          "id": "Pacific/Tahiti",
+          "label": "Tahiti · Pacific/Tahiti"
+        },
+        {
+          "id": "Pacific/Marquesas",
+          "label": "Marquesas · Pacific/Marquesas"
+        },
+        {
+          "id": "Pacific/Gambier",
+          "label": "Gambier · Pacific/Gambier"
+        }
+      ]
+    },
+    {
+      "code": "TF",
+      "name": "French S. Terr.",
+      "zones": [
+        {
+          "id": "Indian/Kerguelen",
+          "label": "Kerguelen · Indian/Kerguelen"
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Gabon",
+      "zones": [
+        {
+          "id": "Africa/Libreville",
+          "label": "Libreville · Africa/Libreville"
+        }
+      ]
+    },
+    {
+      "code": "GM",
+      "name": "Gambia",
+      "zones": [
+        {
+          "id": "Africa/Banjul",
+          "label": "Banjul · Africa/Banjul"
+        }
+      ]
+    },
+    {
+      "code": "GE",
+      "name": "Georgia",
+      "zones": [
+        {
+          "id": "Asia/Tbilisi",
+          "label": "Tbilisi · Asia/Tbilisi"
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "zones": [
+        {
+          "id": "Europe/Berlin",
+          "label": "Berlin · Europe/Berlin"
+        },
+        {
+          "id": "Europe/Busingen",
+          "label": "Busingen · Europe/Busingen"
+        }
+      ]
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "zones": [
+        {
+          "id": "Africa/Accra",
+          "label": "Accra · Africa/Accra"
+        }
+      ]
+    },
+    {
+      "code": "GI",
+      "name": "Gibraltar",
+      "zones": [
+        {
+          "id": "Europe/Gibraltar",
+          "label": "Gibraltar · Europe/Gibraltar"
+        }
+      ]
+    },
+    {
+      "code": "GR",
+      "name": "Greece",
+      "zones": [
+        {
+          "id": "Europe/Athens",
+          "label": "Athens · Europe/Athens"
+        }
+      ]
+    },
+    {
+      "code": "GL",
+      "name": "Greenland",
+      "zones": [
+        {
+          "id": "America/Nuuk",
+          "label": "Nuuk · America/Nuuk"
+        },
+        {
+          "id": "America/Danmarkshavn",
+          "label": "Danmarkshavn · America/Danmarkshavn"
+        },
+        {
+          "id": "America/Scoresbysund",
+          "label": "Scoresbysund · America/Scoresbysund"
+        },
+        {
+          "id": "America/Thule",
+          "label": "Thule · America/Thule"
+        }
+      ]
+    },
+    {
+      "code": "GD",
+      "name": "Grenada",
+      "zones": [
+        {
+          "id": "America/Grenada",
+          "label": "Grenada · America/Grenada"
+        }
+      ]
+    },
+    {
+      "code": "GP",
+      "name": "Guadeloupe",
+      "zones": [
+        {
+          "id": "America/Guadeloupe",
+          "label": "Guadeloupe · America/Guadeloupe"
+        }
+      ]
+    },
+    {
+      "code": "GU",
+      "name": "Guam",
+      "zones": [
+        {
+          "id": "Pacific/Guam",
+          "label": "Guam · Pacific/Guam"
+        }
+      ]
+    },
+    {
+      "code": "GT",
+      "name": "Guatemala",
+      "zones": [
+        {
+          "id": "America/Guatemala",
+          "label": "Guatemala · America/Guatemala"
+        }
+      ]
+    },
+    {
+      "code": "GG",
+      "name": "Guernsey",
+      "zones": [
+        {
+          "id": "Europe/Guernsey",
+          "label": "Guernsey · Europe/Guernsey"
+        }
+      ]
+    },
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "zones": [
+        {
+          "id": "Africa/Conakry",
+          "label": "Conakry · Africa/Conakry"
+        }
+      ]
+    },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "zones": [
+        {
+          "id": "Africa/Bissau",
+          "label": "Bissau · Africa/Bissau"
+        }
+      ]
+    },
+    {
+      "code": "GY",
+      "name": "Guyana",
+      "zones": [
+        {
+          "id": "America/Guyana",
+          "label": "Guyana · America/Guyana"
+        }
+      ]
+    },
+    {
+      "code": "HT",
+      "name": "Haiti",
+      "zones": [
+        {
+          "id": "America/Port-au-Prince",
+          "label": "Port-au-Prince · America/Port-au-Prince"
+        }
+      ]
+    },
+    {
+      "code": "HN",
+      "name": "Honduras",
+      "zones": [
+        {
+          "id": "America/Tegucigalpa",
+          "label": "Tegucigalpa · America/Tegucigalpa"
+        }
+      ]
+    },
+    {
+      "code": "HK",
+      "name": "Hong Kong",
+      "zones": [
+        {
+          "id": "Asia/Hong_Kong",
+          "label": "Hong Kong · Asia/Hong_Kong"
+        }
+      ]
+    },
+    {
+      "code": "HU",
+      "name": "Hungary",
+      "zones": [
+        {
+          "id": "Europe/Budapest",
+          "label": "Budapest · Europe/Budapest"
+        }
+      ]
+    },
+    {
+      "code": "IS",
+      "name": "Iceland",
+      "zones": [
+        {
+          "id": "Atlantic/Reykjavik",
+          "label": "Reykjavik · Atlantic/Reykjavik"
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "zones": [
+        {
+          "id": "Asia/Kolkata",
+          "label": "Kolkata · Asia/Kolkata"
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Indonesia",
+      "zones": [
+        {
+          "id": "Asia/Jakarta",
+          "label": "Jakarta · Asia/Jakarta"
+        },
+        {
+          "id": "Asia/Pontianak",
+          "label": "Pontianak · Asia/Pontianak"
+        },
+        {
+          "id": "Asia/Makassar",
+          "label": "Makassar · Asia/Makassar"
+        },
+        {
+          "id": "Asia/Jayapura",
+          "label": "Jayapura · Asia/Jayapura"
+        }
+      ]
+    },
+    {
+      "code": "ZZ",
+      "name": "International / UTC",
+      "zones": [
+        {
+          "id": "Etc/UTC",
+          "label": "Coordinated Universal Time · UTC"
+        }
+      ]
+    },
+    {
+      "code": "IR",
+      "name": "Iran",
+      "zones": [
+        {
+          "id": "Asia/Tehran",
+          "label": "Tehran · Asia/Tehran"
+        }
+      ]
+    },
+    {
+      "code": "IQ",
+      "name": "Iraq",
+      "zones": [
+        {
+          "id": "Asia/Baghdad",
+          "label": "Baghdad · Asia/Baghdad"
+        }
+      ]
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "zones": [
+        {
+          "id": "Europe/Dublin",
+          "label": "Dublin · Europe/Dublin"
+        }
+      ]
+    },
+    {
+      "code": "IM",
+      "name": "Isle of Man",
+      "zones": [
+        {
+          "id": "Europe/Isle_of_Man",
+          "label": "Isle of Man · Europe/Isle_of_Man"
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Israel",
+      "zones": [
+        {
+          "id": "Asia/Jerusalem",
+          "label": "Jerusalem · Asia/Jerusalem"
+        }
+      ]
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "zones": [
+        {
+          "id": "Europe/Rome",
+          "label": "Rome · Europe/Rome"
+        }
+      ]
+    },
+    {
+      "code": "JM",
+      "name": "Jamaica",
+      "zones": [
+        {
+          "id": "America/Jamaica",
+          "label": "Jamaica · America/Jamaica"
+        }
+      ]
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "zones": [
+        {
+          "id": "Asia/Tokyo",
+          "label": "Tokyo · Asia/Tokyo"
+        }
+      ]
+    },
+    {
+      "code": "JE",
+      "name": "Jersey",
+      "zones": [
+        {
+          "id": "Europe/Jersey",
+          "label": "Jersey · Europe/Jersey"
+        }
+      ]
+    },
+    {
+      "code": "JO",
+      "name": "Jordan",
+      "zones": [
+        {
+          "id": "Asia/Amman",
+          "label": "Amman · Asia/Amman"
+        }
+      ]
+    },
+    {
+      "code": "KZ",
+      "name": "Kazakhstan",
+      "zones": [
+        {
+          "id": "Asia/Almaty",
+          "label": "Almaty · Asia/Almaty"
+        },
+        {
+          "id": "Asia/Qyzylorda",
+          "label": "Qyzylorda · Asia/Qyzylorda"
+        },
+        {
+          "id": "Asia/Qostanay",
+          "label": "Qostanay · Asia/Qostanay"
+        },
+        {
+          "id": "Asia/Aqtobe",
+          "label": "Aqtobe · Asia/Aqtobe"
+        },
+        {
+          "id": "Asia/Aqtau",
+          "label": "Aqtau · Asia/Aqtau"
+        },
+        {
+          "id": "Asia/Atyrau",
+          "label": "Atyrau · Asia/Atyrau"
+        },
+        {
+          "id": "Asia/Oral",
+          "label": "Oral · Asia/Oral"
+        }
+      ]
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "zones": [
+        {
+          "id": "Africa/Nairobi",
+          "label": "Nairobi · Africa/Nairobi"
+        }
+      ]
+    },
+    {
+      "code": "KI",
+      "name": "Kiribati",
+      "zones": [
+        {
+          "id": "Pacific/Tarawa",
+          "label": "Tarawa · Pacific/Tarawa"
+        },
+        {
+          "id": "Pacific/Kanton",
+          "label": "Kanton · Pacific/Kanton"
+        },
+        {
+          "id": "Pacific/Kiritimati",
+          "label": "Kiritimati · Pacific/Kiritimati"
+        }
+      ]
+    },
+    {
+      "code": "KP",
+      "name": "Korea (North)",
+      "zones": [
+        {
+          "id": "Asia/Pyongyang",
+          "label": "Pyongyang · Asia/Pyongyang"
+        }
+      ]
+    },
+    {
+      "code": "KR",
+      "name": "Korea (South)",
+      "zones": [
+        {
+          "id": "Asia/Seoul",
+          "label": "Seoul · Asia/Seoul"
+        }
+      ]
+    },
+    {
+      "code": "KW",
+      "name": "Kuwait",
+      "zones": [
+        {
+          "id": "Asia/Kuwait",
+          "label": "Kuwait · Asia/Kuwait"
+        }
+      ]
+    },
+    {
+      "code": "KG",
+      "name": "Kyrgyzstan",
+      "zones": [
+        {
+          "id": "Asia/Bishkek",
+          "label": "Bishkek · Asia/Bishkek"
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Laos",
+      "zones": [
+        {
+          "id": "Asia/Vientiane",
+          "label": "Vientiane · Asia/Vientiane"
+        }
+      ]
+    },
+    {
+      "code": "LV",
+      "name": "Latvia",
+      "zones": [
+        {
+          "id": "Europe/Riga",
+          "label": "Riga · Europe/Riga"
+        }
+      ]
+    },
+    {
+      "code": "LB",
+      "name": "Lebanon",
+      "zones": [
+        {
+          "id": "Asia/Beirut",
+          "label": "Beirut · Asia/Beirut"
+        }
+      ]
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "zones": [
+        {
+          "id": "Africa/Maseru",
+          "label": "Maseru · Africa/Maseru"
+        }
+      ]
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "zones": [
+        {
+          "id": "Africa/Monrovia",
+          "label": "Monrovia · Africa/Monrovia"
+        }
+      ]
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "zones": [
+        {
+          "id": "Africa/Tripoli",
+          "label": "Tripoli · Africa/Tripoli"
+        }
+      ]
+    },
+    {
+      "code": "LI",
+      "name": "Liechtenstein",
+      "zones": [
+        {
+          "id": "Europe/Vaduz",
+          "label": "Vaduz · Europe/Vaduz"
+        }
+      ]
+    },
+    {
+      "code": "LT",
+      "name": "Lithuania",
+      "zones": [
+        {
+          "id": "Europe/Vilnius",
+          "label": "Vilnius · Europe/Vilnius"
+        }
+      ]
+    },
+    {
+      "code": "LU",
+      "name": "Luxembourg",
+      "zones": [
+        {
+          "id": "Europe/Luxembourg",
+          "label": "Luxembourg · Europe/Luxembourg"
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Macau",
+      "zones": [
+        {
+          "id": "Asia/Macau",
+          "label": "Macau · Asia/Macau"
+        }
+      ]
+    },
+    {
+      "code": "MG",
+      "name": "Madagascar",
+      "zones": [
+        {
+          "id": "Indian/Antananarivo",
+          "label": "Antananarivo · Indian/Antananarivo"
+        }
+      ]
+    },
+    {
+      "code": "MW",
+      "name": "Malawi",
+      "zones": [
+        {
+          "id": "Africa/Blantyre",
+          "label": "Blantyre · Africa/Blantyre"
+        }
+      ]
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "zones": [
+        {
+          "id": "Asia/Kuala_Lumpur",
+          "label": "Kuala Lumpur · Asia/Kuala_Lumpur"
+        },
+        {
+          "id": "Asia/Kuching",
+          "label": "Kuching · Asia/Kuching"
+        }
+      ]
+    },
+    {
+      "code": "MV",
+      "name": "Maldives",
+      "zones": [
+        {
+          "id": "Indian/Maldives",
+          "label": "Maldives · Indian/Maldives"
+        }
+      ]
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "zones": [
+        {
+          "id": "Africa/Bamako",
+          "label": "Bamako · Africa/Bamako"
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Malta",
+      "zones": [
+        {
+          "id": "Europe/Malta",
+          "label": "Malta · Europe/Malta"
+        }
+      ]
+    },
+    {
+      "code": "MH",
+      "name": "Marshall Islands",
+      "zones": [
+        {
+          "id": "Pacific/Majuro",
+          "label": "Majuro · Pacific/Majuro"
+        },
+        {
+          "id": "Pacific/Kwajalein",
+          "label": "Kwajalein · Pacific/Kwajalein"
+        }
+      ]
+    },
+    {
+      "code": "MQ",
+      "name": "Martinique",
+      "zones": [
+        {
+          "id": "America/Martinique",
+          "label": "Martinique · America/Martinique"
+        }
+      ]
+    },
+    {
+      "code": "MR",
+      "name": "Mauritania",
+      "zones": [
+        {
+          "id": "Africa/Nouakchott",
+          "label": "Nouakchott · Africa/Nouakchott"
+        }
+      ]
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "zones": [
+        {
+          "id": "Indian/Mauritius",
+          "label": "Mauritius · Indian/Mauritius"
+        }
+      ]
+    },
+    {
+      "code": "YT",
+      "name": "Mayotte",
+      "zones": [
+        {
+          "id": "Indian/Mayotte",
+          "label": "Mayotte · Indian/Mayotte"
+        }
+      ]
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "zones": [
+        {
+          "id": "America/Mexico_City",
+          "label": "Mexico City · America/Mexico_City"
+        },
+        {
+          "id": "America/Cancun",
+          "label": "Cancun · America/Cancun"
+        },
+        {
+          "id": "America/Merida",
+          "label": "Merida · America/Merida"
+        },
+        {
+          "id": "America/Monterrey",
+          "label": "Monterrey · America/Monterrey"
+        },
+        {
+          "id": "America/Matamoros",
+          "label": "Matamoros · America/Matamoros"
+        },
+        {
+          "id": "America/Chihuahua",
+          "label": "Chihuahua · America/Chihuahua"
+        },
+        {
+          "id": "America/Ciudad_Juarez",
+          "label": "Ciudad Juarez · America/Ciudad_Juarez"
+        },
+        {
+          "id": "America/Ojinaga",
+          "label": "Ojinaga · America/Ojinaga"
+        },
+        {
+          "id": "America/Mazatlan",
+          "label": "Mazatlan · America/Mazatlan"
+        },
+        {
+          "id": "America/Bahia_Banderas",
+          "label": "Bahia Banderas · America/Bahia_Banderas"
+        },
+        {
+          "id": "America/Hermosillo",
+          "label": "Hermosillo · America/Hermosillo"
+        },
+        {
+          "id": "America/Tijuana",
+          "label": "Tijuana · America/Tijuana"
+        }
+      ]
+    },
+    {
+      "code": "FM",
+      "name": "Micronesia",
+      "zones": [
+        {
+          "id": "Pacific/Chuuk",
+          "label": "Chuuk · Pacific/Chuuk"
+        },
+        {
+          "id": "Pacific/Pohnpei",
+          "label": "Pohnpei · Pacific/Pohnpei"
+        },
+        {
+          "id": "Pacific/Kosrae",
+          "label": "Kosrae · Pacific/Kosrae"
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Moldova",
+      "zones": [
+        {
+          "id": "Europe/Chisinau",
+          "label": "Chisinau · Europe/Chisinau"
+        }
+      ]
+    },
+    {
+      "code": "MC",
+      "name": "Monaco",
+      "zones": [
+        {
+          "id": "Europe/Monaco",
+          "label": "Monaco · Europe/Monaco"
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Mongolia",
+      "zones": [
+        {
+          "id": "Asia/Ulaanbaatar",
+          "label": "Ulaanbaatar · Asia/Ulaanbaatar"
+        },
+        {
+          "id": "Asia/Hovd",
+          "label": "Hovd · Asia/Hovd"
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Montenegro",
+      "zones": [
+        {
+          "id": "Europe/Podgorica",
+          "label": "Podgorica · Europe/Podgorica"
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Montserrat",
+      "zones": [
+        {
+          "id": "America/Montserrat",
+          "label": "Montserrat · America/Montserrat"
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "zones": [
+        {
+          "id": "Africa/Casablanca",
+          "label": "Casablanca · Africa/Casablanca"
+        }
+      ]
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "zones": [
+        {
+          "id": "Africa/Maputo",
+          "label": "Maputo · Africa/Maputo"
+        }
+      ]
+    },
+    {
+      "code": "MM",
+      "name": "Myanmar (Burma)",
+      "zones": [
+        {
+          "id": "Asia/Yangon",
+          "label": "Yangon · Asia/Yangon"
+        }
+      ]
+    },
+    {
+      "code": "NA",
+      "name": "Namibia",
+      "zones": [
+        {
+          "id": "Africa/Windhoek",
+          "label": "Windhoek · Africa/Windhoek"
+        }
+      ]
+    },
+    {
+      "code": "NR",
+      "name": "Nauru",
+      "zones": [
+        {
+          "id": "Pacific/Nauru",
+          "label": "Nauru · Pacific/Nauru"
+        }
+      ]
+    },
+    {
+      "code": "NP",
+      "name": "Nepal",
+      "zones": [
+        {
+          "id": "Asia/Kathmandu",
+          "label": "Kathmandu · Asia/Kathmandu"
+        }
+      ]
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "zones": [
+        {
+          "id": "Europe/Amsterdam",
+          "label": "Amsterdam · Europe/Amsterdam"
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "New Caledonia",
+      "zones": [
+        {
+          "id": "Pacific/Noumea",
+          "label": "Noumea · Pacific/Noumea"
+        }
+      ]
+    },
+    {
+      "code": "NZ",
+      "name": "New Zealand",
+      "zones": [
+        {
+          "id": "Pacific/Auckland",
+          "label": "Auckland · Pacific/Auckland"
+        },
+        {
+          "id": "Pacific/Chatham",
+          "label": "Chatham · Pacific/Chatham"
+        }
+      ]
+    },
+    {
+      "code": "NI",
+      "name": "Nicaragua",
+      "zones": [
+        {
+          "id": "America/Managua",
+          "label": "Managua · America/Managua"
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "zones": [
+        {
+          "id": "Africa/Niamey",
+          "label": "Niamey · Africa/Niamey"
+        }
+      ]
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "zones": [
+        {
+          "id": "Africa/Lagos",
+          "label": "Lagos · Africa/Lagos"
+        }
+      ]
+    },
+    {
+      "code": "NU",
+      "name": "Niue",
+      "zones": [
+        {
+          "id": "Pacific/Niue",
+          "label": "Niue · Pacific/Niue"
+        }
+      ]
+    },
+    {
+      "code": "NF",
+      "name": "Norfolk Island",
+      "zones": [
+        {
+          "id": "Pacific/Norfolk",
+          "label": "Norfolk · Pacific/Norfolk"
+        }
+      ]
+    },
+    {
+      "code": "MK",
+      "name": "North Macedonia",
+      "zones": [
+        {
+          "id": "Europe/Skopje",
+          "label": "Skopje · Europe/Skopje"
+        }
+      ]
+    },
+    {
+      "code": "MP",
+      "name": "Northern Mariana Islands",
+      "zones": [
+        {
+          "id": "Pacific/Saipan",
+          "label": "Saipan · Pacific/Saipan"
+        }
+      ]
+    },
+    {
+      "code": "NO",
+      "name": "Norway",
+      "zones": [
+        {
+          "id": "Europe/Oslo",
+          "label": "Oslo · Europe/Oslo"
+        }
+      ]
+    },
+    {
+      "code": "OM",
+      "name": "Oman",
+      "zones": [
+        {
+          "id": "Asia/Muscat",
+          "label": "Muscat · Asia/Muscat"
+        }
+      ]
+    },
+    {
+      "code": "PK",
+      "name": "Pakistan",
+      "zones": [
+        {
+          "id": "Asia/Karachi",
+          "label": "Karachi · Asia/Karachi"
+        }
+      ]
+    },
+    {
+      "code": "PW",
+      "name": "Palau",
+      "zones": [
+        {
+          "id": "Pacific/Palau",
+          "label": "Palau · Pacific/Palau"
+        }
+      ]
+    },
+    {
+      "code": "PS",
+      "name": "Palestine",
+      "zones": [
+        {
+          "id": "Asia/Gaza",
+          "label": "Gaza · Asia/Gaza"
+        },
+        {
+          "id": "Asia/Hebron",
+          "label": "Hebron · Asia/Hebron"
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Panama",
+      "zones": [
+        {
+          "id": "America/Panama",
+          "label": "Panama · America/Panama"
+        }
+      ]
+    },
+    {
+      "code": "PG",
+      "name": "Papua New Guinea",
+      "zones": [
+        {
+          "id": "Pacific/Port_Moresby",
+          "label": "Port Moresby · Pacific/Port_Moresby"
+        },
+        {
+          "id": "Pacific/Bougainville",
+          "label": "Bougainville · Pacific/Bougainville"
+        }
+      ]
+    },
+    {
+      "code": "PY",
+      "name": "Paraguay",
+      "zones": [
+        {
+          "id": "America/Asuncion",
+          "label": "Asuncion · America/Asuncion"
+        }
+      ]
+    },
+    {
+      "code": "PE",
+      "name": "Peru",
+      "zones": [
+        {
+          "id": "America/Lima",
+          "label": "Lima · America/Lima"
+        }
+      ]
+    },
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "zones": [
+        {
+          "id": "Asia/Manila",
+          "label": "Manila · Asia/Manila"
+        }
+      ]
+    },
+    {
+      "code": "PN",
+      "name": "Pitcairn",
+      "zones": [
+        {
+          "id": "Pacific/Pitcairn",
+          "label": "Pitcairn · Pacific/Pitcairn"
+        }
+      ]
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "zones": [
+        {
+          "id": "Europe/Warsaw",
+          "label": "Warsaw · Europe/Warsaw"
+        }
+      ]
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "zones": [
+        {
+          "id": "Europe/Lisbon",
+          "label": "Lisbon · Europe/Lisbon"
+        },
+        {
+          "id": "Atlantic/Madeira",
+          "label": "Madeira · Atlantic/Madeira"
+        },
+        {
+          "id": "Atlantic/Azores",
+          "label": "Azores · Atlantic/Azores"
+        }
+      ]
+    },
+    {
+      "code": "PR",
+      "name": "Puerto Rico",
+      "zones": [
+        {
+          "id": "America/Puerto_Rico",
+          "label": "Puerto Rico · America/Puerto_Rico"
+        }
+      ]
+    },
+    {
+      "code": "QA",
+      "name": "Qatar",
+      "zones": [
+        {
+          "id": "Asia/Qatar",
+          "label": "Qatar · Asia/Qatar"
+        }
+      ]
+    },
+    {
+      "code": "RO",
+      "name": "Romania",
+      "zones": [
+        {
+          "id": "Europe/Bucharest",
+          "label": "Bucharest · Europe/Bucharest"
+        }
+      ]
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "zones": [
+        {
+          "id": "Europe/Kaliningrad",
+          "label": "Kaliningrad · Europe/Kaliningrad"
+        },
+        {
+          "id": "Europe/Moscow",
+          "label": "Moscow · Europe/Moscow"
+        },
+        {
+          "id": "Europe/Kirov",
+          "label": "Kirov · Europe/Kirov"
+        },
+        {
+          "id": "Europe/Volgograd",
+          "label": "Volgograd · Europe/Volgograd"
+        },
+        {
+          "id": "Europe/Astrakhan",
+          "label": "Astrakhan · Europe/Astrakhan"
+        },
+        {
+          "id": "Europe/Saratov",
+          "label": "Saratov · Europe/Saratov"
+        },
+        {
+          "id": "Europe/Ulyanovsk",
+          "label": "Ulyanovsk · Europe/Ulyanovsk"
+        },
+        {
+          "id": "Europe/Samara",
+          "label": "Samara · Europe/Samara"
+        },
+        {
+          "id": "Asia/Yekaterinburg",
+          "label": "Yekaterinburg · Asia/Yekaterinburg"
+        },
+        {
+          "id": "Asia/Omsk",
+          "label": "Omsk · Asia/Omsk"
+        },
+        {
+          "id": "Asia/Novosibirsk",
+          "label": "Novosibirsk · Asia/Novosibirsk"
+        },
+        {
+          "id": "Asia/Barnaul",
+          "label": "Barnaul · Asia/Barnaul"
+        },
+        {
+          "id": "Asia/Tomsk",
+          "label": "Tomsk · Asia/Tomsk"
+        },
+        {
+          "id": "Asia/Novokuznetsk",
+          "label": "Novokuznetsk · Asia/Novokuznetsk"
+        },
+        {
+          "id": "Asia/Krasnoyarsk",
+          "label": "Krasnoyarsk · Asia/Krasnoyarsk"
+        },
+        {
+          "id": "Asia/Irkutsk",
+          "label": "Irkutsk · Asia/Irkutsk"
+        },
+        {
+          "id": "Asia/Chita",
+          "label": "Chita · Asia/Chita"
+        },
+        {
+          "id": "Asia/Yakutsk",
+          "label": "Yakutsk · Asia/Yakutsk"
+        },
+        {
+          "id": "Asia/Khandyga",
+          "label": "Khandyga · Asia/Khandyga"
+        },
+        {
+          "id": "Asia/Vladivostok",
+          "label": "Vladivostok · Asia/Vladivostok"
+        },
+        {
+          "id": "Asia/Ust-Nera",
+          "label": "Ust-Nera · Asia/Ust-Nera"
+        },
+        {
+          "id": "Asia/Magadan",
+          "label": "Magadan · Asia/Magadan"
+        },
+        {
+          "id": "Asia/Sakhalin",
+          "label": "Sakhalin · Asia/Sakhalin"
+        },
+        {
+          "id": "Asia/Srednekolymsk",
+          "label": "Srednekolymsk · Asia/Srednekolymsk"
+        },
+        {
+          "id": "Asia/Kamchatka",
+          "label": "Kamchatka · Asia/Kamchatka"
+        },
+        {
+          "id": "Asia/Anadyr",
+          "label": "Anadyr · Asia/Anadyr"
+        }
+      ]
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "zones": [
+        {
+          "id": "Africa/Kigali",
+          "label": "Kigali · Africa/Kigali"
+        }
+      ]
+    },
+    {
+      "code": "RE",
+      "name": "Réunion",
+      "zones": [
+        {
+          "id": "Indian/Reunion",
+          "label": "Reunion · Indian/Reunion"
+        }
+      ]
+    },
+    {
+      "code": "AS",
+      "name": "Samoa (American)",
+      "zones": [
+        {
+          "id": "Pacific/Pago_Pago",
+          "label": "Pago Pago · Pacific/Pago_Pago"
+        }
+      ]
+    },
+    {
+      "code": "WS",
+      "name": "Samoa (western)",
+      "zones": [
+        {
+          "id": "Pacific/Apia",
+          "label": "Apia · Pacific/Apia"
+        }
+      ]
+    },
+    {
+      "code": "SM",
+      "name": "San Marino",
+      "zones": [
+        {
+          "id": "Europe/San_Marino",
+          "label": "San Marino · Europe/San_Marino"
+        }
+      ]
+    },
+    {
+      "code": "ST",
+      "name": "Sao Tome & Principe",
+      "zones": [
+        {
+          "id": "Africa/Sao_Tome",
+          "label": "Sao Tome · Africa/Sao_Tome"
+        }
+      ]
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "zones": [
+        {
+          "id": "Asia/Riyadh",
+          "label": "Riyadh · Asia/Riyadh"
+        }
+      ]
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "zones": [
+        {
+          "id": "Africa/Dakar",
+          "label": "Dakar · Africa/Dakar"
+        }
+      ]
+    },
+    {
+      "code": "RS",
+      "name": "Serbia",
+      "zones": [
+        {
+          "id": "Europe/Belgrade",
+          "label": "Belgrade · Europe/Belgrade"
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "zones": [
+        {
+          "id": "Indian/Mahe",
+          "label": "Mahe · Indian/Mahe"
+        }
+      ]
+    },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "zones": [
+        {
+          "id": "Africa/Freetown",
+          "label": "Freetown · Africa/Freetown"
+        }
+      ]
+    },
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "zones": [
+        {
+          "id": "Asia/Singapore",
+          "label": "Singapore · Asia/Singapore"
+        }
+      ]
+    },
+    {
+      "code": "SK",
+      "name": "Slovakia",
+      "zones": [
+        {
+          "id": "Europe/Bratislava",
+          "label": "Bratislava · Europe/Bratislava"
+        }
+      ]
+    },
+    {
+      "code": "SI",
+      "name": "Slovenia",
+      "zones": [
+        {
+          "id": "Europe/Ljubljana",
+          "label": "Ljubljana · Europe/Ljubljana"
+        }
+      ]
+    },
+    {
+      "code": "SB",
+      "name": "Solomon Islands",
+      "zones": [
+        {
+          "id": "Pacific/Guadalcanal",
+          "label": "Guadalcanal · Pacific/Guadalcanal"
+        }
+      ]
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "zones": [
+        {
+          "id": "Africa/Mogadishu",
+          "label": "Mogadishu · Africa/Mogadishu"
+        }
+      ]
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "zones": [
+        {
+          "id": "Africa/Johannesburg",
+          "label": "Johannesburg · Africa/Johannesburg"
+        }
+      ]
+    },
+    {
+      "code": "GS",
+      "name": "South Georgia & the South Sandwich Islands",
+      "zones": [
+        {
+          "id": "Atlantic/South_Georgia",
+          "label": "South Georgia · Atlantic/South_Georgia"
+        }
+      ]
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "zones": [
+        {
+          "id": "Africa/Juba",
+          "label": "Juba · Africa/Juba"
+        }
+      ]
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "zones": [
+        {
+          "id": "Europe/Madrid",
+          "label": "Madrid · Europe/Madrid"
+        },
+        {
+          "id": "Africa/Ceuta",
+          "label": "Ceuta · Africa/Ceuta"
+        },
+        {
+          "id": "Atlantic/Canary",
+          "label": "Canary · Atlantic/Canary"
+        }
+      ]
+    },
+    {
+      "code": "LK",
+      "name": "Sri Lanka",
+      "zones": [
+        {
+          "id": "Asia/Colombo",
+          "label": "Colombo · Asia/Colombo"
+        }
+      ]
+    },
+    {
+      "code": "BL",
+      "name": "St Barthelemy",
+      "zones": [
+        {
+          "id": "America/St_Barthelemy",
+          "label": "St Barthelemy · America/St_Barthelemy"
+        }
+      ]
+    },
+    {
+      "code": "SH",
+      "name": "St Helena",
+      "zones": [
+        {
+          "id": "Atlantic/St_Helena",
+          "label": "St Helena · Atlantic/St_Helena"
+        }
+      ]
+    },
+    {
+      "code": "KN",
+      "name": "St Kitts & Nevis",
+      "zones": [
+        {
+          "id": "America/St_Kitts",
+          "label": "St Kitts · America/St_Kitts"
+        }
+      ]
+    },
+    {
+      "code": "LC",
+      "name": "St Lucia",
+      "zones": [
+        {
+          "id": "America/St_Lucia",
+          "label": "St Lucia · America/St_Lucia"
+        }
+      ]
+    },
+    {
+      "code": "SX",
+      "name": "St Maarten (Dutch)",
+      "zones": [
+        {
+          "id": "America/Lower_Princes",
+          "label": "Lower Princes · America/Lower_Princes"
+        }
+      ]
+    },
+    {
+      "code": "MF",
+      "name": "St Martin (French)",
+      "zones": [
+        {
+          "id": "America/Marigot",
+          "label": "Marigot · America/Marigot"
+        }
+      ]
+    },
+    {
+      "code": "PM",
+      "name": "St Pierre & Miquelon",
+      "zones": [
+        {
+          "id": "America/Miquelon",
+          "label": "Miquelon · America/Miquelon"
+        }
+      ]
+    },
+    {
+      "code": "VC",
+      "name": "St Vincent",
+      "zones": [
+        {
+          "id": "America/St_Vincent",
+          "label": "St Vincent · America/St_Vincent"
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "zones": [
+        {
+          "id": "Africa/Khartoum",
+          "label": "Khartoum · Africa/Khartoum"
+        }
+      ]
+    },
+    {
+      "code": "SR",
+      "name": "Suriname",
+      "zones": [
+        {
+          "id": "America/Paramaribo",
+          "label": "Paramaribo · America/Paramaribo"
+        }
+      ]
+    },
+    {
+      "code": "SJ",
+      "name": "Svalbard & Jan Mayen",
+      "zones": [
+        {
+          "id": "Arctic/Longyearbyen",
+          "label": "Longyearbyen · Arctic/Longyearbyen"
+        }
+      ]
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "zones": [
+        {
+          "id": "Europe/Stockholm",
+          "label": "Stockholm · Europe/Stockholm"
+        }
+      ]
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "zones": [
+        {
+          "id": "Europe/Zurich",
+          "label": "Zurich · Europe/Zurich"
+        }
+      ]
+    },
+    {
+      "code": "SY",
+      "name": "Syria",
+      "zones": [
+        {
+          "id": "Asia/Damascus",
+          "label": "Damascus · Asia/Damascus"
+        }
+      ]
+    },
+    {
+      "code": "TW",
+      "name": "Taiwan",
+      "zones": [
+        {
+          "id": "Asia/Taipei",
+          "label": "Taipei · Asia/Taipei"
+        }
+      ]
+    },
+    {
+      "code": "TJ",
+      "name": "Tajikistan",
+      "zones": [
+        {
+          "id": "Asia/Dushanbe",
+          "label": "Dushanbe · Asia/Dushanbe"
+        }
+      ]
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "zones": [
+        {
+          "id": "Africa/Dar_es_Salaam",
+          "label": "Dar es Salaam · Africa/Dar_es_Salaam"
+        }
+      ]
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "zones": [
+        {
+          "id": "Asia/Bangkok",
+          "label": "Bangkok · Asia/Bangkok"
+        }
+      ]
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "zones": [
+        {
+          "id": "Africa/Lome",
+          "label": "Lome · Africa/Lome"
+        }
+      ]
+    },
+    {
+      "code": "TK",
+      "name": "Tokelau",
+      "zones": [
+        {
+          "id": "Pacific/Fakaofo",
+          "label": "Fakaofo · Pacific/Fakaofo"
+        }
+      ]
+    },
+    {
+      "code": "TO",
+      "name": "Tonga",
+      "zones": [
+        {
+          "id": "Pacific/Tongatapu",
+          "label": "Tongatapu · Pacific/Tongatapu"
+        }
+      ]
+    },
+    {
+      "code": "TT",
+      "name": "Trinidad & Tobago",
+      "zones": [
+        {
+          "id": "America/Port_of_Spain",
+          "label": "Port of Spain · America/Port_of_Spain"
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "zones": [
+        {
+          "id": "Africa/Tunis",
+          "label": "Tunis · Africa/Tunis"
+        }
+      ]
+    },
+    {
+      "code": "TR",
+      "name": "Turkey",
+      "zones": [
+        {
+          "id": "Europe/Istanbul",
+          "label": "Istanbul · Europe/Istanbul"
+        }
+      ]
+    },
+    {
+      "code": "TM",
+      "name": "Turkmenistan",
+      "zones": [
+        {
+          "id": "Asia/Ashgabat",
+          "label": "Ashgabat · Asia/Ashgabat"
+        }
+      ]
+    },
+    {
+      "code": "TC",
+      "name": "Turks & Caicos Is",
+      "zones": [
+        {
+          "id": "America/Grand_Turk",
+          "label": "Grand Turk · America/Grand_Turk"
+        }
+      ]
+    },
+    {
+      "code": "TV",
+      "name": "Tuvalu",
+      "zones": [
+        {
+          "id": "Pacific/Funafuti",
+          "label": "Funafuti · Pacific/Funafuti"
+        }
+      ]
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "zones": [
+        {
+          "id": "Africa/Kampala",
+          "label": "Kampala · Africa/Kampala"
+        }
+      ]
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "zones": [
+        {
+          "id": "Europe/Simferopol",
+          "label": "Simferopol · Europe/Simferopol"
+        },
+        {
+          "id": "Europe/Kyiv",
+          "label": "Kyiv · Europe/Kyiv"
+        }
+      ]
+    },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "zones": [
+        {
+          "id": "Asia/Dubai",
+          "label": "Dubai · Asia/Dubai"
+        }
+      ]
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "zones": [
+        {
+          "id": "America/New_York",
+          "label": "New York · America/New_York"
+        },
+        {
+          "id": "America/Detroit",
+          "label": "Detroit · America/Detroit"
+        },
+        {
+          "id": "America/Kentucky/Louisville",
+          "label": "Louisville · America/Kentucky/Louisville"
+        },
+        {
+          "id": "America/Kentucky/Monticello",
+          "label": "Monticello · America/Kentucky/Monticello"
+        },
+        {
+          "id": "America/Indiana/Indianapolis",
+          "label": "Indianapolis · America/Indiana/Indianapolis"
+        },
+        {
+          "id": "America/Indiana/Vincennes",
+          "label": "Vincennes · America/Indiana/Vincennes"
+        },
+        {
+          "id": "America/Indiana/Winamac",
+          "label": "Winamac · America/Indiana/Winamac"
+        },
+        {
+          "id": "America/Indiana/Marengo",
+          "label": "Marengo · America/Indiana/Marengo"
+        },
+        {
+          "id": "America/Indiana/Petersburg",
+          "label": "Petersburg · America/Indiana/Petersburg"
+        },
+        {
+          "id": "America/Indiana/Vevay",
+          "label": "Vevay · America/Indiana/Vevay"
+        },
+        {
+          "id": "America/Chicago",
+          "label": "Chicago · America/Chicago"
+        },
+        {
+          "id": "America/Indiana/Tell_City",
+          "label": "Tell City · America/Indiana/Tell_City"
+        },
+        {
+          "id": "America/Indiana/Knox",
+          "label": "Knox · America/Indiana/Knox"
+        },
+        {
+          "id": "America/Menominee",
+          "label": "Menominee · America/Menominee"
+        },
+        {
+          "id": "America/North_Dakota/Center",
+          "label": "Center · America/North_Dakota/Center"
+        },
+        {
+          "id": "America/North_Dakota/New_Salem",
+          "label": "New Salem · America/North_Dakota/New_Salem"
+        },
+        {
+          "id": "America/North_Dakota/Beulah",
+          "label": "Beulah · America/North_Dakota/Beulah"
+        },
+        {
+          "id": "America/Denver",
+          "label": "Denver · America/Denver"
+        },
+        {
+          "id": "America/Boise",
+          "label": "Boise · America/Boise"
+        },
+        {
+          "id": "America/Phoenix",
+          "label": "Phoenix · America/Phoenix"
+        },
+        {
+          "id": "America/Los_Angeles",
+          "label": "Los Angeles · America/Los_Angeles"
+        },
+        {
+          "id": "America/Anchorage",
+          "label": "Anchorage · America/Anchorage"
+        },
+        {
+          "id": "America/Juneau",
+          "label": "Juneau · America/Juneau"
+        },
+        {
+          "id": "America/Sitka",
+          "label": "Sitka · America/Sitka"
+        },
+        {
+          "id": "America/Metlakatla",
+          "label": "Metlakatla · America/Metlakatla"
+        },
+        {
+          "id": "America/Yakutat",
+          "label": "Yakutat · America/Yakutat"
+        },
+        {
+          "id": "America/Nome",
+          "label": "Nome · America/Nome"
+        },
+        {
+          "id": "America/Adak",
+          "label": "Adak · America/Adak"
+        },
+        {
+          "id": "Pacific/Honolulu",
+          "label": "Honolulu · Pacific/Honolulu"
+        }
+      ]
+    },
+    {
+      "code": "UY",
+      "name": "Uruguay",
+      "zones": [
+        {
+          "id": "America/Montevideo",
+          "label": "Montevideo · America/Montevideo"
+        }
+      ]
+    },
+    {
+      "code": "UM",
+      "name": "US minor outlying islands",
+      "zones": [
+        {
+          "id": "Pacific/Midway",
+          "label": "Midway · Pacific/Midway"
+        },
+        {
+          "id": "Pacific/Wake",
+          "label": "Wake · Pacific/Wake"
+        }
+      ]
+    },
+    {
+      "code": "UZ",
+      "name": "Uzbekistan",
+      "zones": [
+        {
+          "id": "Asia/Samarkand",
+          "label": "Samarkand · Asia/Samarkand"
+        },
+        {
+          "id": "Asia/Tashkent",
+          "label": "Tashkent · Asia/Tashkent"
+        }
+      ]
+    },
+    {
+      "code": "VU",
+      "name": "Vanuatu",
+      "zones": [
+        {
+          "id": "Pacific/Efate",
+          "label": "Efate · Pacific/Efate"
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Vatican City",
+      "zones": [
+        {
+          "id": "Europe/Vatican",
+          "label": "Vatican · Europe/Vatican"
+        }
+      ]
+    },
+    {
+      "code": "VE",
+      "name": "Venezuela",
+      "zones": [
+        {
+          "id": "America/Caracas",
+          "label": "Caracas · America/Caracas"
+        }
+      ]
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "zones": [
+        {
+          "id": "Asia/Ho_Chi_Minh",
+          "label": "Ho Chi Minh · Asia/Ho_Chi_Minh"
+        }
+      ]
+    },
+    {
+      "code": "VG",
+      "name": "Virgin Islands (UK)",
+      "zones": [
+        {
+          "id": "America/Tortola",
+          "label": "Tortola · America/Tortola"
+        }
+      ]
+    },
+    {
+      "code": "VI",
+      "name": "Virgin Islands (US)",
+      "zones": [
+        {
+          "id": "America/St_Thomas",
+          "label": "St Thomas · America/St_Thomas"
+        }
+      ]
+    },
+    {
+      "code": "WF",
+      "name": "Wallis & Futuna",
+      "zones": [
+        {
+          "id": "Pacific/Wallis",
+          "label": "Wallis · Pacific/Wallis"
+        }
+      ]
+    },
+    {
+      "code": "EH",
+      "name": "Western Sahara",
+      "zones": [
+        {
+          "id": "Africa/El_Aaiun",
+          "label": "El Aaiun · Africa/El_Aaiun"
+        }
+      ]
+    },
+    {
+      "code": "YE",
+      "name": "Yemen",
+      "zones": [
+        {
+          "id": "Asia/Aden",
+          "label": "Aden · Asia/Aden"
+        }
+      ]
+    },
+    {
+      "code": "ZM",
+      "name": "Zambia",
+      "zones": [
+        {
+          "id": "Africa/Lusaka",
+          "label": "Lusaka · Africa/Lusaka"
+        }
+      ]
+    },
+    {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "zones": [
+        {
+          "id": "Africa/Harare",
+          "label": "Harare · Africa/Harare"
+        }
+      ]
+    },
+    {
+      "code": "AX",
+      "name": "Åland Islands",
+      "zones": [
+        {
+          "id": "Europe/Mariehamn",
+          "label": "Mariehamn · Europe/Mariehamn"
+        }
+      ]
+    }
+  ]
+}

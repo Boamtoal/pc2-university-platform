@@ -1,0 +1,46 @@
+# LOCAL TEST ONLY. No scheduled date; actual event timing must be chosen by organizers.
+name: 'University Technical Rehearsal'
+short-name: 'REHEARSAL'
+duration: '05:00:00'
+running: false
+auto-stop-clock-at-end: true
+penalty-time: 20
+load-data-files: true
+load-sample-judges-data: true
+computer-judged: true
+manual-review: false
+send-prelim-judgement: false
+max-output-size-K: 256
+output-private-score-dir: scores/private
+output-public-score-dir: scores/public
+languages:
+  - name: 'C++17 (Apple Clang ARM64)'
+    active: true
+    compilerCmd: '/usr/bin/clang++ -O2 -std=c++17 -Wall -Wextra -o {:basename} {:mainfile}'
+    exemask: '{:basename}'
+    execCmd: './{:basename}'
+accounts:
+  - account: TEAM
+    site: 1
+    count: 2
+  - account: JUDGE
+    site: 1
+    count: 2
+  - account: SCOREBOARD
+    site: 1
+    count: 2
+auto-judging:
+  - account: JUDGE
+    site: 1
+    number: 1
+    letters: all
+    enabled: yes
+problemset:
+  - letter: A
+    short-name: sum
+    color: Blue
+    rgb: '#2463eb'
+  - letter: B
+    short-name: maximum
+    color: Green
+    rgb: '#16a34a'

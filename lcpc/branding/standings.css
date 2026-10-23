@@ -1,0 +1,40 @@
+.lcpc-standings-branding{display:flex;align-items:center;justify-content:center;gap:clamp(24px,6vw,64px);flex-wrap:wrap;background:#fff;border-bottom:2px solid #193f6d;border-radius:5px 5px 0 0;padding:16px 24px;margin:1rem 2rem 0;box-sizing:border-box}
+.lcpc-standings-branding img{display:block;object-fit:contain;height:160px;width:auto;max-width:45%}
+.lcpc-standings-branding .lcpc-university-logo{height:180px}
+@media(max-width:600px){.lcpc-standings-branding{margin:1rem 12px 0;padding:12px;gap:20px}.lcpc-standings-branding img{height:116px;max-width:45%}.lcpc-standings-branding .lcpc-university-logo{height:132px}}
+@media print{.lcpc-standings-branding{box-shadow:none;break-inside:avoid}}
+.lcpc-original-standings{display:none!important}
+.lcpc-full-standings{margin:0 2rem 2rem;color:#172b46;min-width:0;font-family:Roboto,Arial,sans-serif;overflow-anchor:none}
+.lcpc-score-heading{display:flex;gap:20px;justify-content:space-between;align-items:center;padding:24px 0 16px}
+.lcpc-eyebrow{font-size:12px;font-weight:700;letter-spacing:2px;color:#51708f;margin:0 0 8px}
+.lcpc-score-heading h1{font-size:26px;line-height:1.3;margin:0;font-weight:700}
+.lcpc-score-meta{font-size:13px;line-height:1.8;text-align:right;flex-shrink:0}.lcpc-score-meta span{font-size:11px;color:#60738b}
+.lcpc-server-notice{padding:12px 16px;background:#eef4fb;border-left:3px solid #28537e;border-radius:4px;font-size:13px;line-height:1.7}
+.lcpc-score-scroll{overflow:auto;border:1px solid #dbe3ec;border-radius:8px;background:#fff;box-shadow:0 3px 12px #17304c0c}
+.lcpc-score-table{border-collapse:separate;border-spacing:0;width:100%;table-layout:fixed;font-variant-numeric:tabular-nums;font-size:13px}
+.lcpc-rank-column{width:44px}.lcpc-team-column{width:22%}.lcpc-solved-column{width:52px}.lcpc-penalty-column{width:58px}.lcpc-attempts-column{width:65px}
+.lcpc-score-table th,.lcpc-score-table td{padding:10px 6px;text-align:center;border-bottom:1px solid #e2e8ef;border-right:1px solid #edf1f5;white-space:normal;overflow-wrap:anywhere;vertical-align:middle}
+.lcpc-score-table thead th{position:sticky;top:0;z-index:2;background:#193f6d;color:#fff;font-size:12px;letter-spacing:.3px;font-weight:500}
+.lcpc-score-table .lcpc-team{text-align:left;position:sticky;left:0;z-index:1;background:#fff;font-weight:600}
+.lcpc-score-table thead .lcpc-team{z-index:3;background:#193f6d}
+.lcpc-score-table tbody tr:nth-child(even)>:not(.lcpc-result){background:#f6f8fb}
+.lcpc-score-table .lcpc-rank{font-size:18px;font-weight:700;color:#375b81}
+.lcpc-score-table .lcpc-total-solved{font-size:22px;font-weight:700;color:#193f6d}
+.lcpc-problem strong{display:block;font-size:19px}.lcpc-problem span{display:block;font-size:10px;font-weight:400;margin-top:3px}
+.lcpc-score-table .lcpc-result{padding:8px 4px}.lcpc-result strong{display:block;font-size:21px;line-height:1.2}.lcpc-result span{display:block;margin-top:4px;font-size:11px}.lcpc-result small{display:block;font-size:10px;opacity:.8;margin-top:3px}
+.lcpc-full-standings .accepted{background:#d8f2e0;color:#12552b;border-color:#96c9a4}.lcpc-full-standings .rejected{background:#fce4e4;color:#932e34;border-color:#e5b0b4}.lcpc-full-standings .pending{background:#fff1c4;color:#775600;border-color:#e2ca82}.lcpc-full-standings .untouched{background:#fbfcfe;color:#8391a1}
+.lcpc-score-table tfoot th,.lcpc-score-table tfoot td{background:#edf2f8;font-size:12px;color:#45617e;font-weight:600}
+@media(max-width:700px){.lcpc-full-standings{margin:0 12px 24px}.lcpc-score-heading{align-items:flex-start;flex-direction:column;gap:8px}.lcpc-score-heading h1{font-size:21px}.lcpc-score-meta{text-align:left}.lcpc-score-table td,.lcpc-score-table th{padding:8px 4px}}
+@media print{.lcpc-score-scroll{overflow:visible;box-shadow:none}.lcpc-score-table{font-size:10px}.lcpc-score-table th,.lcpc-score-table td{padding:6px}.lcpc-score-table .lcpc-team{position:static}.lcpc-full-standings{margin:0}.lcpc-score-table .lcpc-result{min-width:0}}
+.lcpc-verdict{font-weight:700!important;border-radius:5px;padding:8px 12px}
+.lcpc-verdict[data-verdict="accepted"]{color:#12552b!important;background:#d8f2e0!important}
+.lcpc-verdict[data-verdict="rejected"]{color:#932e34!important;background:#fce4e4!important}
+.lcpc-verdict[data-verdict="pending"]{color:#775600!important;background:#fff1c4!important}
+.lcpc-verdict[data-verdict="limit"]{color:#8a3b00!important;background:#ffead1!important}
+.lcpc-verdict[data-verdict="error"]{color:#60308a!important;background:#eee1fa!important}
+/* Filter text must fit Material's trigger without painting over its label. */
+.lcpc-verdict.lcpc-verdict-filter{padding:0!important;background:transparent!important;border-radius:0;line-height:inherit}
+
+.lcpc-score-table .lcpc-problem-color{display:block;width:20px;height:20px;margin:3px auto 0}.lcpc-score-table .lcpc-problem-color-unassigned{display:block;font-size:12px;line-height:20px}
+/* Public/team view uses compact ICPC marks; detailed descriptions remain available on hover. */
+.lcpc-score-table.lcpc-audience-table{table-layout:auto;min-width:560px}.lcpc-audience-table .lcpc-rank-column{width:44px}.lcpc-audience-table .lcpc-team-column{width:30%}.lcpc-audience-table .lcpc-solved-column{width:62px}.lcpc-audience-table .lcpc-penalty-column{width:72px}.lcpc-audience-table th,.lcpc-audience-table td{padding:9px 6px}.lcpc-audience-table .lcpc-result{padding:6px 4px;height:48px}.lcpc-audience-table .lcpc-result strong{font-size:18px;line-height:1.25}.lcpc-audience-table .lcpc-result small{font-size:11px;line-height:1.3;margin-top:1px}.lcpc-audience-table .lcpc-total-solved{font-size:20px}.lcpc-audience-table .lcpc-rank{font-size:16px}.lcpc-audience-table .lcpc-problem strong{font-size:15px}.lcpc-audience-table .lcpc-problem-color{width:17px;height:17px;margin-top:3px}.organizer-scoreboard .lcpc-audience-table .lcpc-problem{min-width:48px}.organizer-scoreboard .lcpc-audience-table .lcpc-team{min-width:130px;max-width:320px}.audience-scoreboard .lcpc-full-standings{margin-top:14px}.scoreboard-display .lcpc-full-standings{margin-top:0}@media(max-width:700px){.lcpc-score-table.lcpc-audience-table{min-width:510px}.lcpc-audience-table th,.lcpc-audience-table td{padding:8px 4px}.lcpc-audience-table .lcpc-team-column{width:25%}}

@@ -1,0 +1,230 @@
+{
+  "contestStandings": {
+    "teamStanding": [
+      {
+        "teamName": "OMU Test Alpha",
+        "teamExternalId": 1001,
+        "totalAttempts": 1,
+        "index": 0,
+        "solved": 1,
+        "problemsAttempted": 1,
+        "lastSolved": 0,
+        "points": 0,
+        "teamAlias": "OMU Test Alpha (not aliasesd)",
+        "overallRank": 1,
+        "problemSummaryInfo": [
+          {
+            "isSolved": true,
+            "index": 1,
+            "solutionTime": 0,
+            "isPending": false,
+            "problemId": "sum-4954929864163167565",
+            "attempts": 1,
+            "points": 0
+          },
+          {
+            "isSolved": false,
+            "index": 2,
+            "solutionTime": 0,
+            "isPending": false,
+            "problemId": "maximum--3109420853456744402",
+            "attempts": 0,
+            "points": 0
+          }
+        ],
+        "firstSolved": 0,
+        "shortSchoolName": "",
+        "teamId": 1,
+        "teamKey": "1TEAM1",
+        "rank": 1,
+        "teamSiteId": 1
+      },
+      {
+        "teamName": "OMU Test Beta",
+        "teamExternalId": 1002,
+        "totalAttempts": 1,
+        "index": 1,
+        "solved": 1,
+        "problemsAttempted": 1,
+        "lastSolved": 9,
+        "points": 9,
+        "teamAlias": "OMU Test Beta (not aliasesd)",
+        "overallRank": 2,
+        "problemSummaryInfo": [
+          {
+            "isSolved": true,
+            "index": 1,
+            "solutionTime": 9,
+            "isPending": false,
+            "problemId": "sum-4954929864163167565",
+            "attempts": 1,
+            "points": 9
+          },
+          {
+            "isSolved": false,
+            "index": 2,
+            "solutionTime": 0,
+            "isPending": false,
+            "problemId": "maximum--3109420853456744402",
+            "attempts": 0,
+            "points": 0
+          }
+        ],
+        "firstSolved": 9,
+        "shortSchoolName": "",
+        "teamId": 2,
+        "teamKey": "1TEAM2",
+        "rank": 2,
+        "teamSiteId": 1
+      },
+      {
+        "teamName": "Technical Test 3",
+        "teamExternalId": 1003,
+        "totalAttempts": 1,
+        "index": 2,
+        "solved": 1,
+        "problemsAttempted": 1,
+        "lastSolved": 9,
+        "points": 9,
+        "teamAlias": "Technical Test 3 (not aliasesd)",
+        "overallRank": 2,
+        "problemSummaryInfo": [
+          {
+            "isSolved": true,
+            "index": 1,
+            "solutionTime": 9,
+            "isPending": false,
+            "problemId": "sum-4954929864163167565",
+            "attempts": 1,
+            "points": 9
+          },
+          {
+            "isSolved": false,
+            "index": 2,
+            "solutionTime": 0,
+            "isPending": false,
+            "problemId": "maximum--3109420853456744402",
+            "attempts": 0,
+            "points": 0
+          }
+        ],
+        "firstSolved": 9,
+        "shortSchoolName": "",
+        "teamId": 3,
+        "teamKey": "1TEAM3",
+        "rank": 2,
+        "teamSiteId": 1
+      },
+      {
+        "teamName": "Technical Test 4",
+        "teamExternalId": 1004,
+        "totalAttempts": 1,
+        "index": 3,
+        "solved": 1,
+        "problemsAttempted": 1,
+        "lastSolved": 9,
+        "points": 9,
+        "teamAlias": "Technical Test 4 (not aliasesd)",
+        "overallRank": 2,
+        "problemSummaryInfo": [
+          {
+            "isSolved": true,
+            "index": 1,
+            "solutionTime": 9,
+            "isPending": false,
+            "problemId": "sum-4954929864163167565",
+            "attempts": 1,
+            "points": 9
+          },
+          {
+            "isSolved": false,
+            "index": 2,
+            "solutionTime": 0,
+            "isPending": false,
+            "problemId": "maximum--3109420853456744402",
+            "attempts": 0,
+            "points": 0
+          }
+        ],
+        "firstSolved": 9,
+        "shortSchoolName": "",
+        "teamId": 4,
+        "teamKey": "1TEAM4",
+        "rank": 2,
+        "teamSiteId": 1
+      },
+      {
+        "teamName": "Technical Test 5",
+        "teamExternalId": 1005,
+        "totalAttempts": 1,
+        "index": 4,
+        "solved": 1,
+        "problemsAttempted": 1,
+        "lastSolved": 9,
+        "points": 9,
+        "teamAlias": "Technical Test 5 (not aliasesd)",
+        "overallRank": 2,
+        "problemSummaryInfo": [
+          {
+            "isSolved": true,
+            "index": 1,
+            "solutionTime": 9,
+            "isPending": false,
+            "problemId": "sum-4954929864163167565",
+            "attempts": 1,
+            "points": 9
+          },
+          {
+            "isSolved": false,
+            "index": 2,
+            "solutionTime": 0,
+            "isPending": false,
+            "problemId": "maximum--3109420853456744402",
+            "attempts": 0,
+            "points": 0
+          }
+        ],
+        "firstSolved": 9,
+        "shortSchoolName": "",
+        "teamId": 5,
+        "teamKey": "1TEAM5",
+        "rank": 2,
+        "teamSiteId": 1
+      }
+    ],
+    "standingsHeader": {
+      "siteCount": 1,
+      "problemCount": 2,
+      "totalAttempts": 5,
+      "currentDate": "Sun Oct 18 14:44:37 EET 2026",
+      "medianProblemsSolved": 1,
+      "groupList": {},
+      "problemsAttempted": 1,
+      "systemURL": "http://pc2.ecs.csus.edu/",
+      "title": "LCPC OMU - ISOLATED INFRASTRUCTURE TEST",
+      "systemVersion": "9.10.0 20241212 build 7065",
+      "colorList": {},
+      "generatorId": "$Id$",
+      "scoreboardMessage": "Scoreboard will be frozen with 1 hour remaining in the contest; all submissions after that will be shown as 'Pending'",
+      "problem": [
+        {
+          "lastSolutionTime": 9,
+          "bestSolutionTime": 0,
+          "id": 1,
+          "title": "Sum Two Integers",
+          "numberSolved": 5,
+          "attempts": 5
+        },
+        {
+          "id": 2,
+          "title": "Maximum",
+          "numberSolved": 0,
+          "attempts": 0
+        }
+      ],
+      "groupCount": 1,
+      "systemName": "CSUS Programming Contest Control System",
+      "totalSolved": 5
+    }
+  }
+}

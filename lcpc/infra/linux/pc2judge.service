@@ -1,0 +1,19 @@
+[Unit]
+Description=LCPC isolated PC2 judge coordinator
+After=network.target
+[Service]
+Type=simple
+User=pc2judge
+Group=pc2judge
+WorkingDirectory=/var/lib/pc2judge
+ExecStart=/usr/bin/java -Djdk.crypto.KeyAgreement.legacyKDF=true -Djava.awt.headless=true -Dlcpc.secrets=/var/lib/pc2judge/credentials.properties -javaagent:/opt/lcpc/classes/judge-guard-agent.jar -Xmx512m -cp /opt/lcpc/classes:/opt/lcpc/lib/* LCPCLaunch judge
+Restart=always
+RestartSec=5
+MemoryMax=1G
+TasksMax=128
+CPUQuota=150%
+UMask=0077
+# Broker needs narrowly scoped sudo access to systemd, mounts and its own audit log.
+# NoNewPrivileges is applied to each submission, not to this coordinator.
+StandardOutput=append:/var/lib/pc2judge/coordinator.log
+StandardError=append:/var/lib/pc2judge/coordinator.log

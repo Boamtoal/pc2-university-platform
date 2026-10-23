@@ -1,0 +1,93 @@
+/* Fixed participant identity. Organizer identity preferences stay private to the dashboard. */
+:root{--team-navy:#102b47;--team-primary:#173f68;--team-accent:#eab746;--team-background:#f3f6fa;--team-surface:#fff;--team-line:#dce4ed;--team-text:#172d48;--team-muted:#65768a;--team-hover:#edf3f9;--team-radius:11px;--mat-option-selected-state-label-text-color:#173f68;--mat-option-hover-state-layer-color:#edf3f9;--mat-select-enabled-trigger-text-color:#172d48;--mdc-filled-text-field-focus-active-indicator-color:#173f68;--mdc-filled-text-field-focus-label-text-color:#173f68;--mdc-filled-text-field-container-color:#f7f9fc;--mdc-dialog-container-color:#fff;--mdc-dialog-subhead-color:#172d48;--mdc-dialog-supporting-text-color:#65768a}
+html:root{font-size:14px;background:var(--team-background);color:var(--team-text);font-family:Inter,Roboto,Arial,sans-serif;scroll-padding-top:16px}
+body{background:var(--team-background);color:var(--team-text);font:14px/1.6 Inter,Roboto,Arial,sans-serif}
+app-root .app-container{min-height:100vh;height:auto!important}app-root .app-content{min-width:0;width:100%;max-width:1600px;margin:0 auto;flex:1}app-root .app-content>ng-component{min-width:0;max-width:100%;width:100%}
+app-root button,.cdk-overlay-container button{font:600 13px/1.5 Inter,Roboto,Arial,sans-serif;border-radius:7px;padding:10px 16px;min-height:40px;border:1px solid var(--team-line);background:#fff;color:var(--team-primary);box-shadow:none;transition:background-color .15s,border-color .15s}
+app-root button:not(:disabled):hover,.cdk-overlay-container button:not(:disabled):hover{background:var(--team-hover);border-color:#b8cbdc}
+app-root button.warning,.cdk-overlay-container button[type=submit],app-root button.primary{background:var(--team-primary);border-color:var(--team-primary);color:#fff;font-weight:600}
+app-root button.warning:not(:disabled):hover,.cdk-overlay-container button[type=submit]:not(:disabled):hover,app-root button.primary:not(:disabled):hover{background:#224f7b;border-color:#224f7b}
+app-root button.outline{border:1px solid #bdcddd;background:#fff;color:var(--team-primary)}app-root button.textLink{min-height:32px;padding:3px 6px;border-color:transparent;background:transparent;text-underline-offset:3px}
+app-root button:disabled,.cdk-overlay-container button:disabled{background:#e7edf3!important;border-color:#dce4ed!important;color:#718298!important;cursor:not-allowed;box-shadow:none}
+app-root :is(a,button,input,textarea,select,[tabindex]):focus-visible,.cdk-overlay-container :is(a,button,input,textarea,select,[tabindex]):focus-visible{outline:3px solid var(--team-accent);outline-offset:3px}
+app-root input:is([type=text],[type=password]),.cdk-overlay-container input:is([type=text],[type=password]),.cdk-overlay-container textarea{font:14px/1.5 Inter,Roboto,Arial,sans-serif;border:1px solid #ccd8e4;border-radius:7px;background:#fff;color:var(--team-text);padding:11px 12px;min-width:0;max-width:100%}
+app-root input:is([type=radio],[type=checkbox]),.cdk-overlay-container input:is([type=radio],[type=checkbox]){accent-color:var(--team-primary);width:16px;height:16px;vertical-align:middle;flex-shrink:0;margin:0 6px 0 0}
+/* Four original/institutional logos, compact navigation, then the full-width team name. */
+app-header>header{background:var(--team-navy)!important;padding:16px 28px 12px!important;box-shadow:0 2px 10px #102b4712;column-gap:22px!important}
+app-header>header .lcpc-header-logos{gap:10px;flex-wrap:nowrap}
+app-header>header .lcpc-header-logos img:nth-child(1){height:48px!important;width:44px;flex-shrink:0}
+app-header>header .lcpc-header-logos img:nth-child(2){height:44px!important;width:3px;flex-shrink:0}
+app-header>header .lcpc-header-logos img:nth-child(3){height:44px!important;width:190px;flex-shrink:1;min-width:105px}
+app-header>header .lcpc-header-logos img.lcpc-institution-logo{height:56px!important;width:64px;padding:5px;border-radius:8px;flex-shrink:0}
+app-header>header>nav{gap:4px!important}
+app-header>header>nav>a{font:500 13px/1.5 Inter,Roboto,Arial,sans-serif!important;padding:10px 9px!important;border-radius:6px 6px 0 0;border-bottom-width:2px!important;color:#d8e3ed!important;transition:background-color .15s,color .15s}
+app-header>header>nav>a:hover{background:#244664;border-bottom-color:#819bb4!important;color:#fff!important}
+app-header>header>nav>a.active,app-header>header>nav>a[aria-current=page]{background:#244664;color:#fff!important;border-bottom-color:var(--team-accent)!important}
+app-header>header>.teamid-container{margin-top:10px!important;padding-top:10px!important;border-top-color:#ffffff24!important;font-size:14px!important;color:#c2d2e2}
+app-header>header>.teamid-container>p{font-size:14px!important;line-height:1.6!important;font-weight:500}#lcpc-team-display-name bdi{color:#fff;font-weight:600}
+app-footer footer{background:#fff!important;border-top:1px solid var(--team-line);color:var(--team-muted)!important;padding:14px 24px!important;font-size:11px}app-footer footer a{color:var(--team-primary);font-weight:500!important;text-underline-offset:3px}
+/* Route headings and filters stay next to the records they control. */
+.lcpc-page-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:26px 28px 0}.lcpc-page-intro h1{font:700 25px/1.3 Inter,Roboto,Arial,sans-serif;letter-spacing:-.5px;margin:0 0 6px;color:var(--team-text)}.lcpc-page-intro p{font-size:13px;line-height:1.7;color:var(--team-muted);margin:0}
+ng-component>.filter-table-container:not(.lcpc-original-standings){display:flex!important;flex-direction:column!important;gap:18px;padding:22px 28px 30px;flex:initial!important;min-width:0}
+ng-component>.filter-table-container>div{margin:0!important;min-width:0}
+ng-component .filter-container{display:flex;flex-direction:column;gap:16px}
+ng-component .filter-container>.buttons{display:flex;justify-content:flex-start;gap:10px;flex-wrap:wrap}
+ng-component .filter-container>.buttons>button{width:auto!important;margin:0!important;min-width:150px}
+ng-component .filter-container>form.filters{margin:0!important;padding:16px!important;border:1px solid var(--team-line);border-radius:var(--team-radius)!important;background:var(--team-surface)!important;box-shadow:none!important;display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}
+ng-component .filter-container>.filters>h3{width:100%;font-size:13px;font-weight:700;line-height:1.4;color:var(--team-text);text-align:left;margin:0!important}
+ng-component .filter-container>.filters>div{padding:0!important;flex:1 1 170px;min-width:0;max-width:100%}
+ng-component .filter-container>.filters>div:first-of-type{flex-basis:200px}
+ng-component .filter-container>.filters>div:first-of-type>div{display:inline-block;margin:3px 9px 3px 0}
+ng-component .filter-container>.filters .filter-label{font-size:11px!important;line-height:1.6;font-weight:600;color:var(--team-muted)!important;margin:0 0 6px!important}
+ng-component .filter-container>.filters label{font-size:13px;line-height:1.8;white-space:normal}
+ng-component .filter-container>.filters>div:last-child:has(>button){flex:0 0 auto;align-self:center}
+ng-component .filter-container>.filters>div:last-child>button{min-height:40px;margin:0}
+app-language-selector,app-problem-selector,app-judgement-selector{display:block;min-width:0;max-width:100%}
+app-root .mat-mdc-form-field,.cdk-overlay-container .mat-mdc-form-field{width:100%;min-width:0;font-size:13px;--mdc-filled-text-field-container-color:#f7f9fc;--mdc-filled-text-field-label-text-color:#65768a;--mdc-filled-text-field-input-text-color:#172d48;--mdc-filled-text-field-active-indicator-color:#ccd8e4;--mdc-filled-text-field-hover-active-indicator-color:#7890a6;--mdc-filled-text-field-focus-active-indicator-color:#173f68;--mdc-filled-text-field-focus-label-text-color:#173f68}
+app-root .mat-mdc-text-field-wrapper,.cdk-overlay-container .mat-mdc-text-field-wrapper{border-radius:7px 7px 0 0!important}.mat-mdc-option{font-size:13px!important}.mat-mdc-select-panel{border:1px solid var(--team-line);border-radius:8px!important;box-shadow:0 12px 36px #102b471c!important}
+/* Runs and clarifications share the same restrained table surface. */
+ng-component .filter-table-container>.table-container{padding:0!important;flex:initial!important;min-width:0;min-height:300px;overflow-x:auto;border:1px solid var(--team-line);border-radius:var(--team-radius)!important;background:#fff!important;box-shadow:none!important}
+ng-component .table-container>table{border-collapse:separate;border-spacing:0;min-width:620px;font-size:13px;color:var(--team-text)}
+ng-component .table-container>table :is(th,td){padding:14px 16px!important;border-bottom:1px solid #edf1f5!important;vertical-align:middle;line-height:1.6;text-align:left}
+ng-component .table-container>table th{background:#f7f9fc;color:var(--team-muted);font-size:11px;letter-spacing:.5px;font-weight:600;white-space:nowrap;border-bottom-color:var(--team-line)!important}
+ng-component .table-container>table tbody>tr:hover{background:#f5f8fc}ng-component .table-container>table tr:last-child td{border-bottom:0!important}
+ng-component .table-container .table-message{margin:auto!important;padding:64px 24px;text-align:center;color:var(--team-muted)}ng-component .table-container .table-message h3{font-size:14px;font-weight:400;line-height:1.7}
+ng-component .table-container td.lcpc-verdict{font-size:12px;font-weight:600!important;white-space:normal;background-clip:padding-box}
+.lcpc-verdict[data-verdict=accepted]{color:#145d33!important;background:#ddf2e5!important}.lcpc-verdict[data-verdict=pending]{color:#826218!important;background:#fff1c9!important}.lcpc-verdict[data-verdict=rejected],.lcpc-verdict[data-verdict=error]{color:#a52e3b!important;background:#fce5e8!important}.lcpc-verdict[data-verdict=limit]{color:#8a3b00!important;background:#ffead1!important}
+.lcpc-verdict.lcpc-verdict-filter{padding:0!important;background:transparent!important;line-height:inherit}.lcpc-verdict.lcpc-verdict-filter[data-verdict]{background:transparent!important}
+/* Sign-in is intentionally limited to the account form and public instructions. */
+ng-component .login-page-container{background:radial-gradient(ellipse at top left,#e2edf4,transparent 65%),var(--team-background)!important;padding:44px 20px;min-height:480px}
+ng-component .login-container{width:min(100%,420px);max-width:420px!important;margin:auto!important;padding:32px!important;background:#fff!important;border:1px solid var(--team-line);border-radius:16px!important;box-shadow:0 18px 70px #16375412}
+ng-component .login-container .header{font-size:25px!important;font-weight:700;line-height:1.3;letter-spacing:-.5px;margin-bottom:10px!important}.lcpc-login-intro{font-size:13px;line-height:1.7;color:var(--team-muted);margin:0 0 24px}
+ng-component .login-container form>div{margin-bottom:16px!important}.lcpc-input-label{display:block;font-size:12px;font-weight:600;margin:0 0 7px;color:var(--team-text)}
+ng-component .login-container input{width:100%!important}.login-container .submit-btn{display:block!important;width:100%;margin:22px 0 0!important;min-height:43px}.login-container .invalid{font-size:12px;color:#a52e3b!important;line-height:1.6}
+/* Settings and native dialogs retain their existing controls and behavior. */
+ng-component .options-container{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);align-items:start;gap:20px;padding:22px 28px 30px}
+ng-component .options-container>div{padding:24px!important;background:#fff;border:1px solid var(--team-line);border-radius:var(--team-radius);min-width:0}
+ng-component .options-container h2{font-size:17px;font-weight:600;line-height:1.5;margin:0 0 8px}ng-component .options-container p{font-size:13px;line-height:1.8;color:var(--team-muted);margin:0 0 18px}
+ng-component .options-container .not-container{gap:20px;flex-wrap:wrap}ng-component .options-container .not-container>div{margin:0!important;flex:1 1 180px;padding:14px;background:#f7f9fc;border-radius:8px}ng-component .options-container .not-container h4{font-size:13px;font-weight:600;margin:0 0 8px}ng-component .options-container label{font-size:13px;line-height:2.2}
+.cdk-overlay-container .mat-mdc-dialog-surface{border:1px solid var(--team-line);border-radius:12px!important;box-shadow:0 24px 80px #102b4729!important;max-height:90vh}
+.cdk-overlay-container .mat-mdc-dialog-container{--mdc-dialog-subhead-font:Inter,Roboto,Arial,sans-serif;--mdc-dialog-supporting-text-font:Inter,Roboto,Arial,sans-serif;--mdc-dialog-subhead-size:21px;--mdc-dialog-subhead-weight:600;--mdc-dialog-supporting-text-size:14px;--mdc-dialog-supporting-text-line-height:1.7}
+.cdk-overlay-container [mat-dialog-title]{padding:22px 24px 16px!important;margin:0!important;border-bottom:1px solid var(--team-line);color:var(--team-text)}
+.cdk-overlay-container [mat-dialog-content]{padding:20px 24px!important;max-height:65vh;overflow:auto;color:var(--team-text)}
+.cdk-overlay-container [mat-dialog-actions]{padding:16px 24px!important;border-top:1px solid var(--team-line);gap:8px;justify-content:flex-end;flex-wrap:wrap}
+.cdk-overlay-container [mat-dialog-actions] button[type=button]{background:#fff;border-color:var(--team-line);color:var(--team-primary)}
+.cdk-overlay-container app-new-run .file-uploads{gap:14px;flex-wrap:wrap}.cdk-overlay-container app-new-run .file{margin:0!important;min-width:180px;min-height:150px;padding:16px;background:#f7f9fc;border:1px dashed #9db3c8;border-radius:10px;color:var(--team-primary)}.cdk-overlay-container app-new-run .file:hover{background:#edf3f9;border-color:var(--team-primary)}.cdk-overlay-container app-new-run .file:focus-within{outline:3px solid var(--team-accent);outline-offset:3px}.cdk-overlay-container app-new-run .file .label{font-size:13px;font-weight:600}.cdk-overlay-container app-new-run .file .small{font-size:12px;overflow-wrap:anywhere;white-space:normal}
+.cdk-overlay-container app-new-clarification textarea{width:min(100%,520px)!important;max-width:100%;min-height:140px;resize:vertical}
+.cdk-overlay-container app-new-run-alert p.lcpc-verdict{display:block;border-radius:7px;padding:12px 14px!important}
+.cdk-overlay-pane:has(app-new-run){width:min(720px,calc(100vw - 32px))!important;max-width:calc(100vw - 32px)!important}
+.cdk-overlay-pane:has(app-new-clarification){width:min(620px,calc(100vw - 32px))!important;max-width:calc(100vw - 32px)!important}
+.cdk-overlay-container app-new-clarification .newClarificationForm>app-problem-selector{margin:20px 24px 12px;width:calc(100% - 48px)}
+.cdk-overlay-container app-new-clarification .newClarificationForm>textarea{display:block;margin:0 24px 20px;width:calc(100% - 48px)!important;max-width:none}
+.cdk-overlay-container app-new-clarification .newClarificationForm>br{display:none}
+.cdk-overlay-container app-new-run-alert [mat-dialog-actions]>button:first-of-type{background:var(--team-primary);border-color:var(--team-primary);color:#fff}
+/* The scoreboard uses the same columns, ranks and freeze-aware response as before. */
+#lcpc-standings-branding{margin:22px 28px 0;border:1px solid var(--team-line);border-radius:var(--team-radius);padding:14px 22px;justify-content:flex-end;gap:14px;box-shadow:none}#lcpc-standings-branding img,#lcpc-standings-branding .lcpc-university-logo{height:52px;width:64px;max-width:none}
+#lcpc-full-standings{margin:0 28px 30px;font-family:Inter,Roboto,Arial,sans-serif}.lcpc-score-heading h1{font-size:23px}.lcpc-score-heading{padding:20px 0 16px}.lcpc-eyebrow{font-size:10px;letter-spacing:1.6px}.lcpc-score-scroll{box-shadow:none;border-color:var(--team-line);border-radius:var(--team-radius)}.lcpc-score-table thead th,.lcpc-score-table thead .lcpc-team{background:var(--team-primary)}.lcpc-server-notice{background:#edf3f9;border-color:var(--team-primary);color:#315473;border-radius:7px}.lcpc-full-standings .accepted{background:#ddf2e5;color:#145d33}.lcpc-full-standings .rejected{background:#fce5e8;color:#a52e3b}.lcpc-full-standings .pending{background:#fff1c9;color:#826218}
+@media(max-width:1100px){app-header>header{row-gap:10px!important}ng-component .filter-container>.filters>div{flex-basis:190px}ng-component .options-container{grid-template-columns:1fr}}
+@media(max-width:700px){app-header>header{padding:14px 16px 10px!important}app-header>header .lcpc-header-logos{gap:8px;flex-wrap:wrap}app-header>header .lcpc-header-logos img:nth-child(1){height:40px!important;width:36px}app-header>header .lcpc-header-logos img:nth-child(3){height:36px!important;width:145px;min-width:105px}app-header>header .lcpc-header-logos img.lcpc-institution-logo{width:49px;height:46px!important;padding:4px}app-header>header>nav{gap:2px!important}app-header>header>nav>a{font-size:12px!important;padding:9px 7px!important}.lcpc-page-intro{padding:22px 16px 0}.lcpc-page-intro h1{font-size:22px}ng-component>.filter-table-container{padding:18px 16px 24px;gap:14px}ng-component .filter-container>form.filters{padding:14px!important;gap:12px}ng-component .filter-container>.filters>div{flex-basis:calc(50% - 12px)}ng-component .options-container{padding:18px 16px 24px;gap:14px}ng-component .options-container>div{padding:18px!important}#lcpc-standings-branding{margin:18px 16px 0}#lcpc-full-standings{margin:0 16px 24px}.cdk-overlay-container [mat-dialog-content]{padding:18px!important}.cdk-overlay-container [mat-dialog-title]{padding:18px!important}.cdk-overlay-container [mat-dialog-actions]{padding:14px 18px!important}.cdk-overlay-container app-new-run .file{min-width:150px}ng-component .login-container{padding:26px!important}}
+@media(max-width:450px){ng-component .filter-container>.filters>div{flex-basis:100%}ng-component .filter-container>.filters>div:last-child:has(>button){flex:1 1 100%}.cdk-overlay-container app-new-run .file{flex-basis:100%;min-height:130px}}
+@media(prefers-reduced-motion:reduce){app-root button,.cdk-overlay-container button,app-header>header>nav>a{transition:none}}
+@media print{app-header,app-footer,.lcpc-page-intro,.filter-container,.lcpc-standings-branding{display:none!important}ng-component>.filter-table-container{padding:0}.lcpc-score-scroll{overflow:visible}.lcpc-score-table .lcpc-team{position:static}#lcpc-full-standings{margin:0}body{background:#fff}}
+
+#lcpc-session-status{position:sticky;top:0;z-index:1000;background:#fff1c9;color:#594000;padding:12px 20px;text-align:center;font:600 14px/1.6 Arial,sans-serif}#lcpc-session-status[hidden]{display:none}

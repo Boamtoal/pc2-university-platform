@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/sudo -n /opt/lcpc/bin/sandbox-broker.py compilepython "$@"

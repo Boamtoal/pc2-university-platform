@@ -1,0 +1,47 @@
+/* Complete styles for the two standalone resource pages, independent of app/scoreboard CSS. */
+body.lcpc-resource-page{--page-navy:#102b47;--page-primary:#173f68;--page-line:#dce4ed;--page-muted:#60738a;--page-focus:#eab746;margin:0;background:#f3f6fa;color:#172d48;font:16px/1.85 Arial,Tahoma,sans-serif;-webkit-text-size-adjust:100%}
+.lcpc-resource-page *{box-sizing:border-box}.lcpc-resource-page [hidden]{display:none!important}
+.lcpc-resource-page>header{background:var(--page-navy);color:#fff;padding:28px 24px}
+.lcpc-resource-page :is(.brand,.heading){max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.lcpc-resource-page :is(.heading-text,.brand>div:first-child){min-width:0}
+.lcpc-resource-page h1{margin:0;font:700 clamp(26px,3vw,34px)/1.35 Arial,Tahoma,sans-serif;letter-spacing:0;color:#fff;overflow-wrap:anywhere}
+.lcpc-resource-page header p{margin:8px 0 0;color:#c4d4e4;font-size:14px;line-height:1.7}
+.lcpc-resource-page .logos{display:flex;align-items:center;gap:14px;flex-shrink:0;direction:ltr}
+.lcpc-resource-page .logos img{display:block;width:116px;height:96px;object-fit:contain;object-position:center;background:#fff;padding:8px;border:1px solid #e3e9ef;border-radius:10px;flex-shrink:0;filter:none}
+.lcpc-resource-page>main{max-width:1100px;margin:26px auto;padding:0 24px 28px;min-width:0}
+.lcpc-resource-page h2{font-size:20px;font-weight:700;line-height:1.5;letter-spacing:0;margin:0 0 12px;color:#173f68}
+.lcpc-resource-page p{margin:10px 0}.lcpc-resource-page li{margin:9px 0}.lcpc-resource-page :is(ul,ol){padding-inline-start:25px;margin:12px 0}
+/* Keep language controls separate from the reading surface. */
+.lcpc-instructions-page .toolbar{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin:0 0 20px;flex-wrap:wrap}
+.lcpc-instructions-page .language-switch{display:flex;gap:8px;flex-wrap:wrap}
+.lcpc-instructions-page .language-switch button{font:600 14px/1.5 Arial,Tahoma,sans-serif;padding:9px 18px;border:1px solid #bdcddd;border-radius:7px;background:#fff;color:var(--page-primary);cursor:pointer;min-height:42px}
+.lcpc-instructions-page .language-switch button[aria-pressed=true]{background:var(--page-primary);border-color:var(--page-primary);color:#fff}
+.lcpc-instructions-page .language-switch button:not([aria-pressed=true]):hover{background:#eaf1f8}
+.lcpc-instructions-page [data-content-language]>section{background:#fff;border:1px solid var(--page-line);border-radius:11px;padding:24px 28px;margin:0 0 18px}
+.lcpc-instructions-page .note{background:#fff9e9;border-inline-start:3px solid var(--page-focus);border-radius:6px;padding:13px 16px;color:#63512c;font-size:15px}
+.lcpc-instructions-page .verdicts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0 4px}
+.lcpc-instructions-page .verdicts p{margin:0;padding:14px 16px;border:1px solid transparent;border-radius:8px;font-size:15px;line-height:1.8}
+.lcpc-instructions-page .verdicts strong{display:block;margin-bottom:5px;font-size:15px;direction:ltr;text-align:start}
+.lcpc-instructions-page .verdicts .accepted{background:#e4f4e9;color:#145d33;border-color:#c8e6d2}
+.lcpc-instructions-page .verdicts :is(.wrong,.error){background:#fcebed;color:#9f2938;border-color:#f2d5da}
+.lcpc-instructions-page .verdicts .pending{background:#fff4d8;color:#785b14;border-color:#eedfb2}
+.lcpc-instructions-page .verdicts .limit{background:#fff0e1;color:#874000;border-color:#f0d9c0}
+/* Problem letters and headings stay blue; file actions have one clear primary color. */
+.lcpc-problems-page .summary{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;background:#fff;padding:22px 24px;border:1px solid var(--page-line);border-radius:11px;margin-bottom:22px}
+.lcpc-problems-page .summary h2{margin:0 0 5px;font-size:22px}.lcpc-problems-page .summary p{font-size:14px;color:var(--page-muted);margin:0}
+.lcpc-problems-page .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0;padding:0}
+.lcpc-problems-page article{display:flex;align-items:flex-start;gap:18px;min-width:0;padding:24px;background:#fff;border:1px solid var(--page-line);border-radius:11px;box-shadow:none}
+.lcpc-problems-page .letter{display:grid;place-items:center;min-width:50px;height:52px;border-radius:9px;background:#eaf1f8;color:var(--page-primary);font:700 26px/1 Arial,sans-serif;direction:ltr}
+.lcpc-problems-page .content{flex:1;min-width:0}.lcpc-problems-page article h2{font-size:19px;line-height:1.5;overflow-wrap:anywhere;margin:0 0 8px;text-align:start}.lcpc-problems-page article p{font-size:13px;line-height:1.8;color:var(--page-muted);margin:0 0 15px}
+.lcpc-problems-page .actions{display:flex;gap:9px;flex-wrap:wrap;margin:10px 0 0}.lcpc-problems-page #booklets>.actions:first-child{margin-top:0}
+.lcpc-problems-page .actions a,.lcpc-problems-page .booklet{display:inline-flex;align-items:center;justify-content:center;max-width:100%;min-height:40px;padding:8px 13px;border-radius:7px;border:1px solid #c4d2df;font:600 14px/1.5 Arial,Tahoma,sans-serif;text-decoration:none;color:var(--page-primary);background:#fff;overflow-wrap:anywhere}
+.lcpc-problems-page .actions .view,.lcpc-problems-page .booklet{background:var(--page-primary);border-color:var(--page-primary);color:#fff}.lcpc-problems-page .actions .view:hover,.lcpc-problems-page .booklet:hover{background:#224f7b;border-color:#224f7b}.lcpc-problems-page .actions .download:hover{background:#eaf1f8}
+.lcpc-problems-page .notice{margin:20px 0;padding:14px 18px;background:#edf4fa;border:1px solid #d2e1ee;border-radius:8px;color:#315473;font-size:14px}
+.lcpc-resource-page footer{text-align:center;font-size:13px;line-height:1.8;color:var(--page-muted);padding:16px 0 4px}
+.lcpc-resource-page :is(a,button):focus-visible{outline:3px solid var(--page-focus);outline-offset:3px}
+html[lang=ar] .lcpc-instructions-page{font-family:Tahoma,Arial,sans-serif;font-size:16px;line-height:2}
+html[lang=ar] .lcpc-instructions-page :is(h1,h2,.language-switch button){font-family:Tahoma,Arial,sans-serif;letter-spacing:0}
+html[lang=ar] .lcpc-instructions-page .verdicts strong{direction:rtl;text-align:right}
+html[lang=ar] .lcpc-instructions-page .verdicts p{font-size:15px;line-height:1.95}
+@media(max-width:760px){.lcpc-resource-page>header{padding:24px 20px}.lcpc-resource-page :is(.brand,.heading){gap:20px;align-items:flex-start;flex-direction:column}.lcpc-resource-page .logos img{width:96px;height:80px;padding:7px}.lcpc-resource-page>main{padding:0 18px 24px;margin-top:22px}.lcpc-problems-page .grid{grid-template-columns:1fr}.lcpc-instructions-page .verdicts{grid-template-columns:1fr}.lcpc-instructions-page [data-content-language]>section{padding:20px}.lcpc-problems-page :is(article,.summary){padding:20px}.lcpc-resource-page h1{font-size:27px}.lcpc-resource-page header p{font-size:13px}}
+@media print{.lcpc-resource-page{background:#fff;color:#172d48}.lcpc-resource-page>header{background:#fff;border-bottom:1px solid var(--page-line);color:#172d48}.lcpc-resource-page h1{color:#172d48}.lcpc-resource-page header p{color:#60738a}.lcpc-instructions-page .toolbar{display:none}.lcpc-instructions-page [data-content-language]>section{break-inside:avoid}.lcpc-resource-page>main{max-width:none;padding:0}.lcpc-resource-page .logos img{border:0}}

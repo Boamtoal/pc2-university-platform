@@ -1,0 +1,1332 @@
+{
+  "version": "1.0.0",
+  "kind": "source-only",
+  "privateStateIncluded": false,
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "bytes": 530,
+      "sha256": "61a7c509b557b25b5e6a7dcbbcbb48214ded18e37e114e2f30a1e0b0a8707967"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "bytes": 310,
+      "sha256": "cf95e2dbbc2eadc5bd6d73e255f4cd750a08bee46bb939ac80517eea316f075c"
+    },
+    {
+      "path": ".github/workflows/source-checks.yml",
+      "bytes": 652,
+      "sha256": "003cadfe92405aedde65d0093a680edbbe2d360a46f15eb81e1fbccfadb64e18"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1077,
+      "sha256": "504aa2e7a40a1711338ec35fa92f99d111e5c0560a029a4f10ba761d0c531ed0"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 981,
+      "sha256": "3567ee4c737445e0f3c6d20fddb4a1989aaebbf0f20555dae4ff04f13f4b7b72"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 3265,
+      "sha256": "a11a5b876a995af242e8ddc482547108acc9ff857f32d23761bc1a3cee604c2b"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 14198,
+      "sha256": "0becf16567beb77fa252b7664631dd177c8f9a1889e48995b45379c7130e5303"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 3422,
+      "sha256": "483680e35374909bf49c66f0de3aa340c85f23a098144faf6f9500ccd5981107"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6043,
+      "sha256": "a1fc0c46a80bcb2f79ffe7c067447c92e9228f3a865c1eb209c549f8d4b9d918"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 2666,
+      "sha256": "2609857606531f6aea713e2fcd0414f657992e2326f8f036c23b51b160998e11"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 3898,
+      "sha256": "2a799de2e4bdb372ad0e50e4d20edab62e0888910d4d126c22cd514cf13d2a1e"
+    },
+    {
+      "path": "docs/INSTALLATION.md",
+      "bytes": 9597,
+      "sha256": "acc240d1058ce3ede0264e23df227b0247d5238283fdd0db2e91eb1669509210"
+    },
+    {
+      "path": "docs/RELEASE_VALIDATION.md",
+      "bytes": 1942,
+      "sha256": "abee9f192db3605ae3f0e53a272736e2ea51a2c694fedd10d24f377e70de623d"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "bytes": 2885,
+      "sha256": "ef8de91a1a572173db2ad0694f9fc39315a627cd0d74bfed7f5f381945eec8f0"
+    },
+    {
+      "path": "docs/USER_GUIDE.md",
+      "bytes": 35470,
+      "sha256": "75e369eceadbabe83652549a637b6bed864e07d736331463fb22705831488395"
+    },
+    {
+      "path": "docs/guide.json",
+      "bytes": 37510,
+      "sha256": "8b7e3dc6e18be1f1e37df476d2c080332bf5589987cd8eb8ab973ed7b8b8ff3a"
+    },
+    {
+      "path": "lcpc/PARTICIPANT-RESOURCES.md",
+      "bytes": 2758,
+      "sha256": "05e760f81af35568f3e84548cdeaa4f4c268e6949aca963938dd00819ee44dd1"
+    },
+    {
+      "path": "lcpc/PROJECT_VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    {
+      "path": "lcpc/admin/PARTICIPANT-DIAGNOSTICS.md",
+      "bytes": 13491,
+      "sha256": "b925d1e09a1632adcba9171896a773b6d5297999901c56c336c48b96433453bc"
+    },
+    {
+      "path": "lcpc/admin/PC2-ADMINISTRATOR-COVERAGE.md",
+      "bytes": 6698,
+      "sha256": "719b72a8224dd151e7de5e70ba43820f654c6333792f0816e8600bbdaa6775ad"
+    },
+    {
+      "path": "lcpc/admin/README.md",
+      "bytes": 48188,
+      "sha256": "4c3b851f3703d685bed80a060990b24289d949c4a74b96fd35ecb2722ef3575b"
+    },
+    {
+      "path": "lcpc/admin/contest_exports.py",
+      "bytes": 9319,
+      "sha256": "e3d5a2d0e3189a49b18d31080efb9d8c4df8951f4697174979a2ee0ef1172e5e"
+    },
+    {
+      "path": "lcpc/admin/contest_runtime.py",
+      "bytes": 12853,
+      "sha256": "362cbebf8ed83ccc4b2e742d0c2b8236c1f512450fb7ec36ccc02c7127d31139"
+    },
+    {
+      "path": "lcpc/admin/contests.py",
+      "bytes": 17591,
+      "sha256": "dab27e566798500b474b4fe92864c5d40cb96153f1fee6fed024c3b5cdd3628a"
+    },
+    {
+      "path": "lcpc/admin/core.py",
+      "bytes": 19680,
+      "sha256": "84abee4c896e7fcd7f7c9e77a78e0c5ba7ce48094fb5d8bcb87ac9f7350834ff"
+    },
+    {
+      "path": "lcpc/admin/dashboard_branding.py",
+      "bytes": 7405,
+      "sha256": "ff529fc248a48fae88eb28faf86e562661b28045ca13824e2f34508a543e9cee"
+    },
+    {
+      "path": "lcpc/admin/learning_pdf.py",
+      "bytes": 14714,
+      "sha256": "ed1ac96a194352d5ba5228d830f11446e15fc13d24a6dc2f0e1d8143c3ff0f2d"
+    },
+    {
+      "path": "lcpc/admin/learning_replay.py",
+      "bytes": 8373,
+      "sha256": "571cd210f11b4c6482b82cdc600a91599330be3a8d9df6b156ff3a1029751d2a"
+    },
+    {
+      "path": "lcpc/admin/learning_reports.py",
+      "bytes": 22064,
+      "sha256": "75cf6f48adf2e04d42bff36b0cf99e044c352591b638560b94121f94a996aa35"
+    },
+    {
+      "path": "lcpc/admin/manage.py",
+      "bytes": 5321,
+      "sha256": "90a62561f191a380177987b89682ae3f57f8f0ef3ea6c84bc782dd94161d1d39"
+    },
+    {
+      "path": "lcpc/admin/native_admin.py",
+      "bytes": 15172,
+      "sha256": "261ed4add348ab0b4fe95d21f52e9abd5b07dc48abe25a3e66a15193388af1c9"
+    },
+    {
+      "path": "lcpc/admin/notifications.py",
+      "bytes": 9728,
+      "sha256": "f3360f4d2da7811ad5a80c8abbf0e1572c3c83723cce25206c5da19014606807"
+    },
+    {
+      "path": "lcpc/admin/participant_access.py",
+      "bytes": 5930,
+      "sha256": "964c3fafbdd92f68ef99897a73d5f44733010f4526b40eca88c91e3598afd254"
+    },
+    {
+      "path": "lcpc/admin/participant_activity.py",
+      "bytes": 4291,
+      "sha256": "7c80338c5aacf3147a910dfda057875e45d9c46098eefc66fb49598045cca2ae"
+    },
+    {
+      "path": "lcpc/admin/participant_identity.py",
+      "bytes": 7881,
+      "sha256": "97bbfffe76a89e2dc675b00db82358142d6a95d2e541dc902a1a0ddd80660a5c"
+    },
+    {
+      "path": "lcpc/admin/participant_test.py",
+      "bytes": 5882,
+      "sha256": "4ed9d256794d40c689cbc433998f30f9c308e3d9efecc2933cac7e6c09818548"
+    },
+    {
+      "path": "lcpc/admin/participant_theme.py",
+      "bytes": 1996,
+      "sha256": "b45a4139143317f2c6bee098399adb425e7c2e483fe0c04b704df9471e929922"
+    },
+    {
+      "path": "lcpc/admin/problem_difficulty.py",
+      "bytes": 1268,
+      "sha256": "5d6f8dc7bc096c3510b1984a556882948046cae3b261baec54d255efaa5f05e1"
+    },
+    {
+      "path": "lcpc/admin/remote_access.py",
+      "bytes": 9788,
+      "sha256": "6b807a02982bb97b5ba8f36f65bef1827256a7a927ce8843b095225d7fe9309f"
+    },
+    {
+      "path": "lcpc/admin/report_pdf.py",
+      "bytes": 5196,
+      "sha256": "cfb67fa3c9e0fdced6114793ec847730ef6e01d6bc5794a7a37ff8a55429ee65"
+    },
+    {
+      "path": "lcpc/admin/requirements.txt",
+      "bytes": 120,
+      "sha256": "ae17b37242a4568a281ac9f16214b1562647189764f8e82078c3c2aa5d39b267"
+    },
+    {
+      "path": "lcpc/admin/restore_backup.py",
+      "bytes": 5699,
+      "sha256": "fb85e396ed607c11fd1092638e0ea19145d8f080e4f9f5a9094c4a9f21a205a8"
+    },
+    {
+      "path": "lcpc/admin/schedule_time.py",
+      "bytes": 4888,
+      "sha256": "f14835b74b1649b084aa13874a1d793a3eebf1d461ca2dbb5e9076f8b72d2c24"
+    },
+    {
+      "path": "lcpc/admin/scoreboards.py",
+      "bytes": 3159,
+      "sha256": "6adb5c98c1f9ada4a45fe73cbd292eb6b691626ffd0623a2990707454dc9902b"
+    },
+    {
+      "path": "lcpc/admin/server.py",
+      "bytes": 36497,
+      "sha256": "2be8727df2d6e68050ef22dbe2fff74ad08bee9e7825112d940f93c444411781"
+    },
+    {
+      "path": "lcpc/admin/submission_review.py",
+      "bytes": 2301,
+      "sha256": "af02230dfa27097225e0ffcee75696e34690d30101f2fb13bfccc95ed2f13020"
+    },
+    {
+      "path": "lcpc/admin/team_connections.py",
+      "bytes": 1831,
+      "sha256": "1cd32c69c746d72b69f06914065e9466c8853a1de4985c48cb44a21cb478ec7f"
+    },
+    {
+      "path": "lcpc/admin/test_team.py",
+      "bytes": 2808,
+      "sha256": "b48ed029e1f82a5b6a303a921f5312ce2243cdde22e93dce33acb24cd7388ac6"
+    },
+    {
+      "path": "lcpc/admin/tests/AdministratorFeaturesTest.java",
+      "bytes": 16161,
+      "sha256": "ad157411a614a197aeb76b0896e11b689d9e899983b186f17f57fddaaf59c9d3"
+    },
+    {
+      "path": "lcpc/admin/tests/CanonicalVerdictsTest.java",
+      "bytes": 2889,
+      "sha256": "f67d142082f902d33e57cf16d43e20ba539e1793a9d1a39259df5206616753b2"
+    },
+    {
+      "path": "lcpc/admin/tests/ContestTemplatesTest.java",
+      "bytes": 8749,
+      "sha256": "7b9515d18b2df84833b2149926f51ed8f0adc3faa444cb78768bfae1413dc539"
+    },
+    {
+      "path": "lcpc/admin/tests/FinalJudgementCommitTest.java",
+      "bytes": 3376,
+      "sha256": "bec9f145619b9970b8c303e71effaf1b049001fb074055619a8ea111069a758e"
+    },
+    {
+      "path": "lcpc/admin/tests/JudgingWorkflowTest.java",
+      "bytes": 3256,
+      "sha256": "94843fbd88bf051189ae590f45c72d85385b743cfbd692b2a55b0c168cbb36e1"
+    },
+    {
+      "path": "lcpc/admin/tests/RunDiagnosticsTest.java",
+      "bytes": 3072,
+      "sha256": "7879bdaf5e3f92327abe4c06ad4495910e6077c91c27221d42ce5dcb92fb1877"
+    },
+    {
+      "path": "lcpc/admin/tests/ScoreboardReleaseTest.java",
+      "bytes": 7008,
+      "sha256": "05f333433a6d1f33d11f375b88c46282d6407a81040e34cf2e39233e0306588a"
+    },
+    {
+      "path": "lcpc/admin/tests/TestTeamPolicyTest.java",
+      "bytes": 4392,
+      "sha256": "145f49a9b978635d142310c2dbe153c9741b1c60640293cf0083d2c17868fad0"
+    },
+    {
+      "path": "lcpc/admin/tests/administrator-editor.test.cjs",
+      "bytes": 5117,
+      "sha256": "6cc3ff2f1e4336abace4a1dc4e5e0c48c92494b628075ac7d40cd4c87e3a585e"
+    },
+    {
+      "path": "lcpc/admin/tests/connection-alerts.test.cjs",
+      "bytes": 1889,
+      "sha256": "07b48ca133c50164aab18e61e118aa4d7be3f1d3d3d998678a805236072f573a"
+    },
+    {
+      "path": "lcpc/admin/tests/dashboard-branding.test.cjs",
+      "bytes": 2065,
+      "sha256": "3aae751990149d874629027c85321222d5413f273bc559bb83895aa5aba22739"
+    },
+    {
+      "path": "lcpc/admin/tests/guide.test.cjs",
+      "bytes": 3182,
+      "sha256": "d14f8ba1be1b434d37160fde3b1f2ea5d019373d466cfe27e15f939cf6828b67"
+    },
+    {
+      "path": "lcpc/admin/tests/learning-reports.test.cjs",
+      "bytes": 1343,
+      "sha256": "ec2cdcff99d3b1214856d5139f2e74927388003dd0424e8bd67f895cdb069376"
+    },
+    {
+      "path": "lcpc/admin/tests/notifications.test.cjs",
+      "bytes": 1504,
+      "sha256": "d988afbc66ef4b3c859a5e8be444f4d6f7ab15415545c7026d5401e3f445172d"
+    },
+    {
+      "path": "lcpc/admin/tests/participant-interactions.test.cjs",
+      "bytes": 1214,
+      "sha256": "3b8c42ca3dae3d8a6990a34b668eb54c2438b8aee86928c79aeac56b86e6a295"
+    },
+    {
+      "path": "lcpc/admin/tests/problem-difficulty.test.cjs",
+      "bytes": 1216,
+      "sha256": "0803fd14e719b03676aa9fea563b80c9add4f873011491cae037b9482056220d"
+    },
+    {
+      "path": "lcpc/admin/tests/row-interactions.test.cjs",
+      "bytes": 6006,
+      "sha256": "2b870ee0fe890a1023ba00d4931505bfc6c640909c129fb65d566ca340065321"
+    },
+    {
+      "path": "lcpc/admin/tests/run-details.test.cjs",
+      "bytes": 8654,
+      "sha256": "669ef1bafc3d04e882fecde6049dde272576de77e2aec71c0e569dea3f86b11b"
+    },
+    {
+      "path": "lcpc/admin/tests/schedule.test.cjs",
+      "bytes": 1566,
+      "sha256": "1f4da63037e8084c38e6805d9f43486cc99788aef42c555ef6a66fd2dd15a8c7"
+    },
+    {
+      "path": "lcpc/admin/tests/scoreboards.test.cjs",
+      "bytes": 2994,
+      "sha256": "68b0c45d12d353f6f5b78dcc1a1f224e37a7dcb929f4b2fb552021a5c4741ef6"
+    },
+    {
+      "path": "lcpc/admin/tests/server-controls.test.cjs",
+      "bytes": 1467,
+      "sha256": "37fbf7156345b72b7999ac23d7b0e4f362bb6238c84070b63da8bdc4bc6d0aff"
+    },
+    {
+      "path": "lcpc/admin/tests/submission-review-ui.test.cjs",
+      "bytes": 2412,
+      "sha256": "1f9b102d74c7b5ea831bbc2c5fdca7de29d84b75b7b89695d113403626999f73"
+    },
+    {
+      "path": "lcpc/admin/tests/test_connection_history.py",
+      "bytes": 4675,
+      "sha256": "ff2a77078852cc78e3203b207d4ecfa1a07a2f5884daa164b51b807646dab5e1"
+    },
+    {
+      "path": "lcpc/admin/tests/test_contest_http.py",
+      "bytes": 5963,
+      "sha256": "52b09761a1176b879ab059d173c2ed4794dbb7dae46f18ffb78eceed6f50977a"
+    },
+    {
+      "path": "lcpc/admin/tests/test_contests.py",
+      "bytes": 14293,
+      "sha256": "c5a8b3981df64ca86b4431d41301f1e3d7bfbc47120392a0eace4ced82397c9d"
+    },
+    {
+      "path": "lcpc/admin/tests/test_dashboard_branding.py",
+      "bytes": 4595,
+      "sha256": "8f8469a47a5ac90c85d739f7588b8ce1ab0d994580b676c4681de02d6f710e0b"
+    },
+    {
+      "path": "lcpc/admin/tests/test_export_runtime.py",
+      "bytes": 1225,
+      "sha256": "d94a9cf6408fd6c827a6e87da78889c66089d73cde02f28d179f563d8cc4b084"
+    },
+    {
+      "path": "lcpc/admin/tests/test_guide_http.py",
+      "bytes": 1981,
+      "sha256": "a100ec96115d9ac7e593b8b0a5f1ad1d787078c92a72b61a0653535de15bf4ef"
+    },
+    {
+      "path": "lcpc/admin/tests/test_identity_notifications_http.py",
+      "bytes": 4573,
+      "sha256": "4fe5c10f8d91e2aa5f840a2c8f7d607dcdc8eda18035ba14ebb9d2cba639505c"
+    },
+    {
+      "path": "lcpc/admin/tests/test_learning_http.py",
+      "bytes": 3036,
+      "sha256": "9b4da709bc34199c38b5f8dabdbb319c3d96a142cab31447b342f76fdbee0956"
+    },
+    {
+      "path": "lcpc/admin/tests/test_learning_pdf.py",
+      "bytes": 2351,
+      "sha256": "b4b2fefb01b0c35c3c8037dd107f615a304aeb45b65c73f13914cccfa9bf9daa"
+    },
+    {
+      "path": "lcpc/admin/tests/test_learning_replay.py",
+      "bytes": 2710,
+      "sha256": "06773f068dfba8c30b42bd5918c2b828fb9eb8190d22e4a42fa2cca7719e127b"
+    },
+    {
+      "path": "lcpc/admin/tests/test_learning_reports.py",
+      "bytes": 6241,
+      "sha256": "ac897909a801cf235bd82c4df6232773ba8624de9264dfb1bdacc92fe98e0366"
+    },
+    {
+      "path": "lcpc/admin/tests/test_native_admin.py",
+      "bytes": 10011,
+      "sha256": "050856e771c464f96e793650d29fb64a496921ce3d7d156590e5e05248e8a1ae"
+    },
+    {
+      "path": "lcpc/admin/tests/test_notifications.py",
+      "bytes": 4428,
+      "sha256": "cfc2fdc0fe5f9ef06e2c053400408a560723776f3c6bbcb20adafb0e4be07b13"
+    },
+    {
+      "path": "lcpc/admin/tests/test_participant_access.py",
+      "bytes": 3493,
+      "sha256": "aea4abbee2b0e65fc7ee5e597482690b093e6e945031a5d2cca9a71033d27d58"
+    },
+    {
+      "path": "lcpc/admin/tests/test_participant_activity.py",
+      "bytes": 9942,
+      "sha256": "154ca8ae70f235095c9f5861674b3371ba926af8cc92ac1c5f8cccd6e4ec034f"
+    },
+    {
+      "path": "lcpc/admin/tests/test_participant_identity.py",
+      "bytes": 5727,
+      "sha256": "5be92b375718fe4857df49e7e2b95b74653e747f7196c1782ec15897a8004306"
+    },
+    {
+      "path": "lcpc/admin/tests/test_participant_resources.py",
+      "bytes": 3758,
+      "sha256": "c40ad738fb6956ab5c9e55b988329c548ad3d491e43534abe3a0693895cf6ddb"
+    },
+    {
+      "path": "lcpc/admin/tests/test_participant_routes.py",
+      "bytes": 8915,
+      "sha256": "bcc6646f01f5382ef538dcd5284c2e4a07d4f850d14348279bee0829e34a2e6c"
+    },
+    {
+      "path": "lcpc/admin/tests/test_problem_difficulty.py",
+      "bytes": 2099,
+      "sha256": "e49c509cbd6446c82829baf1d81334fc33038c32d2a6dfafc1f862deecd4c69e"
+    },
+    {
+      "path": "lcpc/admin/tests/test_remote_access.py",
+      "bytes": 8600,
+      "sha256": "963be3184ee8e9b6e0717e052606ce7793204f707fea4887a2304fad71eb92da"
+    },
+    {
+      "path": "lcpc/admin/tests/test_result_notifications.py",
+      "bytes": 6113,
+      "sha256": "84253751b990e2775f024554c0c2bf334cdc5f0b502750c8964f537cec66e772"
+    },
+    {
+      "path": "lcpc/admin/tests/test_runtime_recovery.py",
+      "bytes": 3130,
+      "sha256": "494f9dcc638bf7ccea293fa6742fbdaf4a71c21abbd87fa69f4a218787d5c0ba"
+    },
+    {
+      "path": "lcpc/admin/tests/test_schedule.py",
+      "bytes": 3275,
+      "sha256": "dd6e0007dfbc12a25261696e1b5efd8d5b232a01ade09411af413e6102b732cf"
+    },
+    {
+      "path": "lcpc/admin/tests/test_scoreboards.py",
+      "bytes": 6090,
+      "sha256": "ec83be0d68dcd735a5c169f2bd6f761217ec59b992f3c0ad968d26e140d4bd5b"
+    },
+    {
+      "path": "lcpc/admin/tests/test_security.py",
+      "bytes": 12608,
+      "sha256": "991c5e11ea5d2ea19fc31b460cfabedfceeb1a0bd7e702f76ef6ac3b2d4afc94"
+    },
+    {
+      "path": "lcpc/admin/tests/test_session_migration.py",
+      "bytes": 1430,
+      "sha256": "f34e45814905d7deadbe7105578244bc49692b175b6ae9e28376753f38c54148"
+    },
+    {
+      "path": "lcpc/admin/tests/test_submission_receipts.py",
+      "bytes": 1182,
+      "sha256": "293429941c7e5d4a3550ff2bdad29b2b203e8a7b124e3b30a0a2b2887e67ee12"
+    },
+    {
+      "path": "lcpc/admin/tests/test_submission_review.py",
+      "bytes": 5057,
+      "sha256": "9247ab59ce25eb6c413df3184b1780266a693e48bb46dd41ce69ca7dec4f1da9"
+    },
+    {
+      "path": "lcpc/admin/tests/test_test_team.py",
+      "bytes": 4511,
+      "sha256": "01c234c24c68f42f4499a0217f9a3dae39db0d41d264cc46e4b32fb192d69c8b"
+    },
+    {
+      "path": "lcpc/admin/tests/test_totp_setup.py",
+      "bytes": 2589,
+      "sha256": "f4269ac40c95890deceb50024f3e8c81d93a929751860f6a0d1ad25646294a19"
+    },
+    {
+      "path": "lcpc/admin/tests/test_workspace_state.py",
+      "bytes": 1990,
+      "sha256": "d53e124b04155872f97c9c3ebf343bdc66187be37dbbd393b6c67f28f01684fa"
+    },
+    {
+      "path": "lcpc/admin/tests/workspace-nav.test.cjs",
+      "bytes": 2535,
+      "sha256": "4183bff588cba86d62d6845500b82280561d7007c795d42afa6e130c926210f3"
+    },
+    {
+      "path": "lcpc/admin/timezones.json",
+      "bytes": 65317,
+      "sha256": "9a7b184975bc734d08c26d3c762499625e05df1d753e3f6363a84466bf7d3693"
+    },
+    {
+      "path": "lcpc/admin/totp_setup.py",
+      "bytes": 1328,
+      "sha256": "d3012777fc215687505e3b1134b04bac58a714b0225ccb84694195ba8c1337da"
+    },
+    {
+      "path": "lcpc/admin/vendor/README.md",
+      "bytes": 383,
+      "sha256": "b30e0f140aac9b6a025974279912409244900af19e1b2505a1b5ea61cbf67484"
+    },
+    {
+      "path": "lcpc/admin/vendor/qrcodegen.py",
+      "bytes": 39337,
+      "sha256": "b089855caf16185c61421ea4927c1b213cf9468940d71fa8ab11ef83662dcc84"
+    },
+    {
+      "path": "lcpc/admin-ui/administrator.js",
+      "bytes": 48143,
+      "sha256": "ebbf8e1bbc75a830f5fa7a09e891b92d013356f23c1dfea7bc2c6b6d6e865656"
+    },
+    {
+      "path": "lcpc/admin-ui/app.css",
+      "bytes": 28068,
+      "sha256": "9a2549b6b185feccbb1b0bb2e6eca29c4fe1ee8a98c73ee6fffa2fd0ba912321"
+    },
+    {
+      "path": "lcpc/admin-ui/app.js",
+      "bytes": 57062,
+      "sha256": "5ca037e4dd17360763d212353b2dc8cfabb96a63220aec6756f3f6b07e1c55d9"
+    },
+    {
+      "path": "lcpc/admin-ui/contests.js",
+      "bytes": 7923,
+      "sha256": "0ff476cf5032dbcf1e8de7a1edbf03c9392ea5819d64e115e7ba190ac06b627f"
+    },
+    {
+      "path": "lcpc/admin-ui/dashboard-branding.js",
+      "bytes": 6693,
+      "sha256": "9649907b1df28814f660214b6e50aef1228995dc817b8dcccc5799923b5fb7d4"
+    },
+    {
+      "path": "lcpc/admin-ui/guide-content.js",
+      "bytes": 35091,
+      "sha256": "529d01e609beaac0fc43a8bfa0fb1a56ee7bae088b2eb30eb5474315d079a93e"
+    },
+    {
+      "path": "lcpc/admin-ui/guide.css",
+      "bytes": 1345,
+      "sha256": "f802581dde7ad07501250f0f08487ab23e6551f21b666603315b1c500a1e7a89"
+    },
+    {
+      "path": "lcpc/admin-ui/guide.js",
+      "bytes": 6589,
+      "sha256": "fa2e406552ed61f8cfdefe53ffd9a3e7e3bd1bb58ba893230cdd6a3e2ecede34"
+    },
+    {
+      "path": "lcpc/admin-ui/index.html",
+      "bytes": 5024,
+      "sha256": "331dd67d552e0fabab98521732543ddaab3bf24fa2c7cac7f9ebdb988ffc934a"
+    },
+    {
+      "path": "lcpc/admin-ui/learning-reports.js",
+      "bytes": 7080,
+      "sha256": "a7d19b7f9f64831df4ac688ebcd99829ff0af3584a452fb716c52c649f3ceac9"
+    },
+    {
+      "path": "lcpc/admin-ui/notifications.js",
+      "bytes": 8315,
+      "sha256": "625805b0611f80a5ac74f371c40124fcd770a9cb51789cc475d0c8d2960ccc00"
+    },
+    {
+      "path": "lcpc/admin-ui/participant-activity.js",
+      "bytes": 13261,
+      "sha256": "70602329581302d2825bdfad0ef6e813c42b2049418aa23e7d7150a639414c82"
+    },
+    {
+      "path": "lcpc/admin-ui/participant-identity-editor.js",
+      "bytes": 11560,
+      "sha256": "d88f1541d9658bb64cf0429813aa84b05827f111168e9d39a30bdd9bc1d72fd9"
+    },
+    {
+      "path": "lcpc/admin-ui/participant-test.js",
+      "bytes": 13635,
+      "sha256": "ec769d21403c07bdb88064901d84453a3b0ea33c0045b4591b3c9b6605cfff2c"
+    },
+    {
+      "path": "lcpc/admin-ui/remote-access.js",
+      "bytes": 8062,
+      "sha256": "21f2728c37f1c1ddd0a62aadc6de6fe0ff10b24c745a5a1ab029d2a4696032df"
+    },
+    {
+      "path": "lcpc/admin-ui/review.css",
+      "bytes": 4095,
+      "sha256": "796c363f66a68f995a2a9c868a84e21b59313d17bd953bce5b3ba756554683e2"
+    },
+    {
+      "path": "lcpc/admin-ui/review.html",
+      "bytes": 1688,
+      "sha256": "214aa6037b4ecdea3caba1e05c9a595cc06d31f9f804ad55e8074fda280c48bb"
+    },
+    {
+      "path": "lcpc/admin-ui/review.js",
+      "bytes": 15092,
+      "sha256": "c5f2b7ae03e136fa60605bd39166e29ed7d8e52507ecb4fcdb920c1039d4647f"
+    },
+    {
+      "path": "lcpc/admin-ui/row-interactions.js",
+      "bytes": 6479,
+      "sha256": "e3cb5d87b763341506fb701fb3d21c64301fe8cbeca87a7d757e3b1a4dfbb52b"
+    },
+    {
+      "path": "lcpc/admin-ui/run-details.js",
+      "bytes": 13903,
+      "sha256": "df9bdeeee2ed4a4707ec5515445342fb53ed740b6b072899a642d9730921c90a"
+    },
+    {
+      "path": "lcpc/admin-ui/schedule.js",
+      "bytes": 7288,
+      "sha256": "78485f841070e469caa622f978b2983212344ad7db02ebae36f5053121dbb43c"
+    },
+    {
+      "path": "lcpc/admin-ui/team-connections.js",
+      "bytes": 8855,
+      "sha256": "386b61e0c36a8c2a58afc1b92cae89f2561029e167551422993231ee2b9b6115"
+    },
+    {
+      "path": "lcpc/admin-ui/workspace-nav.js",
+      "bytes": 5289,
+      "sha256": "2986885b48bfcd5b8d4f05eac1605f8f1d24c75a030f96a7f1ca35f67e38ed2a"
+    },
+    {
+      "path": "lcpc/branding/README.md",
+      "bytes": 7221,
+      "sha256": "4fcce6aeaf73e671fe233c603c993a954a52dccb0451fdb6dd309206312a790e"
+    },
+    {
+      "path": "lcpc/branding/activity.js",
+      "bytes": 9736,
+      "sha256": "572bfa4375d18c8da4028febc087bf54c63814b79b4aff8360513be49f762a1e"
+    },
+    {
+      "path": "lcpc/branding/assets/icpc-logo.png",
+      "bytes": 4779,
+      "sha256": "143803b56b9d05200476f1332a2dccd2072c2686ba25c12b9706864f67c86d2a"
+    },
+    {
+      "path": "lcpc/branding/assets/lcpc-logo.png",
+      "bytes": 130228,
+      "sha256": "357b92216f080b03cc239aee04cafd1fa3b980741c6eb5e198224f5b3b622db4"
+    },
+    {
+      "path": "lcpc/branding/assets/omu-logo.png",
+      "bytes": 822787,
+      "sha256": "bd4dc21f248ac646bce39ed573c7498b2e2a064981252b3dc63f6b84c4d90cda"
+    },
+    {
+      "path": "lcpc/branding/assets/pc2-logo.png",
+      "bytes": 280468,
+      "sha256": "2e6db69111f67878c715a99008e3664665439ff6d4ac5fe594ccc48b218eb505"
+    },
+    {
+      "path": "lcpc/branding/contest-clock.css",
+      "bytes": 1974,
+      "sha256": "681f7dccd7c8e546515244aa48ca6546b51bf26506af824b927f437adfa6da60"
+    },
+    {
+      "path": "lcpc/branding/contest-clock.js",
+      "bytes": 5980,
+      "sha256": "e070748be66f48aa8267b88a7e9bac4b899d6b331c101653acc98baac20ab2c1"
+    },
+    {
+      "path": "lcpc/branding/download-feedback.css",
+      "bytes": 783,
+      "sha256": "b9085c55c316899b30d4e42918f929a477e2fae0f2eabadc706c513ec52ab2f3"
+    },
+    {
+      "path": "lcpc/branding/download-feedback.js",
+      "bytes": 6214,
+      "sha256": "a5f886f4e8182b73e9dbab72afd052c96ccbbee2c5ba4dfb9e9721972ce95e83"
+    },
+    {
+      "path": "lcpc/branding/header.css",
+      "bytes": 2197,
+      "sha256": "635bf0f4fa3dd332168438a36a84d0a194eeb867a557f185eab870b76d2aa5fa"
+    },
+    {
+      "path": "lcpc/branding/header.js",
+      "bytes": 3784,
+      "sha256": "28f381480b70b618661de27c8dc4361b1641d07c90b6fbfc70091aad219d9aa1"
+    },
+    {
+      "path": "lcpc/branding/participant-identity.css",
+      "bytes": 1901,
+      "sha256": "295f003de1db395b9080085996b8d2b7bbf23bbb95ba4b1e001abbb02410c8b0"
+    },
+    {
+      "path": "lcpc/branding/participant-identity.js",
+      "bytes": 6619,
+      "sha256": "5987ad01affd8cb1642d64c6910d9b00cf8028cb75e190622d62100ae800eeff"
+    },
+    {
+      "path": "lcpc/branding/participant-theme.css",
+      "bytes": 3918,
+      "sha256": "9153806c698b84149d7884db828fa51d3f12e4b0fd3dc7b9677c49220b9cebe8"
+    },
+    {
+      "path": "lcpc/branding/participant-theme.js",
+      "bytes": 1744,
+      "sha256": "011abf52a039489def90e1a65eab8e6b5d1a1009fff70c2d665f0808189d5316"
+    },
+    {
+      "path": "lcpc/branding/participant-ui.css",
+      "bytes": 18421,
+      "sha256": "68845d0e6b89d83d08971dfffae522526fa06a40740ca9433cf8949852501380"
+    },
+    {
+      "path": "lcpc/branding/participant-ui.js",
+      "bytes": 3826,
+      "sha256": "971c515f59f9fc4054a8dfc6b7c6a482cb2deaeac2a7ef0cee1e44cc08347ea8"
+    },
+    {
+      "path": "lcpc/branding/problem-resources.js",
+      "bytes": 2394,
+      "sha256": "a21d3fa1ff2c86b39c33b11cd2ea6138abf04cab9b08b8f17702fb3d0c9c1078"
+    },
+    {
+      "path": "lcpc/branding/resource-pages.css",
+      "bytes": 7342,
+      "sha256": "1495d519946fcc2e64538a3253ea1b85c24f0954604cc8c966d8efb717d48416"
+    },
+    {
+      "path": "lcpc/branding/resource-ui.css",
+      "bytes": 3911,
+      "sha256": "9638a2b422caa9ae35a4f106833fa55c24b32c8887a19dc03ed20a1650163b9c"
+    },
+    {
+      "path": "lcpc/branding/resources.css",
+      "bytes": 207,
+      "sha256": "d726ebedd61d15c8ddfc99c90126be267221538a99a436e4817741f35213c9a0"
+    },
+    {
+      "path": "lcpc/branding/resources.js",
+      "bytes": 2844,
+      "sha256": "eed760ec8a4286e8b62de1da2277279fd0503bc6d45fea837f87328ba2f82c80"
+    },
+    {
+      "path": "lcpc/branding/result-notifications.css",
+      "bytes": 2331,
+      "sha256": "33b24996f4a2b2d5eb904ba87a1e80ee966bfd3dfcd022e96e7dbdefebb2b2a7"
+    },
+    {
+      "path": "lcpc/branding/result-notifications.js",
+      "bytes": 8945,
+      "sha256": "6c235a3a299755fb6c04965342419b335975169168ca192de48b1d824816371c"
+    },
+    {
+      "path": "lcpc/branding/run-results.js",
+      "bytes": 4792,
+      "sha256": "df38442a5ede16b4aa8c9eb9cbbe959097e827601c014106b270167a9ccf4192"
+    },
+    {
+      "path": "lcpc/branding/scoreboard-model.js",
+      "bytes": 7425,
+      "sha256": "75778fbc496f022d24b5af4d80bba4828ae36e5581c43ed76b0ecb51c24ed8ad"
+    },
+    {
+      "path": "lcpc/branding/session.js",
+      "bytes": 3163,
+      "sha256": "d3f8888abbf5c7c357cc0c4271e7e6957dd97057faedb21dc0cb8ff0287d94f6"
+    },
+    {
+      "path": "lcpc/branding/standings.css",
+      "bytes": 6251,
+      "sha256": "470cc6e0bab4f409286c08bcc366725968dfeead8781f30206a11581fc219575"
+    },
+    {
+      "path": "lcpc/branding/standings.js",
+      "bytes": 2922,
+      "sha256": "86ad18e6d2cb1b401c63049e594910c5a11ea1acaa0b1878ffc67982345b4b08"
+    },
+    {
+      "path": "lcpc/branding/tests/activity.test.cjs",
+      "bytes": 3391,
+      "sha256": "8afcc65f0917a0851ffd46de3d0b7eee21c0bd0982580e8f6ec0f98e4f5fb12f"
+    },
+    {
+      "path": "lcpc/branding/tests/contest-clock.test.cjs",
+      "bytes": 2858,
+      "sha256": "fc416d192c494bb2c6d81f3acd556559537f39e1590e092121960e239127c878"
+    },
+    {
+      "path": "lcpc/branding/tests/download-feedback.test.cjs",
+      "bytes": 1423,
+      "sha256": "820436158a161a5646e8048c44e9f84fc5b38f5dd5cf43448893c6b2b7a389b1"
+    },
+    {
+      "path": "lcpc/branding/tests/fixtures/pc2-scoreboard.json",
+      "bytes": 6138,
+      "sha256": "e4f423b50b7411406902d39660b555e5a7db20733a65bc98d3992d66eb5888df"
+    },
+    {
+      "path": "lcpc/branding/tests/participant-identity.test.cjs",
+      "bytes": 1434,
+      "sha256": "6d6eaf554fc8d27ced2e410a351d115bf2218115a821550d44b2e29b91799d0a"
+    },
+    {
+      "path": "lcpc/branding/tests/participant-theme.test.cjs",
+      "bytes": 834,
+      "sha256": "d1ce6f20cfe97fb08d2502576e06c4acb1dcd5ceadba807d574e083b2024de1f"
+    },
+    {
+      "path": "lcpc/branding/tests/result-notifications.test.cjs",
+      "bytes": 3515,
+      "sha256": "428058c4f64c9e2b09228e9f88b3e32b321bc897f3a38796679af95ad92691b4"
+    },
+    {
+      "path": "lcpc/branding/tests/run-results.test.cjs",
+      "bytes": 966,
+      "sha256": "b3ccc42e78c0bb4f55a3a8379b1464d9039c0de3104e91d1da06a8baede7101b"
+    },
+    {
+      "path": "lcpc/branding/tests/scoreboard.test.cjs",
+      "bytes": 5332,
+      "sha256": "8bc2b786ef73a0c55e3c9834f185bbf247023dfb1c1197b8842c6968a3b41723"
+    },
+    {
+      "path": "lcpc/branding/tests/session.test.cjs",
+      "bytes": 2828,
+      "sha256": "d567f7f98b18eff70018698500bcc6d2d8781dcdb83f2e60129cf3c3def1715d"
+    },
+    {
+      "path": "lcpc/build-tools.sh",
+      "bytes": 1447,
+      "sha256": "a21fc7d49b7da36bdfb88ffb8fd5de9880d6ac8f6d80173495fff306e84b48ae"
+    },
+    {
+      "path": "lcpc/infra/branding.py",
+      "bytes": 14177,
+      "sha256": "e4e01d28fed90c31c28e9a724983a403a3acb5922954b69c8e6fb83c8d3a9360"
+    },
+    {
+      "path": "lcpc/infra/connection_history.py",
+      "bytes": 4806,
+      "sha256": "40c3451080c76f07cd63fdfdcbd9a6f49b3378fbbe48355f30f7df752dc20c15"
+    },
+    {
+      "path": "lcpc/infra/frontend_results.py",
+      "bytes": 945,
+      "sha256": "bd20fef0fc549ecebdd5f75d747a708e0bb445b6fc2e2eb03e8b9ad3e30849fa"
+    },
+    {
+      "path": "lcpc/infra/frontend_session.py",
+      "bytes": 2400,
+      "sha256": "723c87c27fe72036b44dcb3f86969ca7beaef1b3689a6a2bdb2a3bb3a4b7f20e"
+    },
+    {
+      "path": "lcpc/infra/health.py",
+      "bytes": 4879,
+      "sha256": "1bb29eeb3f11b74e4d39e40fb8c7d7b5fd0296d5e655c8957a6f8d29c09f924d"
+    },
+    {
+      "path": "lcpc/infra/judge-vm.yaml",
+      "bytes": 1647,
+      "sha256": "3a36601457d8f693a1d2567e19e23283c631c4353e64910dea647a462609d8c5"
+    },
+    {
+      "path": "lcpc/infra/linux/compile17",
+      "bytes": 79,
+      "sha256": "7d30f740dc612c53b33f9f46cb759fb12724cdb26582fdb07fafec5a0645db46"
+    },
+    {
+      "path": "lcpc/infra/linux/compile20",
+      "bytes": 79,
+      "sha256": "8e0e0bae5a8b0d01baf7ef34158b72ad00d494469018e573a70bab6df44964f2"
+    },
+    {
+      "path": "lcpc/infra/linux/compilepython",
+      "bytes": 83,
+      "sha256": "302554f2a08e0394e4fd319103b36a2a96e7ff0cd4804c2e5c7336bdb1004e48"
+    },
+    {
+      "path": "lcpc/infra/linux/healthcheck.sh",
+      "bytes": 1040,
+      "sha256": "cf9a419c3b6607984087ee8c74fbbe0a4a6fd2fd6fca3ddac2045538155eec3e"
+    },
+    {
+      "path": "lcpc/infra/linux/install-hardening.sh",
+      "bytes": 1249,
+      "sha256": "bd9e0fbc9f271ddd95f23acb1b850ff71b59b6747b3a6e010fbcd9dffec80146"
+    },
+    {
+      "path": "lcpc/infra/linux/learning-replay.py",
+      "bytes": 2395,
+      "sha256": "339708ed4531b7cf0bcd09795a93b371033f4e35bb9425dc6eaf80fd3d4f25d5"
+    },
+    {
+      "path": "lcpc/infra/linux/pc2judge.service",
+      "bytes": 772,
+      "sha256": "e60213fc9612157568752a4f075853dae5322689d987f69fe5273c26a8025f2f"
+    },
+    {
+      "path": "lcpc/infra/linux/pc2sandbox.sh",
+      "bytes": 131,
+      "sha256": "631db04ef492804c1a0b185bfc8da77493162becefde9f1ba8d090ec3c950db2"
+    },
+    {
+      "path": "lcpc/infra/linux/pc2syscheck.sh",
+      "bytes": 207,
+      "sha256": "cbf3655db348ac31607f5faddb2c96959b1ede595771130ac7cb38363a2ed2c3"
+    },
+    {
+      "path": "lcpc/infra/linux/runpython",
+      "bytes": 154,
+      "sha256": "e3d910ac2d7ee572298497f0601d89b9b2e177c2bf8411e951cf846beca8ec37"
+    },
+    {
+      "path": "lcpc/infra/linux/sandbox-broker.py",
+      "bytes": 8095,
+      "sha256": "e158c36ff29dd5ccc7b79e43c61ec7000f92c7db4761d6c279bbc77cb3ca57a8"
+    },
+    {
+      "path": "lcpc/infra/login_gateway.py",
+      "bytes": 17200,
+      "sha256": "4eb336ba32f950156c20b6c3bc711c95c3439ca0314bb7244a1e265dccba4d8f"
+    },
+    {
+      "path": "lcpc/infra/monitor.py",
+      "bytes": 1025,
+      "sha256": "6740880e706e4d4c0e931eccfc973cbd5759f4b0d036357e423e3435a346a373"
+    },
+    {
+      "path": "lcpc/infra/network.py",
+      "bytes": 14415,
+      "sha256": "3d3e7dbc5c3ee17d2dc2502913e8c67ee8455a88ad59003985237a0bc653cd69"
+    },
+    {
+      "path": "lcpc/infra/network_watch.py",
+      "bytes": 2315,
+      "sha256": "7a0d3a858f762404d9ed88bda0063baa328ec288c5ce2e482f429b91d8d3c989"
+    },
+    {
+      "path": "lcpc/infra/operations.py",
+      "bytes": 1900,
+      "sha256": "8a57f7f78bdeb64a8994a98a759212af88dd45363f6fa6922b6da4f6b42c492c"
+    },
+    {
+      "path": "lcpc/infra/participant_activity.py",
+      "bytes": 24370,
+      "sha256": "2587103107f5c954dc016be00e344188969a00b066fba068d92cdee8539f042a"
+    },
+    {
+      "path": "lcpc/infra/participant_policy.py",
+      "bytes": 2056,
+      "sha256": "971961f4559414f6f3a3ab4266d907552a14de11eef0df377431ccb76461ac60"
+    },
+    {
+      "path": "lcpc/infra/participant_resources.py",
+      "bytes": 1803,
+      "sha256": "d9405e13eb5ecb1566399c25b3e5c6db6320ba4f0bf1bac6c5aedd6286a169a7"
+    },
+    {
+      "path": "lcpc/infra/result_notifications.py",
+      "bytes": 1312,
+      "sha256": "660e98f333dcab717b353948461fafbd66649ad62a4b7af52fc3b8f993f4a911"
+    },
+    {
+      "path": "lcpc/infra/runtime_guard.py",
+      "bytes": 1450,
+      "sha256": "c54a7004d0b127a692631d4251f70a0264ca6d8be75da8e0ad6cb1b5edefcd1b"
+    },
+    {
+      "path": "lcpc/infra/secure_backup.py",
+      "bytes": 3895,
+      "sha256": "164f64f2da280eedd8cc6c2bf0008c2231c2378d0626eb0b29d998705d2146ac"
+    },
+    {
+      "path": "lcpc/infra/submission_receipts.py",
+      "bytes": 2067,
+      "sha256": "95aa512283c15ef50150626f67bd8b193cac0690167299d3e5c0b14261778080"
+    },
+    {
+      "path": "lcpc/infra/templates.py",
+      "bytes": 3747,
+      "sha256": "0da8132e917b4d1e1dead406da6afcb2ed32daeae385d57cb1d91f8112b65769"
+    },
+    {
+      "path": "lcpc/infra/test_backup.py",
+      "bytes": 1485,
+      "sha256": "9ed5d91bd7e8cf494c64fe3bd8423f95389018c5ec5efe5f54857e65732af022"
+    },
+    {
+      "path": "lcpc/infra/test_final_restart.py",
+      "bytes": 1238,
+      "sha256": "c8c6ea23e9e8c5e37fe08b862dcbe383b21533ba607aae4c2ca75b892c939d54"
+    },
+    {
+      "path": "lcpc/infra/test_https.py",
+      "bytes": 5777,
+      "sha256": "0708f108e687b0bbaa572ce39b051f925bf0a962984f50ab7ccefc84357505c0"
+    },
+    {
+      "path": "lcpc/infra/test_offline_judge.py",
+      "bytes": 1339,
+      "sha256": "09430c540415387d9badfdea6df5bf9696bbc9be8c1933eeca2f0f6f94000ae7"
+    },
+    {
+      "path": "lcpc/infra/test_pc2.py",
+      "bytes": 1371,
+      "sha256": "446a401f1c719e521f48ff939cd71631a5f8f559862295e8045083a260295e91"
+    },
+    {
+      "path": "lcpc/infra/test_proxy_limits.py",
+      "bytes": 2038,
+      "sha256": "6209ba19888c74b7a6b53991edb661cf8ff224707ee107bae4724650fa5436ff"
+    },
+    {
+      "path": "lcpc/infra/test_reconnect.py",
+      "bytes": 2076,
+      "sha256": "d8348ed30034666f5a0ac374cd95ef94ce878a02d67a87ba8658230d1716c801"
+    },
+    {
+      "path": "lcpc/infra/test_recovery_phase2.py",
+      "bytes": 3703,
+      "sha256": "251547b9ab704c068ccb680e9303626a0daa11c1506791565d80ac4928a0382e"
+    },
+    {
+      "path": "lcpc/infra/test_sandbox.py",
+      "bytes": 2214,
+      "sha256": "db6c97c1224f012d2a762047e32ce1e90100430f04ac1f46624eb49a8ab6f253"
+    },
+    {
+      "path": "lcpc/infra/test_upload_policy.py",
+      "bytes": 1875,
+      "sha256": "17db44a940bc3cd9a2bc3e46753896cb8a873984821d6aec74a15cfedc9aad39"
+    },
+    {
+      "path": "lcpc/infra/tests/ac.cpp",
+      "bytes": 91,
+      "sha256": "cf4dad71e739aa283c5f9d17c28294e047a4fe64a59d748277a24e972bb0de64"
+    },
+    {
+      "path": "lcpc/infra/tests/ce.cpp",
+      "bytes": 66,
+      "sha256": "218bfba7e864854d8a12bdf571c6a2bd94337f2dd5529b442a9ea64980d43e84"
+    },
+    {
+      "path": "lcpc/infra/tests/cpp20.cpp",
+      "bytes": 166,
+      "sha256": "baa64d0df04cb63eb5f230251e2c48dd2051bb381bf7c58f952c323cbaa34bb6"
+    },
+    {
+      "path": "lcpc/infra/tests/filelimit.cpp",
+      "bytes": 161,
+      "sha256": "a9463a65ed59c1d06f515244cf8abdad548f97b2ae51938fb15e535f6217de7d"
+    },
+    {
+      "path": "lcpc/infra/tests/isolation.cpp",
+      "bytes": 540,
+      "sha256": "72a06ad3e0cae927826b35e30d204d2efb58e24d4acde2019527e97af2c11655"
+    },
+    {
+      "path": "lcpc/infra/tests/mle.cpp",
+      "bytes": 149,
+      "sha256": "72699d55b4b6909c787f32a7a7c9276da685931c3a05d0e1dc3f9f0d0138bfa6"
+    },
+    {
+      "path": "lcpc/infra/tests/pids.cpp",
+      "bytes": 276,
+      "sha256": "a663c62dc2937e91d71ce02acc51fed0af86acfcb2f8df2aeeff864ef8da1f81"
+    },
+    {
+      "path": "lcpc/infra/tests/re.cpp",
+      "bytes": 52,
+      "sha256": "ac923221cc6aebd0d742795f2022112c9e9b96e4aae0ee5e8d164174b9acfb57"
+    },
+    {
+      "path": "lcpc/infra/tests/tle.cpp",
+      "bytes": 83,
+      "sha256": "db3e2803a1e8350e9ac5d330e954c18513a784a2102e93f7871b7d884965c357"
+    },
+    {
+      "path": "lcpc/infra/tests/wa.cpp",
+      "bytes": 88,
+      "sha256": "7683055ca8b5f44467ec9bf7fceeb6d5066a3dcaaccf0b36de3aabbb3c5ee832"
+    },
+    {
+      "path": "lcpc/infra/vm.py",
+      "bytes": 6243,
+      "sha256": "873c1f4f5277652125e867e565f5355f6ab61baeb79cd10d38156e04ca400c76"
+    },
+    {
+      "path": "lcpc/lan_info.py",
+      "bytes": 2270,
+      "sha256": "7280b59e46b74eb85c17e6d8164a30af3187764b98f58d8997129f3aa6709e52"
+    },
+    {
+      "path": "lcpc/pc2ctl.py",
+      "bytes": 17904,
+      "sha256": "2c255b701f7e174570585ea727fe81a94b4428c17de79c117a28255c6fef08eb"
+    },
+    {
+      "path": "lcpc/public-instructions/index.html",
+      "bytes": 15309,
+      "sha256": "9afc1f3b1056ae76f98b9bd2c91da56442cee54db9dc621d92115f250ab5b601"
+    },
+    {
+      "path": "lcpc/public-problems/index.html",
+      "bytes": 1300,
+      "sha256": "bf562aae3c1de1e19846a4abc8123f9da3c1bc292235fbfb259b0b040ab47831"
+    },
+    {
+      "path": "lcpc/public-standings/index.html",
+      "bytes": 2656,
+      "sha256": "5a103d1a3a92faae6270c72b1622d271bb726127575900dc9b3ecc3a57dcd844"
+    },
+    {
+      "path": "lcpc/public-standings/scoreboards.css",
+      "bytes": 8049,
+      "sha256": "6478f759c9477684e932da1ec66241207c772455ec83ff6108c08e241f577b05"
+    },
+    {
+      "path": "lcpc/public-standings/scoreboards.js",
+      "bytes": 6381,
+      "sha256": "2d9a8eb565fa4b391d1229f4ff694459e06f6c9ffaa6e4b8f5b4b43eb7cd8638"
+    },
+    {
+      "path": "lcpc/public_standings.py",
+      "bytes": 1040,
+      "sha256": "1273792c82582c7f1702a272142b44d2a8466e8d2d845f16fcc2b171b6aba8b1"
+    },
+    {
+      "path": "lcpc/runtime_paths.py",
+      "bytes": 961,
+      "sha256": "5468fade4283fc6ad9ab37715a2199313ffe9a11ec931e2510ebe39fbae85f9d"
+    },
+    {
+      "path": "lcpc/src/AdministratorConfig.java",
+      "bytes": 11615,
+      "sha256": "4936813eed81dfde46af15e0c784481353ee3c63d76ff7e0dfc6433edab8702e"
+    },
+    {
+      "path": "lcpc/src/AdministratorFeatures.java",
+      "bytes": 59881,
+      "sha256": "b9394060dd17c989444412d1da12b6a5f2c1c3ed33657a589fcc33bb42be8876"
+    },
+    {
+      "path": "lcpc/src/ContestTemplates.java",
+      "bytes": 10895,
+      "sha256": "0f0f9dbd1fd05647a99769b21193fe7028076978a7bfe5f33388d5f38718705e"
+    },
+    {
+      "path": "lcpc/src/ContestVerdicts.java",
+      "bytes": 1843,
+      "sha256": "11b84062520d1f23f70fbee702b4f0910aacf31f6789c70181bb569701483081"
+    },
+    {
+      "path": "lcpc/src/DashboardBridge.java",
+      "bytes": 27482,
+      "sha256": "0e45bc198424ef5b4223298153f0261335318846820ab2ef39a35c9e633e5f49"
+    },
+    {
+      "path": "lcpc/src/JudgeGuardAgent.java",
+      "bytes": 1343,
+      "sha256": "003fea761e1f4b64a73c493023966e23a48ea213e1e6404476ec66f1035b141c"
+    },
+    {
+      "path": "lcpc/src/JudgeGuardPolicy.java",
+      "bytes": 1674,
+      "sha256": "1681349a7145fe2e534764cc4548eb291cf4984bd948a60f00e58a00ccdec0ff"
+    },
+    {
+      "path": "lcpc/src/JudgeGuardSelfTest.java",
+      "bytes": 2729,
+      "sha256": "9a541622dc05378157f27a475d0f751bf3ea7b97829684f5a96642a63e1e47b7"
+    },
+    {
+      "path": "lcpc/src/JudgingWorkflow.java",
+      "bytes": 1003,
+      "sha256": "be006f3616a7165512bfadf080b0b73e90e68a9a3aca2806e2557523fe6259fd"
+    },
+    {
+      "path": "lcpc/src/LCPCAdmin.java",
+      "bytes": 11886,
+      "sha256": "56d6f065ee28baa5b2112c4f3f19930d25e58808faef830765fe9a8c6a0f06a9"
+    },
+    {
+      "path": "lcpc/src/LCPCLaunch.java",
+      "bytes": 1520,
+      "sha256": "0414ce26b09af3bbeea37a2ac8dd30be180f738c57aee9ad91580e895ed340c9"
+    },
+    {
+      "path": "lcpc/src/LocalOnlyAgent.java",
+      "bytes": 3331,
+      "sha256": "f454bf231bb417fc1e7b2becff6d261354fff6579a1a98c139a4d63e466660f5"
+    },
+    {
+      "path": "lcpc/src/MacExecutionPolicy.java",
+      "bytes": 242,
+      "sha256": "baa39eb256ad239072cba0c5db1c07a833d3b8adab2c607506cb75209883faae"
+    },
+    {
+      "path": "lcpc/src/OfflineLearningEvidence.java",
+      "bytes": 8466,
+      "sha256": "b5ae69b0b83a69a1f01b8ea7158fce644ac221e515bb395d5176f1dc966c3cf8"
+    },
+    {
+      "path": "lcpc/src/ProblemColors.java",
+      "bytes": 1092,
+      "sha256": "b8c742598532bd2b1b678f2cf45ecde62aca81431d1fc46b7aac77e2e1c42efc"
+    },
+    {
+      "path": "lcpc/src/PublicStandings.java",
+      "bytes": 5677,
+      "sha256": "ded9aba7343c656d3434b48e1324e94d74e3cbbd1cba08906bcac732e14edaee"
+    },
+    {
+      "path": "lcpc/src/RunDiagnostics.java",
+      "bytes": 4454,
+      "sha256": "eddff1c489d0d0d0ebcf26252b4cb16c832a9a72cc3b7e35809e1eb1fc4652c3"
+    },
+    {
+      "path": "lcpc/src/SecretRedactingOutputStream.java",
+      "bytes": 959,
+      "sha256": "bbc44b6d06fb2696e63e4c89d0de3779e80a2d9db86c64133cbc8363ec29d8e1"
+    },
+    {
+      "path": "lcpc/src/StandingsBranding.java",
+      "bytes": 2374,
+      "sha256": "e7d37d852aec503755f0bf41c998e3630a6d3f05e53f2fef9f97d687157599c2"
+    },
+    {
+      "path": "lcpc/src/TestTeamPolicy.java",
+      "bytes": 1232,
+      "sha256": "92620973553e85c41c7ad70323cc5dded7c14f75d107eeb75a072e6d11b847e0"
+    },
+    {
+      "path": "lcpc/templates/practice/config/contest.yaml",
+      "bytes": 1068,
+      "sha256": "81526edcd37ea5bab732e6c2acfd9dea5ecd927d37f3103b6e4ba8040ac9ac71"
+    },
+    {
+      "path": "lcpc/templates/practice/config/maximum/data/secret/01.ans",
+      "bytes": 2,
+      "sha256": "10159baf262b43a92d95db59dae1f72c645127301661e0a3ce4e38b295a97c58"
+    },
+    {
+      "path": "lcpc/templates/practice/config/maximum/data/secret/01.in",
+      "bytes": 6,
+      "sha256": "2daf70c203478fc3d3189c03fbd8402d8cdcc28a08a2275ac915812a7cd83731"
+    },
+    {
+      "path": "lcpc/templates/practice/config/maximum/problem.yaml",
+      "bytes": 423,
+      "sha256": "41a3de29ad22c937efe5dcdb5d375199996e70ea020086f136ee1606b3d11c73"
+    },
+    {
+      "path": "lcpc/templates/practice/config/maximum/statement.md",
+      "bytes": 197,
+      "sha256": "7401c0e4db59564052e5638fe8cfa0cf285efa22b439d1a58cc00eeadb5c8203"
+    },
+    {
+      "path": "lcpc/templates/practice/config/sum/data/secret/01.ans",
+      "bytes": 2,
+      "sha256": "f0b5c2c2211c8d67ed15e75e656c7862d086e9245420892a7de62cd9ec582a06"
+    },
+    {
+      "path": "lcpc/templates/practice/config/sum/data/secret/01.in",
+      "bytes": 4,
+      "sha256": "337b794ce718a09a620090d53541c3b4640a64133bbee2188444810cd3169f81"
+    },
+    {
+      "path": "lcpc/templates/practice/config/sum/problem.yaml",
+      "bytes": 441,
+      "sha256": "ecd9f5382574e6a66b891d6ab7a99409670266f9b4cb8cffede1bdd76cbbf3e0"
+    },
+    {
+      "path": "lcpc/templates/practice/config/sum/statement.md",
+      "bytes": 182,
+      "sha256": "20bacc9939f1150579cb0b7a0f6f51a2104065d452b8199e3a1d157272fa3d6f"
+    },
+    {
+      "path": "lcpc/trialctl.py",
+      "bytes": 352,
+      "sha256": "6ef3926a315123de2da26efceb87632f162a3809466c73e9d01e1760d5c2d272"
+    },
+    {
+      "path": "lcpc/workspace_state.py",
+      "bytes": 1131,
+      "sha256": "427f0a65cd26e44dc1ed321e6a03de68ff8991607d3748df0b93d9de3fcd107f"
+    },
+    {
+      "path": "tools/build-guide.py",
+      "bytes": 1590,
+      "sha256": "78673db23125a550a0d57638b45ce256d86e599250a1a54a64cc53b1008f5ee7"
+    },
+    {
+      "path": "tools/package-source.py",
+      "bytes": 4583,
+      "sha256": "6e46171bd5833fe6930d7cbb7c330896c774d95f34e4c2f50710063a6b19e0a6"
+    },
+    {
+      "path": "tools/tests/test_publication.py",
+      "bytes": 1633,
+      "sha256": "1eb04744a92ba36415627ede32c78b0c9c9232e360e01ddb2f7389969c067a12"
+    }
+  ],
+  "notes": [
+    "Explicit source allowlist; no native vendor binaries or real contest data.",
+    "Public synthetic rehearsal inputs/answers are included deliberately.",
+    "Review future changes; pattern scanning is not a universal secret detector."
+  ]
+}

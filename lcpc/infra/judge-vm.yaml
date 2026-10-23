@@ -1,0 +1,42 @@
+# Dedicated LCPC judge. No host directories shared into the guest.
+vmType: vz
+arch: aarch64
+cpus: 2
+memory: 4GiB
+disk: 20GiB
+images:
+  - location: https://cloud-images.ubuntu.com/minimal/releases/noble/release-20261001/ubuntu-24.04-minimal-cloudimg-arm64.img
+    arch: aarch64
+    digest: sha256:fbf6b15c50c474dc6dee5b3c74da212bb687a2625e877227828e6492d88dc151
+mounts: []
+mountInotify: false
+containerd:
+  system: false
+  user: false
+rosetta:
+  enabled: false
+  binfmt: false
+portForwards:
+  - guestIPMustBeZero: true
+    guestPortRange: [1, 65535]
+    ignore: true
+hostResolver:
+  enabled: true
+provision:
+  - mode: system
+    script: |
+      #!/bin/sh
+      set -eu
+      export DEBIAN_FRONTEND=noninteractive
+      apt-get update
+      apt-get install -y --no-install-recommends openjdk-17-jre-headless g++ python3 sudo time ca-certificates
+      apt-get clean
+      useradd --system --create-home --home-dir /var/lib/pc2judge --shell /usr/sbin/nologin pc2judge || true
+      install -d -o pc2judge -g pc2judge -m 0700 /var/lib/pc2judge
+      install -d -o root -g root -m 0755 /opt/lcpc /opt/lcpc/bin /opt/lcpc/lib
+      install -d -o root -g root -m 0711 /var/lib/lcpc-jobs
+      install -d -o root -g root -m 0755 /var/lib/lcpc-root
+      for d in usr bin lib lib64 etc work proc dev tmp; do mkdir -p /var/lib/lcpc-root/$d; done
+      printf 'root:x:0:0:root:/root:/usr/sbin/nologin\nnobody:x:65534:65534:nobody:/:/usr/sbin/nologin\n' > /var/lib/lcpc-root/etc/passwd
+      printf 'root:x:0:\nnogroup:x:65534:\n' > /var/lib/lcpc-root/etc/group
+      printf 'passwd: files\ngroup: files\nhosts: files\n' > /var/lib/lcpc-root/etc/nsswitch.conf

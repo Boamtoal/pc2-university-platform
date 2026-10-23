@@ -1,0 +1,23 @@
+/* These overrides address identity surfaces only, never judgement/status/balloon classes. */
+:root{--team-active:#244664;--team-menu-hover:#244664;--team-on-header:#fff;--team-on-primary:#fff;--team-on-active:#fff;--team-on-menu-hover:#fff;--team-on-hover:#111827;--team-focus:#eab746}
+body{background:var(--team-background,#f3f6fa)}app-root{color:var(--team-text,#172d48)}
+app-header>header{background:var(--team-navy)!important;color:var(--team-on-header)!important}app-header>header :is(nav>a,.teamid-container,.lcpc-identity-caption){color:var(--team-on-header)!important}
+app-header>header>nav>a:hover{background:var(--team-menu-hover)!important;color:var(--team-on-menu-hover)!important}app-header>header>nav>a.active{background:var(--team-active)!important;color:var(--team-on-active)!important;border-bottom-color:var(--team-accent)!important}
+app-root button.primary,app-root button.warning,.cdk-overlay-container button[type=submit]{background:var(--team-primary)!important;border-color:var(--team-primary)!important;color:var(--team-on-primary)!important}
+app-root button.primary:hover,app-root button.warning:hover,.cdk-overlay-container button[type=submit]:hover{filter:brightness(1.12)}
+ng-component :is(.login-container,.table-container,.filters-container,.options-container),.cdk-overlay-container .mat-mdc-dialog-surface{background:var(--team-surface)!important;color:var(--team-text)!important}
+ng-component .table-container>table th{background:var(--team-hover)!important;color:var(--team-text)!important}ng-component .table-container>table tbody>tr:hover{background:var(--team-hover)!important;color:var(--team-on-hover)!important}
+app-root input:is([type=text],[type=password]),.cdk-overlay-container :is(input,textarea){background:var(--team-surface)!important;color:var(--team-text)!important}
+app-root .mat-mdc-form-field,.cdk-overlay-container .mat-mdc-form-field{--mdc-filled-text-field-container-color:var(--team-surface);--mdc-filled-text-field-input-text-color:var(--team-text);--mdc-filled-text-field-label-text-color:var(--team-text);--mdc-filled-text-field-focus-active-indicator-color:var(--team-primary);--mdc-filled-text-field-focus-label-text-color:var(--team-primary)}
+:is(a,button,input,select,textarea):focus-visible{outline-color:var(--team-focus)!important}
+body.lcpc-resource-page{--page-navy:var(--team-navy);--page-primary:var(--team-primary);--page-muted:var(--team-muted);--page-focus:var(--team-focus);background:var(--team-background);color:var(--team-text)}
+.lcpc-resource-page>header,.scoreboard-display .display-brand{background:var(--team-navy)!important;color:var(--team-on-header)!important}
+.lcpc-resource-page :is(header h1,header p),.scoreboard-display .display-brand :is(h1,p,span){color:var(--team-on-header)!important}
+.lcpc-resource-page :is(main>section,article,.summary){background:var(--team-surface);color:var(--team-text)}
+.lcpc-resource-page :is(.actions .view,.booklet,.language-switch button[aria-pressed=true]){background:var(--team-primary)!important;border-color:var(--team-primary)!important;color:var(--team-on-primary)!important}
+.lcpc-resource-page :is(.actions .download,.language-switch button:not([aria-pressed=true])){background:var(--team-surface);color:var(--team-text)}
+.lcpc-resource-page :is(.actions a,.language-switch button):hover{filter:brightness(1.08)}
+.lcpc-resource-page :is(h2,h3,.summary p,#problem-grid article p,footer){color:var(--team-text)}
+.lcpc-score-table thead th,.lcpc-score-table thead .lcpc-team{background:var(--team-primary)!important;color:var(--team-on-primary)!important}
+.scoreboard-display,.scoreboard-display .scoreboard-controls{background:var(--team-background);color:var(--team-text)}
+@media print{body.lcpc-resource-page{background:#fff;color:#172d48}.lcpc-resource-page>header{background:#fff!important;color:#172d48!important}.lcpc-resource-page :is(header h1,header p){color:#172d48!important}}

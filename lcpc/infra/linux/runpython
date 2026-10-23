@@ -1,0 +1,4 @@
+#!/bin/sh
+# Marker consumed by the PC2 sandbox broker; never run a submission outside it.
+echo 'Python submissions require the PC2 sandbox.' >&2
+exit 246

@@ -1,0 +1,16 @@
+title: 'Maximum'
+name: 'B - Maximum'
+source: Public synthetic practice fixture
+author: Boamtoal and contributors
+computer-judged: true
+manual-review: false
+limits:
+  timeout: 3
+  output: 256
+validator:
+  validatorProg: pc2.jar edu.csus.ecs.pc2.validator.Validator
+  validatorCmd: '{:validator} {:infile} {:outfile} {:ansfile} {:resfile} -pc2 1 false'
+  usingInternal: true
+  validatorOption: 1
+input:
+  readFromSTDIN: true

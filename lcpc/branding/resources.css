@@ -1,0 +1,3 @@
+/* Resource links share the main navigation styles in header.css. */
+.lcpc-resource-link:focus-visible{outline:3px solid #eab64b;outline-offset:3px}
+@media print{.lcpc-resource-link{display:none!important}}

@@ -1,0 +1,13 @@
+/* Identity assets keep their natural colors and aspect ratios. Semantic verdict colors are independent. */
+app-header [data-lcpc-native-logo]{display:none!important}.lcpc-managed-identity{min-width:0}.lcpc-managed-logos{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.lcpc-managed-logos img{display:block;object-fit:contain;object-position:center;flex-shrink:0}
+app-header>header .lcpc-managed-logos img[data-identity-slot]{width:64px!important;height:56px!important;min-width:0!important;max-width:100%;padding:5px;border-radius:8px;background:white}
+app-header>header .lcpc-managed-logos img[data-identity-slot=pc2]{width:44px!important;height:48px!important;padding:0;background:transparent}
+app-header>header .lcpc-managed-logos img[data-identity-slot=icpc]{width:190px!important;height:44px!important;padding:0;background:transparent}
+app-header>header .lcpc-identity-caption{font:500 11px/1.6 Arial,sans-serif;color:#c2d2e2;white-space:normal;overflow-wrap:anywhere;margin:8px 0 0}
+.lcpc-organizer-credit{text-align:center;margin:0 0 5px;font-size:12px;font-weight:600}
+.lcpc-resource-page .logos:empty,.display-logos:empty,#lcpc-standings-branding:empty{display:none!important}
+@media(max-width:700px){app-header>header .lcpc-managed-logos{gap:8px}app-header>header .lcpc-managed-logos img[data-identity-slot]{width:49px!important;height:46px!important;padding:4px}app-header>header .lcpc-managed-logos img[data-identity-slot=pc2]{width:36px!important;height:40px!important;padding:0}app-header>header .lcpc-managed-logos img[data-identity-slot=icpc]{width:145px!important;height:36px!important;padding:0}.lcpc-identity-caption{font-size:10px!important}}
+
+app-header>header .lcpc-managed-logos img[data-identity-slot][data-custom=true]{background:#fff;padding:5px;border-radius:8px}
+
+.lcpc-public-institution{display:block;color:#c4d4e4;font:12px/1.7 Arial,sans-serif;margin-top:7px}

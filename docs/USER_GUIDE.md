@@ -2,36 +2,36 @@
 
 Version 1.0.0 · Initial open-source release · [About and credits](../NOTICE.md)
 
-This guide is also available in the dashboard sidebar under **User Guide**. Installation prerequisites are in [INSTALLATION.md](INSTALLATION.md).
+This guide is also available in the dashboard sidebar under **User Guide**. Installation prerequisites are in [INSTALLATION.md](INSTALLATION.md). Read [Feature availability](SUPPORTED_FEATURES.md) for precise status/limits and [PDF manuals](MANUALS.md) for the English/Arabic books.
 
-- [Start here: what this platform does](#start)
-- [Network, router and participant addresses](#network)
-- [Sign-in, roles and account separation](#roles)
-- [Optional access for another organizer](#remote)
-- [Create a contest and keep history separate](#contests)
-- [Problems, difficulty and balloon colors](#problems)
-- [Private tests and trusted execution](#judge-data)
-- [PDF statements, Arabic versions and supporting files](#resources)
-- [University identity, logos and colors](#identity)
-- [Official teams, credentials and the private test team](#teams)
-- [Schedule, start, pause and remaining time](#clock)
-- [Participant submissions and result dialogs](#submissions)
-- [Automatic judging and human approval](#review)
-- [Read source, output and test-case evidence](#details)
-- [Private live and public frozen scoreboards](#scoreboards)
-- [Questions and announcements](#clarifications)
-- [Team activity, connection warnings and notifications](#monitoring)
-- [CSV, PDF and recovery backups](#exports)
-- [Detailed post-contest learning packages](#learning)
-- [Security, privacy and operating conditions](#security)
-- [Troubleshooting during an event](#troubleshooting)
-- [Native Administrator coverage and boundaries](#advanced)
-- [Version 1 limitations and contribution priorities](#limits)
-- [Before, during and after the contest](#checklist)
+- [1. Start here: what this platform does](#start)
+- [2. Network, router and participant addresses](#network)
+- [3. Sign-in, roles and account separation](#roles)
+- [4. Optional access for another organizer](#remote)
+- [5. Create a contest and keep history separate](#contests)
+- [6. Problems, difficulty and balloon colors](#problems)
+- [7. Private tests and trusted execution](#judge-data)
+- [8. PDF statements, Arabic versions and supporting files](#resources)
+- [9. University identity, logos and colors](#identity)
+- [10. Official teams, credentials and the private test team](#teams)
+- [11. Schedule, start, pause and remaining time](#clock)
+- [12. Participant submissions and result dialogs](#submissions)
+- [13. Automatic judging and human approval](#review)
+- [14. Read source, output and test-case evidence](#details)
+- [15. Private live and public frozen scoreboards](#scoreboards)
+- [16. Questions and announcements](#clarifications)
+- [17. Team activity, connection warnings and notifications](#monitoring)
+- [18. CSV, PDF and recovery backups](#exports)
+- [19. Detailed post-contest learning packages](#learning)
+- [20. Security, privacy and operating conditions](#security)
+- [21. Troubleshooting during an event](#troubleshooting)
+- [22. Native Administrator coverage and boundaries](#advanced)
+- [23. Version 1 limitations and contribution priorities](#limits)
+- [24. Before, during and after the contest](#checklist)
 
 <a id="start"></a>
 
-## Start here: what this platform does
+## 1. Start here: what this platform does
 
 **Where:** User Guide → Start here
 
@@ -41,6 +41,8 @@ The dashboard was developed and customized by Boamtoal in the context of program
 
 Read Installation before a fresh deployment, then rehearse the entire event on the intended router and team laptops. Version 1 is an initial open-source release. Successful local checks are not certification for every host, university network or contest size.
 
+After the updated interface has loaded, refreshing the browser restores the signed-in dashboard account’s section, contextual tab and available page position. Saved navigation is scoped to that account and revalidated against its current role. Blocked browser storage falls back safely to Overview.
+
 1. Install the supported runtime and isolated judge on a dedicated organizer computer.
 2. Create a separate rehearsal contest and test the complete participant journey.
 3. Prepare a new official contest with fresh team credentials and reviewed problem data.
@@ -48,7 +50,7 @@ Read Installation before a fresh deployment, then rehearse the entire event on t
 
 <a id="network"></a>
 
-## Network, router and participant addresses
+## 2. Network, router and participant addresses
 
 **Where:** System → Participant test & access
 
@@ -60,6 +62,8 @@ The sidebar shows the detected server IP and last update. Use the exact particip
 
 Automatic address detection can update the displayed address and managed listener after a network change. It cannot rewrite a URL already typed on another laptop. Teams must open the new address. A short hostname works only when the network actually resolves it; an IP address is the reliable fallback.
 
+A fully wired Ethernet contest works without Wi-Fi. Connect the organizer and team computers by Ethernet to the same router or switch. A router normally supplies DHCP; a switch alone needs an existing DHCP service or correctly assigned static addresses. A USB-to-Ethernet adapter can provide a port for the organizer laptop. Use the wired interface’s actual address in participant links.
+
 1. Before the event, open the login page on every physical team laptop.
 2. If switching networks during an event, pause the contest explicitly first and communicate the interruption.
 3. Move the server and every team to the same router, read the new participant address, and have teams reopen it.
@@ -70,7 +74,7 @@ Automatic address detection can update the displayed address and managed listene
 
 <a id="roles"></a>
 
-## Sign-in, roles and account separation
+## 3. Sign-in, roles and account separation
 
 **Where:** My Account; Security & Logs
 
@@ -88,7 +92,7 @@ Dashboard users are separate from native PC² teams, judges and service accounts
 
 <a id="remote"></a>
 
-## Optional access for another organizer
+## 4. Optional access for another organizer
 
 **Where:** System → Remote dashboard access
 
@@ -104,7 +108,7 @@ Participant access settings do not expose the organizer dashboard through the te
 
 <a id="contests"></a>
 
-## Create a contest and keep history separate
+## 5. Create a contest and keep history separate
 
 **Where:** Contests
 
@@ -124,7 +128,7 @@ Deactivate only after pausing the clock and resolving unfinished submissions. Ac
 
 <a id="problems"></a>
 
-## Problems, difficulty and balloon colors
+## 6. Problems, difficulty and balloon colors
 
 **Where:** Problems → Problems; Edit settings
 
@@ -142,7 +146,7 @@ The current policy accepts a time limit of 1–10 seconds and memory limit of 32
 
 <a id="judge-data"></a>
 
-## Private tests and trusted execution
+## 7. Private tests and trusted execution
 
 **Where:** Problems → Private judge data; Judging → Judge clients
 
@@ -160,7 +164,7 @@ Private judge inputs, expected answers, reference solutions and organizer source
 
 <a id="resources"></a>
 
-## PDF statements, Arabic versions and supporting files
+## 8. PDF statements, Arabic versions and supporting files
 
 **Where:** Resources
 
@@ -179,7 +183,7 @@ New PDF uploads reject common active/embedded features; export a plain PDF if re
 
 <a id="identity"></a>
 
-## University identity, logos and colors
+## 9. University identity, logos and colors
 
 **Where:** System → Dashboard identity; Participant identity
 
@@ -194,7 +198,7 @@ Participant pages and new dashboard UI are English. The standalone participant I
 
 <a id="teams"></a>
 
-## Official teams, credentials and the private test team
+## 10. Official teams, credentials and the private test team
 
 **Where:** Teams & Accounts; System → Participant test & access
 
@@ -209,7 +213,7 @@ The diagnostic account helps reproduce participant behavior; it does not prove e
 
 <a id="clock"></a>
 
-## Schedule, start, pause and remaining time
+## 11. Schedule, start, pause and remaining time
 
 **Where:** Contest Controls → Clock & schedule
 
@@ -227,7 +231,7 @@ Freeze remaining time is a scoreboard setting, not a pause of judging or of the 
 
 <a id="submissions"></a>
 
-## Participant submissions and result dialogs
+## 12. Participant submissions and result dialogs
 
 **Where:** Submissions
 
@@ -240,7 +244,7 @@ Submission receipts reduce duplicates for retries with the same retained client 
 
 <a id="review"></a>
 
-## Automatic judging and human approval
+## 13. Automatic judging and human approval
 
 **Where:** Judging → Pending human review; Submissions → Awaiting human
 
@@ -248,18 +252,18 @@ Choose Automatic only, Automatic + human approval, or Human only. Change the wor
 
 In Automatic + human approval, the automatic verdict is provisional. It remains pending for teams and does not count in standings until an authorized owner confirms a final decision. Open a submission row to see its automatic result, source and retained evidence.
 
-Confirm auto adopts the precise automatic verdict. Accept solution selects Accepted. Reject / choose verdict lets the owner select the actual reason, such as Wrong Answer, Compilation Error, Runtime Error or Time Limit Exceeded. Enter the organizer reason and confirm the final action. Do not label a runtime failure as Wrong Answer merely because both are unsuccessful.
+Approve result confirms the exact displayed automatic verdict, including Wrong Answer or a runtime/compile failure. A single confirmation shows the attempt, team, problem and final verdict; no typed reason or CONFIRM is required for this pending approval. An automatic reason is retained in the audit log. Choose different verdict opens one selection/confirmation when an override is needed. Reviewing an already final decision or rejudging retains the separate deliberate review flow.
 
 Manual changes and rejudges affect official results and are audited. Check the current record after a timeout before retrying; native PC² operations are not a distributed database transaction. A new judgement can coexist with retained older evidence, which remains labelled separately.
 
 1. Open the pending queue.
 2. Read the automatic result, code and relevant saved evidence.
-3. Choose the exact final verdict and record a reason.
+3. Confirm the displayed automatic verdict, or choose a different precise verdict if needed.
 4. Confirm once, then verify the final state and participant notification.
 
 <a id="details"></a>
 
-## Read source, output and test-case evidence
+## 14. Read source, output and test-case evidence
 
 **Where:** Click a submission row → Details
 
@@ -274,7 +278,7 @@ At most ten retained native reports and 64 KiB per text preview are displayed in
 
 <a id="scoreboards"></a>
 
-## Private live and public frozen scoreboards
+## 15. Private live and public frozen scoreboards
 
 **Where:** Scoreboard & Awards → Live Scoreboard / Public Scoreboard
 
@@ -286,10 +290,14 @@ Configure penalties, scoring, freeze and finalization deliberately. Thawing rele
 
 Balloon delivery and award tools depend on the corresponding native configuration. Email, printers and external drivers are deployment prerequisites; enabling a setting does not create working printer/mail infrastructure.
 
+A 1ST crown badge and a darker accepted-green cell identify First to solve for each problem. It uses original elapsed submission milliseconds among final accepted, visible official teams, not the order of human approval. Exact-time ties are shared. Deleted/rejudged results recalculate the marker. The public view reveals only first solves whose accepted cell has been released by the native freeze policy; the marker does not change rank or penalty.
+
+Balloon delivery lists one entry per final accepted team/problem. Click Mark delivered, review the team, problem and balloon color, then Confirm delivery. No typed reason or CONFIRM is needed. Cancel leaves the entry unchanged. Mark pending reverses the acknowledgement through the same simple confirmation. This records delivery status; it does not claim a balloon was physically handed over or that a printer/email service worked.
+
 
 <a id="clarifications"></a>
 
-## Questions and announcements
+## 16. Questions and announcements
 
 **Where:** Clarifications
 
@@ -300,7 +308,7 @@ Use announcements for operational notices, corrected statements and remaining-ti
 
 <a id="monitoring"></a>
 
-## Team activity, connection warnings and notifications
+## 17. Team activity, connection warnings and notifications
 
 **Where:** Teams & Accounts → Participant activity / Team connections
 
@@ -319,7 +327,7 @@ The diagnostic history is bounded (currently 30 days / 200,000 events). Its HMAC
 
 <a id="exports"></a>
 
-## CSV, PDF and recovery backups
+## 18. CSV, PDF and recovery backups
 
 **Where:** Exports & Backups
 
@@ -334,7 +342,7 @@ Downloads show a spinner during preparation and actual received-byte progress wh
 
 <a id="learning"></a>
 
-## Detailed post-contest learning packages
+## 19. Detailed post-contest learning packages
 
 **Where:** Exports & Backups → Team Learning Reports
 
@@ -356,7 +364,7 @@ Preparation runs in the background with completed-work progress; a downloadable 
 
 <a id="security"></a>
 
-## Security, privacy and operating conditions
+## 20. Security, privacy and operating conditions
 
 **Where:** Security & Logs
 
@@ -373,7 +381,7 @@ Version 1 is provided under the repository license without a promise of uninterr
 
 <a id="troubleshooting"></a>
 
-## Troubleshooting during an event
+## 21. Troubleshooting during an event
 
 **Where:** System; Team connections; Security & Logs
 
@@ -394,7 +402,7 @@ Rejected PDF upload: export a plain non-active PDF and retry within limits. Fail
 
 <a id="advanced"></a>
 
-## Native Administrator coverage and boundaries
+## 22. Native Administrator coverage and boundaries
 
 **Where:** System → Supported features
 
@@ -411,11 +419,13 @@ Bulk native operations may partially complete if a connection fails. Inspect act
 
 <a id="limits"></a>
 
-## Version 1 limitations and contribution priorities
+## 23. Version 1 limitations and contribution priorities
 
 **Where:** About; GitHub → Issues / Pull requests
 
 The validated organizer deployment is macOS on Apple Silicon with a dedicated Lima VZ ARM64 Linux judge. Native PC² itself supports more systems, but this overlay’s host lifecycle and isolation are not certified on Windows, Linux organizer hosts or Intel Macs.
+
+Team and remote-administrator browser clients are separate from the organizer host. They may access the supported server from Windows, macOS or Linux browsers; rehearse the actual browsers and LAN. A Linux guest judge does not establish Linux organizer-host support, and Java-based PC² does not automatically port this overlay.
 
 There is no one-click, fully validated clean-machine installer. Install the matching upstream PC²/WTI distribution, build the bridge, configure tool paths and provision the isolated judge according to Installation. Clean-machine installation/restore and the intended physical load still require a rehearsal.
 
@@ -428,7 +438,7 @@ Everyone may study, use, modify and contribute under EPL-2.0. Open an issue with
 
 <a id="checklist"></a>
 
-## Before, during and after the contest
+## 24. Before, during and after the contest
 
 **Where:** Organizer checklist
 

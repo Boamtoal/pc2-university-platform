@@ -18,13 +18,13 @@ test('zero problems stays concise; arbitrary problem counts get columns',()=>{
  const data=sample();data.contestStandings.standingsHeader.problem=[];
  assert.doesNotMatch(render(data),/class="lcpc-problem"|lcpc-empty-problems/);
  data.contestStandings.standingsHeader.problem=Array.from({length:30},(_,i)=>({id:i+1,title:'Problem '+i}));
- const html=render(data);assert.equal((html.match(/class="lcpc-problem"/g)||[]).length,30);assert.match(html,/<strong>AD<\/strong>/);
+ const html=render(data);assert.equal((html.match(/class="lcpc-problem"/g)||[]).length,30);assert.match(html,/<text[^>]*>AD<\/text>/);
 });
 test('problem headers show native balloon color and letter with full titles in tooltips',()=>{
  const data=sample();data.contestStandings.standingsHeader.problem[0].title='The Three Divisors of Acacus';
  data.contestStandings.standingsHeader.problem[0].colorRGB='#FF1234';data.contestStandings.standingsHeader.problem[0].colorName='Red';
  const html=render(data,{strictStyles:true});
- assert.match(html,/title="The Three Divisors of Acacus · Balloon: Red"/);assert.match(html,/<strong>A<\/strong><svg[^>]+class="lcpc-problem-color"/);assert.match(html,/fill="#FF1234"/);assert.doesNotMatch(html,/<span>Th<\/span>|style=/);
+ assert.match(html,/title="The Three Divisors of Acacus · Balloon: Red"/);assert.match(html,/<svg class="lcpc-problem-card"[^>]*>[\s\S]*?<text[^>]*>A<\/text><\/svg>/);assert.match(html,/fill="#FF1234"/);assert.doesNotMatch(html,/<span>Th<\/span>|style=/);
  assert.doesNotMatch(html,/<span>The Three Divisors of Acacus<\/span>/);
 });
 test('formal interface contains no explanatory paragraphs or Arabic UI text',()=>{
@@ -42,7 +42,7 @@ test('actual historical PC2 response renders all teams and both problem columns'
 
 test('metadata matches native problem IDs and titles; unassigned and invalid colors are never invented',()=>{
  const data=sample(),problemMetadata=[{id:2,title:'B problem',letter:'F',colorName:'Blue',colorRGB:'#0000ff'},{id:1,title:'wrong problem',colorRGB:'#ff0000'}];
- const html=render(data,{problemMetadata,strictStyles:true});assert.match(html,/<strong>F<\/strong><svg/);assert.match(html,/fill="#0000ff"/);assert.doesNotMatch(html,/fill="#ff0000"/);assert.match(html,/Color not assigned/);
+ const html=render(data,{problemMetadata,strictStyles:true});assert.match(html,/<text[^>]*>F<\/text>/);assert.match(html,/fill="#0000ff"/);assert.doesNotMatch(html,/fill="#ff0000"/);assert.match(html,/Balloon: Not assigned/);
  data.contestStandings.standingsHeader.problem[0].colorRGB='red" onload="alert(1)';assert.doesNotMatch(render(data),/fill="red|onload=/);
 });
 test('audience standings contain only rank, team, solved, penalty and compact problem results',()=>{
@@ -53,4 +53,27 @@ test('audience standings contain only rank, team, solved, penalty and compact pr
  const data=sample();data.contestStandings.standingsHeader.scoreboardMessage='Frozen after 45 minutes';data.contestStandings.teamStanding[0].problemSummaryInfo=[{index:1,isPending:true,isSolved:false,solutionTime:999,attempts:3}];
  const pending=render(data,{audience:true});assert.match(pending,/pending[^>]*><strong>\?<\/strong><\/td>/);assert.doesNotMatch(pending,/999|lcpc-server-notice/);
  data.contestStandings.teamStanding=[];assert.match(render(data,{audience:true}),/colspan="6"/);
+});
+
+test('balloon cards retain readable text on dark and light colors in both scoreboard views',()=>{
+ const colors=[['#000000','#ffffff'],['#ffffff','#000000'],['#0000ff','#ffffff'],['#ffff00','#000000'],['#ff0000','#000000'],['#ff69b4','#000000'],['#800080','#ffffff'],['#00ff00','#000000'],['#ffa500','#000000']];
+ for(const audience of [false,true])for(const [background,foreground]of colors){
+  const data=sample();data.contestStandings.standingsHeader.problem=[{id:1,title:'A problem',colorRGB:background,colorName:'Fixture color'}];
+  const html=render(data,{audience,strictStyles:true}),header=html.match(/<th scope="col" class="lcpc-problem"[^>]*>([\s\S]*?)<\/th>/)[1];
+  assert.match(header,/<svg class="lcpc-problem-card"/);assert.ok(header.includes('rx="7" fill="'+background+'"'));assert.ok(header.includes('fill="'+foreground+'">A</text>'));
+  assert.doesNotMatch(header,/<circle|lcpc-problem-color|<strong>|style=/);
+ }
+});
+test('missing balloon color has a neutral letter card and never hides the missing assignment',()=>{
+ const html=render(sample(),{strictStyles:true});assert.match(html,/lcpc-problem-card-unassigned/);assert.match(html,/aria-label="A: A problem · Balloon: Not assigned"/);assert.match(html,/<text[^>]*>A<\/text>/);
+ const data=sample();data.contestStandings.standingsHeader.problem[0].letter='WWW';
+ assert.match(render(data,{strictStyles:true}),/font-size="13"[^>]*>WWW<\/text>/);
+});
+
+test('first solve requires authoritative metadata, visible acceptance and exact team identity',()=>{
+ const data=sample();data.contestStandings.teamStanding[0].teamKey='1TEAM2';data.contestStandings.standingsHeader.problem[0].firstToSolveTeams=['1TEAM2'];
+ for(const audience of [false,true]){const html=render(data,{audience,strictStyles:true});assert.match(html,/lcpc-first-solve-badge/);assert.match(html,/title="First to solve · A problem/);assert.match(html,/>111<\/td>/);}
+ data.contestStandings.teamStanding[0].problemSummaryInfo[0]={index:1,isSolved:false,isPending:true,solutionTime:71,attempts:3};assert.doesNotMatch(render(data),/lcpc-first-solve-badge/);
+ data.contestStandings.teamStanding[0].problemSummaryInfo[0].isSolved=true;data.contestStandings.standingsHeader.problem[0].firstToSolveTeams=['2TEAM2'];assert.doesNotMatch(render(data),/lcpc-first-solve-badge/);
+ delete data.contestStandings.standingsHeader.problem[0].firstToSolveTeams;assert.doesNotMatch(render(data),/lcpc-first-solve-badge/);
 });

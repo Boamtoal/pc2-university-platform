@@ -12,6 +12,8 @@
 
 **v1.0.0 · First open-source release · [EPL-2.0](LICENSE)**
 
+> **Server host: macOS on Apple Silicon.** This overlay's managed services and isolated judge have been exercised on that host. Windows, Linux and Intel Mac organizer hosts require porting and acceptance testing; they are not supported installation targets for this release. Team laptops access the platform through a browser and may use different operating systems. See the [compatibility table](docs/INSTALLATION.md#operating-system-compatibility).
+
 An organizer dashboard and configurable participant experience around **PC² 9.10.0 / Web Team Interface 1.1**. Developed and customized by **[Boamtoal](https://github.com/Boamtoal)** in the context of programming contests at **Omar Al-Mukhtar University (OMU), Libya**, to make preparation, judging and participant support easier for universities.
 
 **PC² is the original contest engine.** It was developed at California State University, Sacramento by the PC² Development Team, including **John Clevenger, Douglas Lane, Samir Ashoo and Troy Boudreau**, with its upstream contributors. Their names, logos, copyright notices, original About screens and third-party acknowledgements retain their place. This project credits their work and does not claim authorship of PC² or WTI. See [full attribution](NOTICE.md), [PC² upstream](https://github.com/pc2ccs/pc2v9) and the [official PC² site](https://pc2ccs.github.io/).
@@ -38,7 +40,10 @@ The validated organizer environment is **macOS on Apple Silicon with a dedicated
 | Document | Purpose |
 | --- | --- |
 | [Complete User Guide](docs/USER_GUIDE.md) | Everyday workflows, judging, network advice, troubleshooting and operating conditions |
+| [Feature availability](docs/SUPPORTED_FEATURES.md) | Working controls, read-only tools, external setup and unavailable or unvalidated capabilities |
+| [English PDF](docs/manuals/University_Contest_Platform_User_Guide_EN.pdf) · [Arabic PDF](docs/manuals/University_Contest_Platform_User_Guide_AR.pdf) | Complete downloadable manuals, including organizer-host compatibility; [build and maintenance](docs/MANUALS.md) |
 | [Installation](docs/INSTALLATION.md) | Supported host, upstream dependencies, bootstrap and rehearsal |
+| [Other operating systems: untested ideas](docs/PORTING.md) · [العربية](docs/PORTING_AR.md) | Research-based Windows/Linux/Intel Mac porting sketch, official references and missing engineering work; not a working installer |
 | [Architecture](docs/ARCHITECTURE.md) | Components, trust boundaries, ports and data ownership |
 | [Known limitations & roadmap](docs/ROADMAP.md) | Unfinished work and useful contribution areas |
 | [Administrator coverage](lcpc/admin/PC2-ADMINISTRATOR-COVERAGE.md) | Native tools, destinations and integration boundaries |

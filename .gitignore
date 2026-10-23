@@ -31,6 +31,8 @@ __pycache__/
 *.img
 *.vmdk
 *.pdf
+!docs/manuals/University_Contest_Platform_User_Guide_EN.pdf
+!docs/manuals/University_Contest_Platform_User_Guide_AR.pdf
 *.in
 *.ans
 *.out

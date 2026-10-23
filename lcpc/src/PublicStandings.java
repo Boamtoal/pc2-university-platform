@@ -35,6 +35,26 @@ public class PublicStandings extends ServerConnection {
   return new JSONObject().put("contestStandings",new JSONObject().put("standingsHeader",safeHeader).put("teamStanding",teams));
  }
  /** Public presentation metadata only. Native scorer numbers visible active problems in model order. */
+ static JSONArray firstToSolve(JSONObject payload,IInternalContest contest,Problem problem,int index)throws Exception{
+  long earliest=Long.MAX_VALUE;java.util.Set<String> winners=new java.util.TreeSet<>();
+  JSONArray teams=array(payload.getJSONObject("contestStandings").opt("teamStanding"));
+  for(edu.csus.ecs.pc2.core.model.Run run:contest.getRuns()){
+   edu.csus.ecs.pc2.core.model.JudgementRecord verdict=run.getJudgementRecord();
+   if(run.isDeleted()||!run.isJudged()||!run.isSolved()||verdict==null||verdict.isPreliminaryJudgement()||!run.getProblemId().equals(problem.getElementId())||TestTeamPolicy.isTest(run.getSubmitter()))continue;
+   String key=run.getSubmitter().getTripletKey();boolean released=false;
+   for(int t=0;t<teams.length();t++){
+    JSONObject team=teams.getJSONObject(t);if(!team.optString("teamKey","").equals(key))continue;
+    JSONArray cells=array(team.opt("problemSummaryInfo"));
+    for(int c=0;c<cells.length();c++){
+     JSONObject cell=cells.getJSONObject(c);
+     if(cell.optInt("index",0)==index&&cell.optBoolean("isSolved",false)&&cell.optLong("solutionTime",-1)==run.getElapsedMS()/60000L)released=true;
+    }
+   }
+   if(!released)continue;
+   long time=run.getElapsedMS();if(time<earliest){earliest=time;winners.clear();}if(time==earliest)winners.add(key);
+  }
+  JSONArray result=new JSONArray();for(String key:winners)result.put(key);return result;
+ }
  static JSONObject presentation(JSONObject payload,IInternalContest contest)throws Exception {
   ContestTime time=contest.getContestTime();long length=time.getContestLengthSecs();
   payload.put("clock",new JSONObject().put("schema",1).put("lengthSeconds",length).put("remainingSeconds",Math.max(0,Math.min(length,length-time.getElapsedSecs()))).put("running",time.isContestRunning()));
@@ -44,6 +64,7 @@ public class PublicStandings extends ServerConnection {
    for(int n=0;n<columns.length();n++){
     JSONObject column=columns.getJSONObject(n);
     if(column.optInt("id",0)!=id||!column.optString("title","").equals(problem.getDisplayName()))continue;
+    column.put("firstToSolveTeams",firstToSolve(payload,contest,problem,id));
     String rgb=problem.getColorRGB(),name=problem.getColorName(),letter=problem.getLetter();
     if(letter!=null&&letter.matches("[A-Za-z]{1,3}"))column.put("letter",letter);
     if(rgb!=null&&rgb.matches("#[0-9A-Fa-f]{6}"))column.put("colorRGB",rgb).put("colorName",name==null?"":name);

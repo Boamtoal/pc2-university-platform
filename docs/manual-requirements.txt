@@ -1,0 +1,2 @@
+# Documentation build only; not a participant/judging runtime dependency.
+weasyprint==70.0

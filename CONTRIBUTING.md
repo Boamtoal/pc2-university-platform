@@ -34,7 +34,7 @@ Tests under `lcpc/infra/test_*.py` include real operational acceptance scripts. 
 
 ## Guide maintenance
 
-Edit `docs/guide.json`, then run `python3 tools/build-guide.py`. Commit both generated `docs/USER_GUIDE.md` and `lcpc/admin-ui/guide-content.js`. The UI escapes guide content and supports offline reading after dashboard sign-in. Keep claims aligned with implemented behavior and explicitly state gaps.
+Edit `docs/guide.json` and keep `docs/guide.ar.json` aligned. Feature boundaries live in `docs/features.json`. Run `python3 tools/build-guide.py`; commit the generated `docs/USER_GUIDE.md`, `docs/SUPPORTED_FEATURES.md` and `lcpc/admin-ui/guide-content.js`. Rebuild both public PDF manuals after workflow/support changes as described in `docs/MANUALS.md`. The UI escapes guide content and supports offline reading after dashboard sign-in. Keep claims aligned with implemented behavior and explicitly state gaps.
 
 ## Release process
 

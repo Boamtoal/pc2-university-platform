@@ -1,5 +1,18 @@
 # Changelog
 
+## Source updates — 2026-10-23
+
+- Complete English/Arabic PDF manuals with original and university logos, clickable contents, numbered chapters, a connected workspace tree and workflow diagrams.
+- Explicit capability status, external setup requirements and unavailable or unvalidated features in the guide and System coverage.
+- Protected manual downloads with shared download progress feedback.
+- Restore the signed-in workspace section, nested tab and scroll after refresh.
+- One confirmation for pending-verdict approval and balloon delivery, retaining permission checks and automatic audit reasons.
+- Fix balloon-delivery sorting for native records without schema IDs.
+- Authoritative First to Solve indicators using final accepted submission times and native public freeze policy; distinct accepted-green styling.
+- Readable finished/stale/low-time clock colors.
+
+The original v1.0.0 tag remains the first release snapshot. These refinements are in the current source branch; deployment limitations remain documented.
+
 ## 1.0.0 — 2026-10-23
 
 First public source release of the university organizer dashboard and customization overlay for PC² 9.10.0 / WTI 1.1.

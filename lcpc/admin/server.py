@@ -147,6 +147,10 @@ class Handler(BaseHTTPRequestHandler):
     self.send(200,(ROOT/'lcpc/branding/assets'/Path(path).name).read_bytes(),'image/png');return
    if branding_route(self,path):return
    user=self.user()
+   if path in ('/api/manuals/en','/api/manuals/ar'):
+    language=path.rsplit('/',1)[1].upper();filename='University_Contest_Platform_User_Guide_'+language+'.pdf';file=ROOT/'docs/manuals'/filename
+    require(file.is_file(),'Manual not built yet. Follow docs/MANUALS.md.',404)
+    self.send(200,file.read_bytes(),'application/pdf',{'Content-Disposition':'attachment; filename="'+filename+'"'});return
    if remote_route(self,path):return
    if native_route(self,path):return
    if participant_route(self,path):return

@@ -12,6 +12,9 @@ class PublicationTests(unittest.TestCase):
   for raw in [b'-----BEGIN '+b'PRIVATE KEY-----',b'ghp_'+b'a'*32,b'/Users/'+b'fixtureperson/anything',b'10.199.'+b'178.7']:
    self.assertTrue(m.inspect(Path('example.py'),raw))
   self.assertFalse(m.inspect(Path('test.py'),b'password=secrets.token_urlsafe(32)'))
+ def test_only_the_two_named_public_manual_pdfs_are_allowlisted(self):
+  for lang in ('EN','AR'):self.assertTrue(m.allowed(Path('docs/manuals/University_Contest_Platform_User_Guide_'+lang+'.pdf')))
+  for file in ('docs/manuals/problem-booklet.pdf','docs/manuals/team-report.pdf','docs/credentials.pdf','output/pdf/University_Contest_Platform_User_Guide_AR.pdf'):self.assertFalse(m.allowed(Path(file)))
  def test_existing_output_is_never_overwritten(self):
   with tempfile.TemporaryDirectory() as d:
    with self.assertRaises(ValueError):m.package(Path(d),Path(d))

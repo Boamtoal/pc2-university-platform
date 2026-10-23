@@ -29,3 +29,10 @@ test('stopped server shows its retained time without claiming to reconnect or co
  assert.equal(workspaceView(retained,'active',null,900000).status,'Reconnecting');
  assert.equal(workspaceView(retained,'active',read(fixture()),2000).text,'00:29:59');
 });
+
+test('finished clock gets its own semantic state and does not inherit white header text',()=>{
+ const {paint}=require('../contest-clock.js'),parts=Object.fromEntries(['data-clock-title','data-clock-value','data-clock-status'].map(key=>[key,{textContent:''}]));
+ const element={dataset:{},querySelector(selector){return parts[selector.slice(1,-1)];},setAttribute(){}};
+ paint(element,read(fixture(0,false)),1000);assert.equal(element.dataset.clockState,'finished');assert.equal(parts['data-clock-status'].textContent,'Finished');assert.equal(parts['data-clock-value'].textContent,'00:00:00');
+ const css=require('node:fs').readFileSync(require('node:path').join(__dirname,'../contest-clock.css'),'utf8');assert.match(css,/data-clock-state=finished[\s\S]*color:#932e34!important/);assert.match(css,/data-clock-state=low[\s\S]*color:#ad2334!important/);
+});

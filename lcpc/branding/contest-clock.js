@@ -27,7 +27,7 @@
   }
   set(element.querySelector('[data-clock-title]'),value?.title||'Contest');
   set(element.querySelector('[data-clock-value]'),state.text);set(element.querySelector('[data-clock-status]'),state.status);
-  const mode=state.stale?'stale':state.low?'low':value.running?'running':'paused';
+  const mode=state.stale?'stale':state.remaining===0?'finished':state.low?'low':value.running?'running':'paused';
   if(element.dataset.clockState!==mode)element.dataset.clockState=mode;
   element.setAttribute('aria-label',(value?.title||'Contest')+' · Time left '+state.text+' · '+state.status);
  }
@@ -61,7 +61,7 @@
    if(generation!==epoch)return;
    value=next;
    const raw=payload.contestStandings.standingsHeader.problem,problems=Array.isArray(raw)?raw:raw?[raw]:[];
-   if(JSON.stringify(problems.map(p=>[p.id,p.title,p.letter,p.colorName,p.colorRGB]))!==JSON.stringify(metadata.map(p=>[p.id,p.title,p.letter,p.colorName,p.colorRGB]))){metadata=problems;document.dispatchEvent(new Event('lcpc-contest-metadata'));}
+   if(JSON.stringify(problems.map(p=>[p.id,p.title,p.letter,p.colorName,p.colorRGB,p.firstToSolveTeams]))!==JSON.stringify(metadata.map(p=>[p.id,p.title,p.letter,p.colorName,p.colorRGB,p.firstToSolveTeams]))){metadata=problems;document.dispatchEvent(new Event('lcpc-contest-metadata'));}
   }catch(_){}finally{clearTimeout(timeout);if(abort===controller){busy=false;abort=null;}}
   tick();
  }

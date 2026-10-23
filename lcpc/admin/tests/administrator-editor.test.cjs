@@ -45,3 +45,29 @@ test('native account permission checkboxes preserve exactly the reviewed selecti
   await dialog.submit({newPassword:'',primaryGroup:'',members:''},form);assert.equal(writes.length,0);await dialog.submit({confirm:'CONFIRM',reason:'Fixture account permissions',password:'Fixture-owner-password'});assert.deepEqual(writes[0].args.permissions,checked);
  }
 });
+
+test('balloon deliveries render and sort real records without native ids or schema fields',async()=>{
+ const sandbox={window:{},LCPCNavigation:require('../../admin-ui/workspace-nav.js')};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../../admin-ui/administrator.js'),'utf8'),sandbox);
+ const view={innerHTML:'',textContent:''},calls=[],root={dataset:{section:'deliveries'},isConnected:true,addEventListener(){},querySelector:()=>view};
+ const rows=[{team:'team10',teamName:'Team 10',letter:'C',name:'Third',problem:'p3',color:'Blue',elapsedMinutes:35,delivered:false},{team:'team2',teamName:'Team 2',letter:'B',name:'Second',problem:'p2',color:'Red',elapsedMinutes:20,delivered:true},{team:'team2',teamName:'Team 2',letter:'A',name:'First',problem:'p1',color:'Gold',elapsedMinutes:10,delivered:false}];
+ await sandbox.window.LCPCAdministrator.mount(root,{getData:()=>({}),api:async name=>{calls.push(name);return name==='native/catalog'?{}:{rows};}});
+ assert.equal(view.textContent,'');assert.match(view.innerHTML,/Mark delivered/);assert.match(view.innerHTML,/Mark pending/);assert.ok(view.innerHTML.indexOf('A · First')<view.innerHTML.indexOf('B · Second'));assert.ok(view.innerHTML.indexOf('B · Second')<view.innerHTML.indexOf('C · Third'));assert.deepEqual(calls,['native/catalog','native/section?section=deliveries']);
+});
+
+test('balloon delivery uses one confirmation without typing and records an audit reason',async()=>{
+ const sandbox={window:{},LCPCNavigation:require('../../admin-ui/workspace-nav.js')};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../../admin-ui/administrator.js'),'utf8'),sandbox);
+ const view={innerHTML:'',textContent:''},handlers={},calls=[],row={team:'team2',teamName:'Fixture team',letter:'A',name:'Fixture problem',problem:'p1',color:'Blue',elapsedMinutes:10,delivered:false};let modal;
+ const root={dataset:{section:'deliveries'},isConnected:true,addEventListener:(name,fn)=>handlers[name]=fn,querySelector:()=>view,contains:()=>true};
+ const ctx={getData:()=>({}),dialog:(title,html,submit)=>modal={title,html,submit},close(){},notice(){},refresh:async()=>{},api:async(name,data)=>{if(name==='native/catalog')return {};if(name.startsWith('native/section'))return {rows:[row]};calls.push({name,data});return {};}};
+ await sandbox.window.LCPCAdministrator.mount(root,ctx);await handlers.click({target:{closest:()=>({disabled:false,dataset:{native:'delivery',id:'team2|p1'}})}});
+ assert.equal(calls.length,0);assert.match(modal.html,/Confirm delivery/);assert.match(modal.html,/Fixture team/);assert.match(modal.html,/Blue/);assert.doesNotMatch(modal.html,/<input|<textarea|Type CONFIRM/);
+ await modal.submit({});assert.equal(calls.length,1);assert.equal(calls[0].data.args.delivered,true);assert.equal(calls[0].data.confirm,'CONFIRM');assert.match(calls[0].data.reason,/confirmed balloon delivery/);
+});
+
+test('native feature coverage identifies read-only and external tools without offering writes',async()=>{
+ const sandbox={window:{LCPCGuideContent:require('../../admin-ui/guide-content.js')},LCPCNavigation:require('../../admin-ui/workspace-nav.js')};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../../admin-ui/administrator.js'),'utf8'),sandbox);
+ const view={innerHTML:'',textContent:''},calls=[],root={dataset:{section:'coverage'},isConnected:true,addEventListener(){},querySelector:()=>view};
+ await sandbox.window.LCPCAdministrator.mount(root,{getData:()=>({}),api:async name=>{calls.push(name);if(name!=='native/catalog')throw Error('unexpected call');return {};}});
+ assert.equal(view.textContent,'');for(const text of ['Read-only','Requires external setup','Partly supported','unimplemented','compiler/runtime'])assert.ok(view.innerHTML.includes(text),text);
+ assert.deepEqual(calls,['native/catalog']);assert.doesNotMatch(view.innerHTML,/data-native="(?:save|execute|create|delete)"/);
+});

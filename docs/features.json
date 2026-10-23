@@ -1,0 +1,306 @@
+[
+  {
+    "id": "accounts",
+    "label": "PC² Accounts & Permissions",
+    "status": "Available",
+    "works": "Create/edit native identities, metadata and permission checkboxes; generate/import credentials.",
+    "limits": "Creating a judge account does not start its service. Managed service accounts remain protected.",
+    "alternative": "Use individual accounts; start the deployed service through its lifecycle."
+  },
+  {
+    "id": "languages",
+    "label": "Languages & Compilers",
+    "status": "Partly supported",
+    "works": "Manage language definitions; choose existing isolated C++17/C++20/Python profiles.",
+    "limits": "Additional languages need a compiler/runtime and trusted sandbox profile. Saving a definition alone does not install them.",
+    "alternative": "Deploy and validate the language inside the isolated judge before enabling it."
+  },
+  {
+    "id": "problems",
+    "label": "Problem settings",
+    "status": "Available",
+    "works": "Edit native problem identity, limits, flags, validator settings and balloon color.",
+    "limits": "Only deployed isolated execution/validator policy may be active; test replacement does not rejudge.",
+    "alternative": "Use trusted deployment for custom executables."
+  },
+  {
+    "id": "groups",
+    "label": "Groups & Divisions",
+    "status": "Available",
+    "works": "Create/edit group names, native IDs, scoreboard visibility and account membership.",
+    "limits": "Group visibility controls do not replace private/public scoreboard freeze rules.",
+    "alternative": "Review membership and both scoreboard views before the event."
+  },
+  {
+    "id": "categories",
+    "label": "Clarification Categories",
+    "status": "Available",
+    "works": "Create/edit active clarification categories used by the native contest.",
+    "limits": "A category is a question-routing definition; it is not an announcement or an answer.",
+    "alternative": "Use Questions & announcements to send messages to teams."
+  },
+  {
+    "id": "judgements",
+    "label": "Judgement Definitions",
+    "status": "Available",
+    "works": "Create/edit verdict names, acronyms and active state. Native Accepted remains protected.",
+    "limits": "A new verdict definition does not change a submission or add execution detection.",
+    "alternative": "Use the pending review queue for decisions and deployed judge support for detection."
+  },
+  {
+    "id": "autojudges",
+    "label": "Automatic Judge Clients",
+    "status": "Requires external setup",
+    "works": "Configure enabled judge accounts and native problem filters.",
+    "limits": "The corresponding isolated judge process must already be deployed; settings do not create services.",
+    "alternative": "Provision the documented VM and start the judge lifecycle."
+  },
+  {
+    "id": "contest",
+    "label": "Contest & Team Display",
+    "status": "Available",
+    "works": "Edit native contest title, short name, team display, login policy and advanced flags.",
+    "limits": "Configuration changes do not activate a separate contest or certify imported settings.",
+    "alternative": "Use Contests for independent events, and Clock & schedule for event timing."
+  },
+  {
+    "id": "scoring",
+    "label": "Scoring Rules",
+    "status": "Available",
+    "works": "Read/edit the installed native scoring properties, including penalties and freeze behavior.",
+    "limits": "These controls use the installed scoring implementation; they do not deploy arbitrary scoring plugins.",
+    "alternative": "Rehearse ties, pending approvals and public freeze before changing official rules."
+  },
+  {
+    "id": "clocks",
+    "label": "Site Clocks",
+    "status": "Available",
+    "works": "Inspect/edit native site clocks and explicitly start/pause their configured scope.",
+    "limits": "Changing elapsed time affects official event timing; server activation and clock start are separate.",
+    "alternative": "Review the site scope and schedule; pause before planned infrastructure changes."
+  },
+  {
+    "id": "sites",
+    "label": "Sites",
+    "status": "Requires external setup",
+    "works": "Edit permitted native sites and connection settings; protected local loopback remains fixed.",
+    "limits": "Each remote site needs a separately configured PC² server and private credentials.",
+    "alternative": "Provision/test the remote site using native deployment procedures."
+  },
+  {
+    "id": "notifications",
+    "label": "Verdict Notifications",
+    "status": "Available",
+    "works": "Configure per-problem final-verdict suppression and cutoff rules.",
+    "limits": "Preliminary verdict delivery must remain suppressed by the judging workflow policy.",
+    "alternative": "Use announcements for general messages; approve held results from Submissions."
+  },
+  {
+    "id": "balloons",
+    "label": "Balloon Settings",
+    "status": "Requires external setup",
+    "works": "Configure native balloon printing/mail settings.",
+    "limits": "Printer drivers, devices, SMTP service and delivery need separate setup; no installation or test-mail guarantee.",
+    "alternative": "Use Problems for colors and Balloon delivery for acknowledgements; validate external delivery."
+  },
+  {
+    "id": "deliveries",
+    "label": "Balloon Delivery",
+    "status": "Available",
+    "works": "List final accepted team/problem entries and confirm delivered or pending in one dialog.",
+    "limits": "Acknowledgement records organizer intent, not proof of physical handover. Hidden diagnostic teams are excluded.",
+    "alternative": "Arrange physical balloon distribution separately."
+  },
+  {
+    "id": "finalization",
+    "label": "Finalization & Medals",
+    "status": "Available",
+    "works": "Edit native medal rank thresholds, certification state and comment.",
+    "limits": "Certification does not resolve pending judgements or produce an institution-approved certificate design.",
+    "alternative": "Finalize decisions and verify standings before certifying; export the needed summaries."
+  },
+  {
+    "id": "profiles",
+    "label": "Native Profiles",
+    "status": "Available",
+    "works": "Edit existing native profile name, description and contest ID metadata.",
+    "limits": "This is not a full desktop profile-switching interface or a clone of linked dashboard state.",
+    "alternative": "Use Contests to create, clone, activate and archive independent managed events."
+  },
+  {
+    "id": "connections",
+    "label": "Connections",
+    "status": "Available",
+    "works": "Inspect native client/site connections and disconnect permitted non-runtime connections.",
+    "limits": "Critical runtime clients are protected. Native connections are not a router device inventory.",
+    "alternative": "Use Team connections for observed browser presence; use router tools for network inventory."
+  },
+  {
+    "id": "reports",
+    "label": "Native Reports",
+    "status": "Partly supported",
+    "works": "Generate supported native text reports with filters and owner reauthentication.",
+    "limits": "Desktop file-only native report exporters need the desktop alternative. CSV/PDF summaries are not full recovery archives.",
+    "alternative": "Use the stated native desktop export or Exports & Backups as appropriate."
+  },
+  {
+    "id": "runs",
+    "label": "Submission Management",
+    "status": "Available",
+    "works": "Filter submissions, adjust permitted elapsed times, recoverably remove/restore and release checkouts; request guarded rejudging.",
+    "limits": "Rejudging can execute code and change official results. Bulk actions can partially complete after a connection failure.",
+    "alternative": "Inspect actual state before retrying; use submission details for final-verdict review."
+  },
+  {
+    "id": "clarifications",
+    "label": "Clarification Management",
+    "status": "Available",
+    "works": "Inspect native questions, deletion/recovery and checkout state; send answers and announcements from the main page.",
+    "limits": "Private/all-team audiences must be chosen deliberately; removal does not unsend a message already read.",
+    "alternative": "Check the recipient scope and retained question before confirming."
+  },
+  {
+    "id": "tests",
+    "label": "Private Judge Data",
+    "status": "Available",
+    "works": "Inspect current private input/expected output and replace supported problem test pairs.",
+    "limits": "Replacing current tests does not rejudge old attempts or reconstruct historical test revisions.",
+    "alternative": "Keep a separate data revision archive and request an explicit rejudge when justified."
+  },
+  {
+    "id": "imports",
+    "label": "Account Generation & Import",
+    "status": "Available",
+    "works": "Preview and generate/import native accounts with group membership and credential export.",
+    "limits": "Generated credentials are private; creating judge/site identities does not provision services.",
+    "alternative": "Use synthetic accounts for rehearsal and distribute real credentials privately."
+  },
+  {
+    "id": "compare",
+    "label": "Compare Source Files",
+    "status": "Available",
+    "works": "Compare two retained source files without executing them.",
+    "limits": "Text similarity is not proof of correctness, plagiarism or algorithmic equivalence.",
+    "alternative": "Inspect source and retained evidence with qualified human judgement."
+  },
+  {
+    "id": "submit",
+    "label": "Submit on Behalf of a Team",
+    "status": "Available",
+    "works": "Owner can submit for an active team/problem while the clock runs.",
+    "limits": "Creates an official attempt and can execute code through the isolated judge; requires reauthentication.",
+    "alternative": "Prefer the hidden diagnostic team for a rehearsal."
+  },
+  {
+    "id": "playback",
+    "label": "Contest Playback",
+    "status": "Available",
+    "works": "Import validated native playback data and explicitly start/stop it.",
+    "limits": "Only an empty technical contest; native playback starts clocks and continues after the browser closes.",
+    "alternative": "Use an independent rehearsal; never replay into a real event."
+  },
+  {
+    "id": "eventfeeds",
+    "label": "Event Feeds",
+    "status": "Read-only",
+    "works": "Inspect retained/native Event Feed definitions and status.",
+    "limits": "The installed upstream add/update handlers are unimplemented; this dashboard does not claim they work.",
+    "alternative": "Use supported native JSON/XML report exports, or contribute a tested upstream implementation."
+  },
+  {
+    "id": "inputValidation",
+    "label": "Input Validation Results",
+    "status": "Read-only",
+    "works": "Read saved native input-validation results.",
+    "limits": "Arbitrary uploaded custom validators are not executed on the organizer host.",
+    "alternative": "Deploy trusted isolated validator support and validate it separately."
+  },
+  {
+    "id": "shadow",
+    "label": "Shadow CCS Status",
+    "status": "Read-only",
+    "works": "Inspect Shadow CCS state and existing imported-event information.",
+    "limits": "External CCS credentials/connection are not provisioned here.",
+    "alternative": "Use the original native tools and a separately tested external CCS deployment."
+  },
+  {
+    "id": "plugins",
+    "label": "Installed Java Plugins",
+    "status": "Read-only",
+    "works": "List installed Java plugins and their native classes.",
+    "limits": "No arbitrary JVM plugin installation, Swing windows or graphical print dialogs in the web dashboard.",
+    "alternative": "Use native PC² Administrator and trusted host deployment for supported plugins."
+  },
+  {
+    "id": "logs",
+    "label": "Service Logs",
+    "status": "Available",
+    "works": "Read bounded/redacted tails of known service logs.",
+    "limits": "Only supported files; log contents are not proof that every external service succeeded.",
+    "alternative": "Use trusted host diagnostics for deeper infrastructure inspection."
+  },
+  {
+    "id": "reset",
+    "label": "Reset & Recovery",
+    "status": "Available",
+    "works": "Reset through the guarded native workflow.",
+    "limits": "Requires full backup, exact event identity, owner reauthentication and explicit destructive confirmation.",
+    "alternative": "Prefer a new independent contest for a new event."
+  },
+  {
+    "id": "coverage",
+    "label": "Feature Coverage",
+    "status": "Available",
+    "works": "Show capability status and explicit limits in this section.",
+    "limits": "This is an integration map, not parity with every upstream desktop dialog.",
+    "alternative": "Read the User Guide, Installation and Roadmap."
+  },
+  {
+    "id": "host-portability",
+    "label": "Organizer operating systems",
+    "status": "Not yet validated",
+    "works": "Current deployment: macOS Apple Silicon with Lima VZ Linux ARM64 judge.",
+    "limits": "This overlay is not certified on Windows/Linux organizer hosts or Intel Macs.",
+    "alternative": "Contribute isolated host support and run clean-machine acceptance."
+  },
+  {
+    "id": "installer",
+    "label": "One-click installer and fresh-host recovery",
+    "status": "Not yet validated",
+    "works": "Engineer-assisted setup and consistent contest backups to a new workspace.",
+    "limits": "No fully validated one-click clean-machine installer or full host/VM disk restore.",
+    "alternative": "Follow Installation and rehearse the whole deployment and recovery."
+  },
+  {
+    "id": "historic-data",
+    "label": "Historic test revisions and peak memory",
+    "status": "Unavailable",
+    "works": "Current reference tests, retained native evidence and available execution times.",
+    "limits": "No guaranteed historic dataset reconstruction or trusted peak memory metric.",
+    "alternative": "Use clearly labelled current-data learning replay; do not invent historical evidence."
+  },
+  {
+    "id": "cloud",
+    "label": "Public cloud and multiple tenants",
+    "status": "Not yet validated",
+    "works": "Private-LAN local organizer architecture with optional approved HTTPS admins.",
+    "limits": "Not a certified public Internet service or multi-university tenancy layer.",
+    "alternative": "Separate threat model, deployment and independent security/load review."
+  },
+  {
+    "id": "network-inventory",
+    "label": "Router device inventory",
+    "status": "Unavailable",
+    "works": "Observed browser presence, verified session events and connection gaps.",
+    "limits": "Cannot identify every router-connected device or prove uninterrupted physical network presence.",
+    "alternative": "Use router administration for hardware inventory with an appropriate privacy policy."
+  },
+  {
+    "id": "learning",
+    "label": "Team Learning Reports",
+    "status": "Available",
+    "works": "Private per-active-team PDFs/ZIPs, source, statements and current-data isolated replay.",
+    "limits": "Only deployed C++17/C++20/Python replay; expensive for large datasets and deliberate solution/test disclosure.",
+    "alternative": "Generate after the event, validate capacity and give each team only its own archive."
+  }
+]

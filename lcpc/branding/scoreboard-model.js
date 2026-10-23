@@ -5,23 +5,30 @@
  const count=n=>Number.isFinite(Number(n))?Math.max(0,Math.trunc(Number(n))):0;
  const array=v=>v==null?[]:Array.isArray(v)?v:[v];
  const letter=i=>{let s='';for(let n=i+1;n>0;n=Math.floor((n-1)/26))s=String.fromCharCode(65+(n-1)%26)+s;return s;};
+ // Choose the stronger black/white text contrast against the actual balloon color.
+ function cardText(rgb){
+  const channels=rgb.slice(1).match(/../g).map(h=>parseInt(h,16)/255).map(c=>c<=.04045?c/12.92:Math.pow((c+.055)/1.055,2.4));
+  const luminance=.2126*channels[0]+.7152*channels[1]+.0722*channels[2];
+  return (luminance+.05)/.05>=1.05/(luminance+.05)?'#000000':'#ffffff';
+ }
  function render(payload,options={}){
   const snapshot=payload?.contestStandings;
   if(!snapshot?.standingsHeader)throw new Error('Invalid PC2 standings snapshot');
   const header=snapshot.standingsHeader,teams=array(snapshot.teamStanding),problems=array(header.problem),audience=options.audience===true,summaryColumns=audience?4:5;
   const columns=problems.map((p,i)=>{
    const metadata=array(options.problemMetadata).find(m=>count(m.id)===count(p.id)&&m.title===p.title)||p;
-   return {id:count(p.id)||i+1,label:/^[A-Za-z]{1,3}$/.test(metadata.letter||'')?metadata.letter:letter(i),title:p.title||letter(i),rgb:/^#[0-9a-f]{6}$/i.test(metadata.colorRGB||'')?metadata.colorRGB:null,colorName:String(metadata.colorName||''),data:p};
+   return {id:count(p.id)||i+1,label:/^[A-Za-z]{1,3}$/.test(metadata.letter||'')?metadata.letter:letter(i),title:p.title||letter(i),rgb:/^#[0-9a-f]{6}$/i.test(metadata.colorRGB||'')?metadata.colorRGB:null,colorName:String(metadata.colorName||''),firstTeams:array(metadata.firstToSolveTeams).filter(key=>typeof key==='string'),data:p};
   });
   const cell=(team,p)=>{
    const result=array(team.problemSummaryInfo).find(r=>count(r.index)===p.id)||{};
    const attempts=count(result.attempts),time=count(result.solutionTime),solved=result.isSolved===true,pending=result.isPending===true;
+   const first=solved&&p.firstTeams.includes(String(team.teamKey||''));
    const state=solved?'accepted':pending?'pending':attempts?'rejected':'untouched';
    const mark=solved?(attempts>1?'+'+(attempts-1):'+'):pending?'?':attempts?'−'+attempts:'—';
    const detail=solved?'Accepted':pending?'Pending':attempts?'Not solved':'No attempts';
    const meta=solved?time+' min':attempts?attempts+(attempts===1?' try':' tries'):'';
-   const title=p.title+': '+(solved?'Accepted at '+time+' minutes':detail)+'; '+attempts+' attempts';
-   return '<td class="lcpc-result '+state+'" title="'+escape(title)+'"'+(audience?' aria-label="'+escape(title)+'"':'')+'><strong>'+mark+'</strong>'+(audience?(solved?'<small>'+time+'</small>':''):'<span>'+escape(detail)+'</span><small>'+escape(meta)+'</small>')+'</td>';
+   const title=(first?'First to solve · ':'')+p.title+': '+(solved?'Accepted at '+time+' minutes':detail)+'; '+attempts+' attempts';
+   return '<td class="lcpc-result '+state+(first?' lcpc-first-solve':'')+'" title="'+escape(title)+'"'+(audience?' aria-label="'+escape(title)+'"':'')+'>'+(first?'<span class="lcpc-first-solve-badge" aria-hidden="true"><svg viewBox="0 0 24 20" focusable="false"><path d="m3 5 4 4 5-7 5 7 4-4-2 11H5Z"/><path d="M6 19h12"/></svg><b>1ST</b></span>':'')+'<strong>'+mark+'</strong>'+(audience?(solved?'<small>'+time+'</small>':''):'<span>'+escape(detail)+'</span><small>'+escape(meta)+'</small>')+'</td>';
   };
   let html=audience?'':'<div class="lcpc-score-heading" data-lcpc-key="heading"><div><p class="lcpc-eyebrow">'+escape(options.identityName||'Contest')+' · STANDINGS</p><h1>'+escape(header.title||'Contest standings')+'</h1></div><div class="lcpc-score-meta">'+teams.length+' teams · '+columns.length+' problems<br><span>Last update: '+escape(header.currentDate||'Live')+'</span></div></div>';
   if(!audience&&header.scoreboardMessage)html+='<p class="lcpc-server-notice" data-lcpc-key="notice" dir="auto">'+escape(header.scoreboardMessage)+'</p>';
@@ -30,8 +37,9 @@
   html+='</colgroup><thead><tr><th scope="col">Rank</th><th scope="col" class="lcpc-team">Team</th><th scope="col">Solved</th><th scope="col" title="Total penalty in minutes">Penalty</th>'+(audience?'':'<th scope="col">Attempts</th>');
   for(const p of columns){
    const color=p.rgb?(p.colorName||p.rgb):'Not assigned';
-   const swatch=p.rgb?'<svg class="lcpc-problem-color" viewBox="0 0 20 20" role="img" aria-label="'+escape(color)+'"><circle cx="10" cy="10" r="8" fill="'+p.rgb+'" stroke="currentColor" stroke-width="1"/></svg>':'<span class="lcpc-problem-color-unassigned" aria-label="Color not assigned">—</span>';
-   html+='<th scope="col" class="lcpc-problem" title="'+escape(p.title+' · Balloon: '+color)+'" aria-label="'+escape(p.label+': '+p.title+' · Balloon: '+color)+'"><strong>'+escape(p.label)+'</strong>'+swatch+'</th>';
+   const background=p.rgb||'#edf1f6',foreground=p.rgb?cardText(p.rgb):'#172b46';
+   const card='<svg class="lcpc-problem-card'+(p.rgb?'':' lcpc-problem-card-unassigned')+'" viewBox="0 0 44 36" aria-hidden="true" focusable="false"><rect x="1" y="1" width="42" height="34" rx="7" fill="'+background+'" stroke="'+foreground+'" stroke-opacity="0.18"/><text x="22" y="19" text-anchor="middle" dominant-baseline="central" font-size="'+(p.label.length>2?13:17)+'" fill="'+foreground+'">'+escape(p.label)+'</text></svg>';
+   html+='<th scope="col" class="lcpc-problem" title="'+escape(p.title+' · Balloon: '+color)+'" aria-label="'+escape(p.label+': '+p.title+' · Balloon: '+color)+'">'+card+'</th>';
   }
   html+='</tr></thead><tbody>';
   for(const [index,t] of teams.entries()){

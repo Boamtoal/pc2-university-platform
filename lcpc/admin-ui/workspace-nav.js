@@ -42,6 +42,19 @@
   account:'<circle cx="12" cy="8" r="4"/><path d="M4 22v-2a8 8 0 0 1 16 0v2"/>'
  };
  function icon(name){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">'+(icons[name]||icons.overview)+'</svg>';}
- const api={sections,views,home,available,current,icon};
+ const storageKey=username=>'lcpc.workspace.navigation.v1:'+encodeURIComponent(username);
+ function restore(storage,username,owner){
+  const fallback={tab:'overview',views:{},scroll:null};
+  try{
+   const saved=JSON.parse(storage?.getItem(storageKey(username))||'null');
+   if(!saved||!sections.some(([id])=>id===saved.tab)||(!owner&&['security','system'].includes(saved.tab)))return fallback;
+   const view=current(saved.tab,saved.view,owner),scroll=Array.isArray(saved.scroll)&&saved.scroll.length===2&&saved.scroll.every(n=>typeof n==='number'&&Number.isFinite(n)&&n>=0)?saved.scroll:null;
+   return {tab:saved.tab,views:{[saved.tab]:view},scroll};
+  }catch(_){return fallback;}
+ }
+ function remember(storage,username,tab,view,scroll){
+  try{storage?.setItem(storageKey(username),JSON.stringify({tab,view,scroll}));}catch(_){}
+ }
+ const api={sections,views,home,available,current,icon,restore,remember};
  if(typeof module!=='undefined'&&module.exports)module.exports=api;else window.LCPCNavigation=api;
 })();

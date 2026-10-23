@@ -84,7 +84,7 @@ public class DashboardBridge extends ServerConnection {
     JSONArray clarifications=new JSONArray();for(IClarification c:getContest().getClarifications())clarifications.put(new JSONObject().put("number",c.getNumber()).put("site",c.getSiteNumber()).put("team",c.getTeam()==null?"Organizer":c.getTeam().getLoginName()).put("problem",c.getProblem()==null?"General":c.getProblem().getName()).put("question",c.getQuestion()).put("answer",c.getAnswer()==null?"":c.getAnswer()).put("answered",c.isAnswered()).put("all",c.isSendToAll()).put("deleted",c.isDeleted()));
     out.put("clarifications",clarifications);JSONArray languages=new JSONArray();for(Language l:internalContest.getLanguages())languages.put(new JSONObject().put("name",l.getDisplayName()).put("active",l.isActive()));out.put("languages",languages);
     DefaultScoringAlgorithm scoring=new DefaultScoringAlgorithm();scoring.setObeyFreeze(false);
-    String xml=scoring.getStandings(internalContest,internalContest.getRuns(),null,info.getScoringProperties(),controller.getLog());out.put("standings",XML.toJSONObject(xml));
+    String xml=scoring.getStandings(internalContest,internalContest.getRuns(),null,info.getScoringProperties(),controller.getLog());out.put("standings",PublicStandings.presentation(XML.toJSONObject(xml),internalContest));
     JSONArray judgements=new JSONArray();for(IJudgement j:getContest().getJudgements())judgements.put(new JSONObject().put("name",j.getName()));out.put("judgements",judgements);
     return out.put("updatedAt",java.time.Instant.now().toString());
   }

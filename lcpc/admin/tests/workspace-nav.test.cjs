@@ -40,3 +40,21 @@ test('remembered tools remain scoped to their own section',()=>{
 test('each sidebar section uses a consistent, self-contained semantic SVG icon',()=>{
  const seen=new Set();for(const [id,icon] of nav.sections){assert.equal(icon,id);const svg=nav.icon(icon);assert.match(svg,/viewBox="0 0 24 24"/);assert.match(svg,/stroke="currentColor"/);assert.match(svg,/aria-hidden="true"/);assert.doesNotMatch(svg,/<script|href=|onload=/);assert.ok(!seen.has(svg));seen.add(svg);}
 });
+
+test('a browser refresh restores the account section, nested tab and scroll position',()=>{
+ const data=new Map(),storage={setItem:(k,v)=>data.set(k,v),getItem:k=>data.get(k)};
+ nav.remember(storage,'owner','scoreboard','deliveries',[0,420]);
+ assert.deepEqual(nav.restore(storage,'owner',true),{tab:'scoreboard',views:{scoreboard:'deliveries'},scroll:[0,420]});
+ assert.deepEqual(nav.restore(storage,'another-owner',true),{tab:'overview',views:{},scroll:null});
+});
+test('restoring a workspace never revives a tab forbidden by current permissions',()=>{
+ const data=new Map(),storage={setItem:(k,v)=>data.set(k,v),getItem:k=>data.get(k)};
+ nav.remember(storage,'changed-role','scoreboard','deliveries',[0,0]);assert.equal(nav.restore(storage,'changed-role',false).views.scoreboard,'main');
+ nav.remember(storage,'changed-role','security','main',[0,0]);assert.equal(nav.restore(storage,'changed-role',false).tab,'overview');
+ nav.remember(storage,'changed-role','missing-page','main',[0,0]);assert.equal(nav.restore(storage,'changed-role',true).tab,'overview');
+});
+test('missing, corrupt or blocked browser storage cannot prevent dashboard sign-in',()=>{
+ for(const storage of [null,{getItem:()=>'{invalid'},{getItem(){throw Error('Blocked');},setItem(){throw Error('Blocked');}}]){
+  assert.equal(nav.restore(storage,'owner',true).tab,'overview');assert.doesNotThrow(()=>nav.remember(storage,'owner','guide','main',[0,0]));
+ }
+});

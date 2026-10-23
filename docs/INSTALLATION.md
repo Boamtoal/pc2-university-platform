@@ -4,6 +4,23 @@ This is a **source overlay**, not a self-contained replacement distribution of P
 
 ## Supported baseline
 
+### Operating-system compatibility
+
+| Machine / role | Current status | What this means |
+| --- | --- | --- |
+| Organizer server: macOS on Apple Silicon | Current exercised deployment | Follow this guide, then rehearse a clean installation, recovery and the intended client load. |
+| Organizer server: Intel Mac | Not supported by this overlay release | ARM64 judge images, VZ settings and host paths require porting and validation. |
+| Organizer server: Windows | Not supported by this overlay release | Service lifecycle, networking and isolated judge provisioning need a Windows-specific implementation. |
+| Organizer server: Linux | Not supported by this overlay release | Replace macOS/Lima host integration with a reviewed Linux deployment and isolated execution boundary. |
+| Team laptops: Windows, macOS or Linux | Browser clients | No local Java/PC² installation is required for the web interface. Rehearse the actual browsers, file uploads and LAN access on every laptop. |
+| Optional remote organizer browser | Browser client with approved access | It connects to the supported server over the configured HTTPS path; it does not move server services to the remote laptop. |
+
+PC² being Java-based does not make this custom overlay portable automatically. The Linux judge is a guest execution environment, not validation of Linux as an organizer host. Host scripts currently depend on macOS tools, filesystem paths, Lima VZ and ARM64 compiler/runtime profiles. Do not run team code directly on another organizer host as a shortcut around the missing isolation deployment.
+
+For a research-based starting point, read [Other operating systems: experimental porting notes](PORTING.md) or [the Arabic edition](PORTING_AR.md). Those suggestions cite official sources and **have not been tested with this platform**. They do not change the support status above.
+
+### Host prerequisites
+
 - Dedicated **macOS Apple Silicon** organizer host with enough RAM/storage for Java, PDF generation and a **4 GiB RAM / 20 GiB disk** Lima VZ Linux ARM64 judge. Keep at least 8 GiB free host storage; large learning exports need significantly more space.
 - Matching official **PC² 9.10.0 build 7065** distribution, including `lib/pc2.jar`, its dependency jars and `projects/WebTeamInterface-1.1-7065.zip`. Obtain it from [official PC² distribution information](https://pc2ccs.github.io/). Verify the distribution's provenance/checksum and preserve its original licenses, manuals and About credits.
 - Java capable of building with `--release 17` (Java 17 is the bridge build baseline). The deployed native runtime also uses `-Djdk.crypto.KeyAgreement.legacyKDF=true` for its storage compatibility. New JDK/upstream combinations need independent validation.
@@ -21,6 +38,7 @@ Work in a **fresh copy** of the official PC² installation. Keep any existing ev
 git clone https://github.com/Boamtoal/pc2-university-platform.git
 cp -R pc2-university-platform/lcpc /path/to/fresh-pc2-9.10.0/
 cp -R pc2-university-platform/tools /path/to/fresh-pc2-9.10.0/
+cp -R pc2-university-platform/docs /path/to/fresh-pc2-9.10.0/
 ```
 
 Do not replace the upstream `README`, `VERSION`, `doc`, `bin`, `lib` or About/license assets. Keep this repository's documentation and [NOTICE](../NOTICE.md) available to operators too. Commands below run from `/path/to/fresh-pc2-9.10.0`; replace that placeholder with your real directory.
